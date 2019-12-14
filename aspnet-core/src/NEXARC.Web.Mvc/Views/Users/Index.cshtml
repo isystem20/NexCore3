@@ -1,166 +1,229 @@
-﻿@using Abp.Authorization.Users
+@using Abp.Authorization.Users
+@using NEXARC.Web.Models.Common.Modals
 @using NEXARC.Web.Startup
+@using NEXARC.Domain.Enumerations;
+@using NEXARC.Extensions;
 @model NEXARC.Web.Models.Users.UserListViewModel
 @{
-    ViewBag.CurrentPageName = PageNames.Users; // The menu item will be active for this page.
+    ViewBag.Title = L("Users");
+    ViewBag.CurrentPageName = PageNames.Users;
 }
 @section scripts
-{
+    {
     <environment names="Development">
-        <script src="~/view-resources/Views/Users/Index.js" asp-append-version="true"></script>
     </environment>
 
     <environment names="Staging,Production">
-        <script src="~/view-resources/Views/Users/Index.min.js" asp-append-version="true"></script>
     </environment>
+
+    <script src="~/view-resources/Views/Users/Index.js" asp-append-version="true"></script>
+    <!-- Page JS Plugins -->
+    <script src="./oneui/src/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.print.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+    <!-- Page JS Code -->
+    <script src="./oneui/src/assets/js/pages/be_tables_datatables.js"></script>
+    <script>jQuery(function () { One.helpers(['table-tools-checkable', 'table-tools-sections']); });</script>
+
+
+    <script>
+        $("#search_table").on("keyup search input paste cut", function (e) {
+            e.preventDefault();
+            if ($('.table').length > 0) {
+                if ($.fn.dataTable.isDataTable('.table')) {
+                    table = $('.table').DataTable();
+                    table.search(this.value).draw();
+                }
+            }
+        });
+
+        $('.export-csv').click(function () {
+            $('.buttons-csv').trigger("click");;
+        });
+        $('.export-copy').click(function () {
+            $('.buttons-copy').trigger("click");;
+        });
+        $('.export-print').click(function () {
+            $('.buttons-print').trigger("click");;
+        });
+    </script>
 }
-<div class="row clearfix">
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
-            <div class="header">
-                <h2>
-                    @L("Users")
-                </h2>
-                <ul class="header-dropdown m-r--5">
-                    <li class="dropdown">
-                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="material-icons">more_vert</i>
-                        </a>
-                        <ul class="dropdown-menu pull-right">
-                            <li><a id="RefreshButton" href="javascript:void(0);" class="waves-effect waves-block"><i class="material-icons">refresh</i>@L("Refresh")</a></li>
-                        </ul>
-                    </li>
-                </ul>
+
+<div class="content" style="padding: 10px !important;">
+
+    <div class="block">
+        <div class="block-header ribbon ribbon-primary ribbon-left ribbon-modern">
+            <div class="ribbon-box">
+                Users
+                <i class="fa fa-user"></i>
             </div>
-            <div class="body table-responsive">
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th>@L("UserName")</th>
-                            <th>@L("FullName")</th>
-                            <th>@L("EmailAddress")</th>
-                            <th>@L("IsActive")</th>
-                            <th>@L("Actions")</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var user in Model.Users)
-                        {
-                            <tr>
-                                <td>@user.UserName</td>
-                                <td>@user.FullName</td>
-                                <td>@user.EmailAddress</td>
-                                <td><i class="material-icons" style="color:@(user.IsActive ? "green":"red");">@(user.IsActive ? "check_box" : "indeterminate_check_box")</i></td>
-                                <td class="dropdown">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">menu</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="#" class="waves-effect waves-block edit-user" data-user-id="@user.Id" data-toggle="modal" data-target="#UserEditModal"><i class="material-icons">edit</i>@L("Edit")</a></li>
-                                        <li><a href="#" class="waves-effect waves-block delete-user" data-user-id="@user.Id" data-user-name="@user.UserName"><i class="material-icons">delete_sweep</i>@L("Delete")</a></li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-                <button type="button" class="btn btn-primary btn-circle waves-effect waves-circle waves-float pull-right" data-toggle="modal" data-target="#UserCreateModal">
-                    <i class="material-icons">add</i>
+            <h3 class="block-title"></h3>
+            <div class="block-options">
+                <button type="button" class="btn btn-sm btn-square text-primary btn-primary-custom" data-toggle="modal" data-target="#UserCreateModal">
+                    @*<button type="button" class="btn btn-square btn-outline-primary">Primary</button>*@
+                    <i class="si si-pencil"></i>&nbsp;<span>@L("Create")</span>
                 </button>
+                <button type="button" class="btn btn-sm btn-square text-danger delete-user-multi btn-danger-custom">
+                    <i class="far fa-trash-alt"></i>&nbsp;<span>Delete</span>
+                </button>
+                <button type="button" class="btn btn-sm btn-square text-primary dropdown-toggle btn-primary-custom" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="si si-note"></i> Export
+                </button>
+                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                    <a class="dropdown-item export-copy" href="javascript:void(0)">
+                        <i class="si si-docs"></i>&nbsp;
+                        Copy
+                    </a>
+                    <a class="dropdown-item export-csv" href="javascript:void(0)">
+                        <i class="si si-doc"></i>&nbsp;
+                        CVS
+                    </a>
+                    <a class="dropdown-item export-print" href="javascript:void(0)">
+                        <i class="si si-printer"></i>&nbsp;
+                        Print
+                    </a>
+                </div>
+                <button type="button" class="btn btn-sm btn-square btn-dark" data-toggle="block-option" data-action="fullscreen_toggle"><i class="si si-size-fullscreen"></i></button>
             </div>
         </div>
+        <div class="block-content">
+
+            <!-- DataTables init on table by adding .js-dataTable-buttons class, functionality is initialized in js/pages/be_tables_datatables.min.js which was auto compiled from _es6/pages/be_tables_datatables.js -->
+            <table id="dtable" class="table table-striped table-vright js-dataTable-buttons dataTable no-footer  js-table-checkable">
+                <thead>
+                    <tr>
+                        <th class="text-center noExport" style="width: 70px;">
+                            <div class="custom-control custom-checkbox d-inline-block">
+                                <input type="checkbox" class="custom-control-input" id="check-all" name="check-all">
+                                <label class="custom-control-label" for="check-all"></label>
+                            </div>
+                        </th>
+                        <th class="font-size-sm text-center noExport" style="width: 80px;">@L("Actions")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("UserName")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("FullName")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("EmailAddress")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("IsActive")</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model.Users)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox d-inline-block">
+                                    <input type="checkbox" class="custom-control-input" dataclass="record-key" data-id="@user.Id" id="row_@user.Id" name="row_@user.Id">
+                                    <label class="custom-control-label" for="row_@user.Id"></label>
+                                </div>
+                            </td>
+                            <td class="d-sm-table-cell font-size-sm">
+                                <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>@L("Actions")</span>
+                                    <b class="caret"></b>
+                                </button>
+                                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                                    <a href="#" class="dropdown-item edit-user" data-user-id="@user.Id" data-toggle="modal" data-target="#UserEditModal">
+                                        <i class="fa fa-edit"></i>&nbsp;@L("Edit")
+                                    </a>
+                                    <a href="#" class="delete-user dropdown-item" data-user-id="@user.Id" data-user-name="@user.UserName">
+                                        <i class="fa fa-trash"></i>&nbsp;@L("Delete")
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="font-size-sm">
+                                @user.UserName
+                            </td>
+                            <td class="font-size-sm">
+                                @user.FullName
+                            </td>
+                            <td class="font-size-sm">
+                                @user.EmailAddress
+                            </td>
+                            <td class="font-size-sm">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" disabled="disabled"
+                                               @(user.IsActive ? Html.Raw("checked=\"checked\"") : null)>
+                                    </label>
+                                </div>
+                            </td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </div>
+    <!-- END Dynamic Table with Export Buttons -->
 </div>
-<div class="modal fade" id="UserCreateModal" tabindex="-1" role="dialog" aria-labelledby="UserCreateModalLabel" data-backdrop="static">
+<!-- END Page Content -->
+
+
+
+
+<div class="modal fade" id="UserCreateModal" tabindex="-1" role="dialog" aria-labelledby="UserCreateModal" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">
-                    <span>@L("CreateNewUser")</span>
-                </h4>
-            </div>
-            <div class="modal-body">
-                <form name="userCreateForm" role="form" novalidate class="form-validation">
-                    <ul class="nav nav-tabs tab-nav-right" role="tablist">
-                        <li role="presentation" class="active"><a href="#create-user-details" data-toggle="tab">@L("UserDetails")</a></li>
-                        <li role="presentation"><a href="#create-user-roles" data-toggle="tab">@L("UserRoles")</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane animated fadeIn active" id="create-user-details">
-                            <div class="row clearfix" style="margin-top:10px;">
-                                <div class="col-sm-12">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input class="form-control" type="text" name="UserName" required maxlength="@AbpUserBase.MaxUserNameLength" minlength="2">
-                                            <label class="form-label">@L("UserName")</label>
-                                        </div>
-                                    </div>
+            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewUser")))
+            <form name="UserCreateForm" role="form" novalidate class="form-horizontal form-validation go-bottom customform">
+                <div class="modal-body">
+
+                    <div class="block mb0">
+                        <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#tab-user-details">General</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tab-user-role">User Role</a>
+                            </li>
+                        </ul>
+                        <div class="block-content tab-content">
+                            <div class="tab-pane active" id="tab-user-details" role="tabpanel">
+                                <div class="form-group">
+                                    <label for="UserName">@L("UserName")</label>
+                                    <input required id="UserName" class="form-control form-control-sm"
+                                           name="UserName" placeholder="@L("UserName")"
+                                           maxlength="@AbpUserBase.MaxUserNameLength" minlength="2">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Name">@L("Name")</label>
+                                    <input required id="Name" class="form-control form-control-sm"
+                                           name="Name" placeholder="@L("Name")"
+                                           maxlength="@AbpUserBase.MaxNameLength">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Surname">@L("Surname")</label>
+                                    <input required id="Surname" class="form-control form-control-sm"
+                                           name="Surname" placeholder="@L("Surname")"
+                                           maxlength="@AbpUserBase.MaxNameLength">
+                                </div>
+                                <div class="form-group">
+                                    <label for="EmailAddress">@L("EmailAddress")</label>
+                                    <input required id="EmailAddress" class="form-control form-control-sm" type="email"
+                                           name="EmailAddress" placeholder="@L("EmailAddress")"
+                                           maxlength="@AbpUserBase.MaxEmailAddressLength">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Password">@L("Password")</label>
+                                    <input required id="Password" class="form-control form-control-sm" type="password"
+                                           name="Password" placeholder="@L("Password")"
+                                           maxlength="@AbpUserBase.MaxPlainPasswordLength">
+                                </div>
+                                <div class="form-group">
+                                    <label for="IsActive">@L("IsActive")</label>
+                                    <input type="checkbox" name="IsActive" value="true" checked />
                                 </div>
                             </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-6">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="Name" class="form-control" required maxlength="@AbpUserBase.MaxNameLength">
-                                            <label class="form-label">@L("Name")</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="text" name="Surname" class="form-control" required maxlength="@AbpUserBase.MaxSurnameLength">
-                                            <label class="form-label">@L("Surname")</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="email" name="EmailAddress" class="form-control" required maxlength="@AbpUserBase.MaxEmailAddressLength">
-                                            <label class="form-label">@L("EmailAddress")</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="password" id="Password" name="Password" class="form-control" required maxlength="@AbpUserBase.MaxPlainPasswordLength">
-                                            <label class="form-label">@L("Password")</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="form-group form-float">
-                                        <div class="form-line">
-                                            <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control" required maxlength="@AbpUserBase.MaxPlainPasswordLength">
-                                            <label class="form-label">@L("ConfirmPassword")</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row clearfix">
-                                <div class="col-sm-12">
-                                    <div class="checkbox">
-                                        <input type="checkbox" name="IsActive" value="true" id="CreateUserIsActive" class="filled-in" checked />
-                                        <label for="CreateUserIsActive">@L("IsActive")</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane animated fadeIn" id="create-user-roles">
-                            <div class="row">
-                                <div class="col-sm-12 ">
+                            <div class="tab-pane" id="tab-user-role" role="tabpanel">
+                                <div class="form-group">
                                     @foreach (var role in Model.Roles)
                                     {
-                                        <div class="col-sm-6">
-                                            <input type="checkbox" name="role" value="@role.NormalizedName" title="@role.Description" class="filled-in" id="role-@role.Id" />
+                                        <div class="col-md-6">
+                                            <input type="checkbox" name="role" id="role-@role.Id" value="@role.NormalizedName" title="@role.Description" />
                                             <label for="role-@role.Id" title="@role.DisplayName">@role.Name</label>
                                         </div>
                                     }
@@ -168,20 +231,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">@L("Cancel")</button>
-                        <button type="submit" class="btn btn-primary waves-effect">@L("Save")</button>
-                    </div>
-                </form>
-            </div>
+
+                </div>
+                @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+            </form>
         </div>
     </div>
 </div>
 
-<div class="modal fade" id="UserEditModal" tabindex="-1" role="dialog" aria-labelledby="UserEditModalLabel" data-backdrop="static">
+
+<div class="modal fade" id="UserEditModal" tabindex="-1" role="dialog" aria-labelledby="UserEditModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-
         </div>
     </div>
 </div>
