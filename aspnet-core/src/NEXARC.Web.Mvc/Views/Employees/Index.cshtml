@@ -3,6 +3,7 @@
 @using NEXARC.Web.Startup
 @using NEXARC.Domain.Enumerations;
 @using NEXARC.Extensions;
+@using System.Collections.Generic;
 @model NEXARC.Web.Models.Employees.EmployeeListViewModel
 @{
     ViewBag.Title = L("Employees");
@@ -66,18 +67,16 @@
         <div class="block-header ribbon ribbon-primary ribbon-left ribbon-modern">
 
             <div class="ribbon-box">
-            Employees
+                Employees
                 <i class="fa fa-user-friends"></i>
             </div>
-
-
 
             <h3 class="block-title"></h3>
             <div class="block-options">
                 <button type="button" class="btn btn-sm btn-square text-primary btn-primary-custom" data-toggle="modal" data-target="#EmployeeCreateModal">
                     @*<button type="button" class="btn btn-square btn-outline-primary">Primary</button>*@
                     <i class="si si-pencil"></i>&nbsp;<span>@L("Create")</span>
-                    
+
                 </button>
                 <button type="button" class="btn btn-sm btn-square text-danger delete-employee-multi btn-danger-custom">
                     <i class="far fa-trash-alt"></i>&nbsp;<span>Delete</span>
@@ -100,8 +99,8 @@
                     </a>
                 </div>
                 <button type="button" class="btn btn-sm btn-square text-primary btn-primary-custom" data-toggle="block-option" data-action="fullscreen_toggle">
-                <i class="si si-size-fullscreen text-primary"></i></button>
-
+                    <i class="si si-size-fullscreen text-primary"></i>
+                </button>
             </div>
         </div>
         <div class="block-content">
@@ -157,10 +156,8 @@
                             <td class="font-size-sm">
                                 @employee.FirstName
                             </td>
-
                             <td class="font-size-sm">
-                                @*@ViewBag.Departments[employee.CurrentState.DepartmentId]*@
-                                @employee.CurrentState.Department.Name
+                                @ViewBag.Departments[employee.CurrentState.DepartmentId.ToString()]
                             </td>
                             <td class="font-size-sm">
                                 <span class="badge badge-@employee.Status.GetDescription()"> @employee.Status</span>
@@ -191,12 +188,13 @@
                     <form name="EmployeeCreateForm" role="form" novalidate class="form-horizontal form-validation go-bottom customform">
                         <div class="modal-body">
                             <div class="block mb0 modal-body-content">
-                                <ul class="nav nav-tabs nav-tabs-alt " data-toggle="tabs" role="tablist">
+                                <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
                                     <li class="nav-item">
                                         <a class="nav-link active" href="#personal_details">Personal Details</a>
                                     </li>
 
                                     <li class="nav-item">
+                                        @*Upon clicking should load all lookup data*@
                                         <a class="nav-link" href="#employment">Employment</a>
                                     </li>
                                     <li class="nav-item">
@@ -210,49 +208,18 @@
                                     </li>
 
                                 </ul>
-                                <div class="block-content tab-content modal-tab-content">
-                                    <div class="tab-pane active" id="personal_details" role="tabpanel" style="max-height: calc(100vh - 280px); overflow-y: scroll">
+                                <div class="block-content tab-content  modal-tab-content">
+                                    <div class="tab-pane active" id="personal_details" role="tabpanel">
+                                        <div class="col-sm-12 group-title">
+                                            <h3 class="font-w400">General</h3>
+                                        </div>
+                                        <br />
                                         <div class="container row col-sm-12">
                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="Code">@L("Code")</label>
-                                                    <input required id="Code" class="form-control form-control-sm"
-                                                           type="text" name="Code" placeholder="@L("Code")"
-                                                           autocomplete="off">
-                                                </div>
                                                 <div class="form-group">
                                                     <label for="LastName">@L("LastName")</label>
                                                     <input required id="LastName" class="form-control form-control-sm"
                                                            type="text" name="LastName" placeholder="@L("LastName")"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="LastName">@L("MiddleName")</label>
-                                                    <input required id="MiddleName" class="form-control form-control-sm"
-                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="BirthDate">@L("BirthDate")</label>
-                                                    <input type="text" class="js-datepicker form-control from-control-sm"
-                                                           id="BirthDate" name="BirthDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Status">@L("Status")</label>
-                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="HiredDate">@L("HiredDate")</label>
-                                                    <input type="text" class="js-datepicker form-control from-control-sm"
-                                                           id="HiredDate" name="HiredDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
                                                            autocomplete="off">
                                                 </div>
                                                 <div class="form-group">
@@ -268,6 +235,48 @@
                                                            autocomplete="off">
                                                 </div>
                                                 <div class="form-group">
+                                                    <label for="CivilStatus">@L("CivilStatus")</label>
+                                                    <select id="CivilStatus" name="CivilStatus" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="BirthDate">@L("BirthDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="BirthDate" name="BirthDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Status">@L("Status")</label>
+                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="MiddleName">@L("MiddleName")</label>
+                                                    <input required id="MiddleName" class="form-control form-control-sm"
+                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Suffix">@L("Suffix")</label>
+                                                    <input required id="Suffix" class="form-control form-control-sm"
+                                                           type="text" name="Suffix" placeholder="@L("Suffix")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Gender">@L("Gender")</label>
+                                                    <select id="Gender" name="Gender" asp-items="ViewBag.Gender"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Nationality">@L("Nationality")</label>
+                                                    <select id="Nationality" name="Nationality" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
                                                     <label for="BirthPlace">@L("BirthPlace")</label>
                                                     <input required id="BirthPlace" class="form-control form-control-sm"
                                                            type="text" name="BirthPlace" placeholder="@L("BirthPlace")"
@@ -275,9 +284,170 @@
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <div class="col-sm-12 group-title">
+                                            <h3 class="font-w400">Place</h3>
+                                        </div>
+                                        <br />
+
+                                        <div class="container row col-sm-12">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Region">@L("Region")</label>
+                                                    <select id="Region" name="Region" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Province">@L("Province")</label>
+                                                    <select id="Province" name="Province" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="City">@L("City")</label>
+                                                    <select id="City" name="City" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Municipality">@L("Municipality")</label>
+                                                    <select id="Municipality" name="Municipality" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Baranggay">@L("Baranggay")</label>
+                                                    <select id="Baranggay" name="Baranggay" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="AddressStreet">@L("AddressStreet")</label>
+                                                    <textarea class="form-control form-control-sm"
+                                                              id="AddressStreet" name="AddressStreet" rows="3"
+                                                              placeholder="@L("AddressStreet")"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="tab-pane" id="employment" role="tabpanel">
+                                        <div class="col-sm-12 group-title">
+                                            <h3 class="font-w400">General</h3>
+                                        </div>
+                                        <br />
+                                        <div class="container row col-sm-12">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Code">@L("Code")</label>
+                                                    <input required id="Code" class="form-control form-control-sm"
+                                                           type="text" name="Code" placeholder="@L("Code")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="HiredDate">@L("HiredDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="HiredDate" name="HiredDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ContractStartDate">@L("ContractStartDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="ContractStartDate" name="ContractStartDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ResignationDate">@L("ResignationDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="ResignationDate" name="ResignationDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Status">@L("Status")</label>
+                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="RegularDate">@L("RegularDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="RegularDate" name="RegularDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ContractEndDate">@L("ContractEndDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="ContractEndDate" name="ContractEndDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
 
-
+                                        <div class="col-sm-12 group-title">
+                                            <h3 class="font-w400">Organization</h3>
+                                        </div>
+                                        <br />
+                                        <div class="container row col-sm-12">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Company">@L("Company")</label>
+                                                    <select id="Company" name="CompanyId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Division">@L("Division")</label>
+                                                    <select id="Division" name="DivisionId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Department">@L("Department")</label>
+                                                    <select id="Department" name="DepartmentId" asp-items="ViewBag.DepartmentLookUp"
+                                                            class="form-control form-control-sm">
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Position">@L("Position")</label>
+                                                    <select id="Position" name="PositionId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Group">@L("Group")</label>
+                                                    <select id="Group" name="GroupId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Site">@L("Site")</label>
+                                                    <select id="Site" name="SiteId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Section">@L("Section")</label>
+                                                    <select id="Section" name="SectionId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Rank">@L("Rank")</label>
+                                                    <select id="Rank" name="RankId" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="CostCenter">@L("CostCenter")</label>
+                                                    <select id="CostCenter" name="CostCenterid" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div class="tab-pane" id="education" role="tabpanel" style="min-height: 300px;">
                                         <h3 class="block-title">
@@ -343,8 +513,8 @@
                                                         </div>
                                                     </form>
                                                     @*<div class="dropdown-divider"></div>
-        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Sign up</a>
-        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Forgot password?</a>*@
+                                                        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Sign up</a>
+                                                        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Forgot password?</a>*@
                                                 </div>
                                             </div>
 
@@ -388,26 +558,36 @@
 
                                     </div>
 
+
+                                    <div class="tab-pane" id="work_history" role="tabpanel">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                            </div>
+                                        </div>
+                                    </div>
+
                                     <div class="tab-pane" id="government" role="tabpanel">
-                                        <div class="form-group">
-                                            <label for="SSS">@L("SSS")</label>
-                                            <input required id="SSS" class="form-control form-control-sm"
-                                                   type="text" name="SSS" placeholder="@L("SSS")">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="PHIC">@L("PHIC")</label>
-                                            <input required id="PHIC" class="form-control form-control-sm"
-                                                   type="text" name="PHIC" placeholder="@L("PHIC")">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="HDMF">@L("HDMF")</label>
-                                            <input required id="PHIC" class="form-control form-control-sm"
-                                                   type="text" name="HDMF" placeholder="@L("HDMF")">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="WTAX">@L("WTAX")</label>
-                                            <input required id="WTAX" class="form-control form-control-sm"
-                                                   type="text" name="WTAX" placeholder="@L("WTAX")">
+                                        <div class="col-sm-6">
+                                            <div class="form-group">
+                                                <label for="SSS">@L("SSS")</label>
+                                                <input required id="SSS" class="form-control form-control-sm"
+                                                       type="text" name="SSS" placeholder="@L("SSS")">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="PHIC">@L("PHIC")</label>
+                                                <input required id="PHIC" class="form-control form-control-sm"
+                                                       type="text" name="PHIC" placeholder="@L("PHIC")">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="HDMF">@L("HDMF")</label>
+                                                <input required id="PHIC" class="form-control form-control-sm"
+                                                       type="text" name="HDMF" placeholder="@L("HDMF")">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="TIN">@L("TIN")</label>
+                                                <input required id="TIN" class="form-control form-control-sm"
+                                                       type="text" name="WTAX" placeholder="@L("TIN")">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

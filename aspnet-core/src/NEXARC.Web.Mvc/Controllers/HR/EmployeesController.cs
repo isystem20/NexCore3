@@ -54,20 +54,15 @@ namespace NEXARC.Web.Controllers.HR
             ViewBag.Status = status;
 
             //IDictionary<int, string> departmentNames = new Dictionary<int, string>();
+           
+            IDictionary<string, string> departmentNames = new Dictionary<string, string>();
             var departments = (await _departmentAppService.GetAllAsync(new PagedDepartmentResultRequestDto { MaxResultCount = int.MaxValue })).Items;
-            //foreach (var item in departments)
-            //{
-            //    departmentNames.Add(item.Id,item.Name);
-            //}
-            //ViewBag.Departments = departmentNames;
-
-
-            var departmentNames = new List<SelectListItem>();
             foreach (var item in departments)
             {
-                departmentNames.Add(new SelectListItem { Text = item.Name, Value = item.Id.ToString() });
+                departmentNames.Add(item.Id.ToString(), item.Name);
             }
             ViewBag.Departments = departmentNames;
+            ViewBag.DepartmentLookUp = departments.Select(x => new SelectListItem { Text = x.Name, Value = x.Id.ToString() });
 
             return View(model);
         }
