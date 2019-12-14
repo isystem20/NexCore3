@@ -159,7 +159,8 @@
                             </td>
 
                             <td class="font-size-sm">
-                                @ViewBag.Departments[employee.CurrentState.DepartmentId]
+                                @*@ViewBag.Departments[employee.CurrentState.DepartmentId]*@
+                                @employee.CurrentState.Department.Name
                             </td>
                             <td class="font-size-sm">
                                 <span class="badge badge-@employee.Status.GetDescription()"> @employee.Status</span>

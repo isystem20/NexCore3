@@ -9380,3 +9380,1045 @@ DEBUG 2019-12-14 19:29:53,594 [4    ] HttpRequestEntityChangeSetReasonProvider -
 DEBUG 2019-12-14 19:29:58,615 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
 DEBUG 2019-12-14 19:30:03,629 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
 DEBUG 2019-12-14 19:30:08,642 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:04,683 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 20:13:05,192 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 20:13:05,217 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,221 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,222 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,223 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,224 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,225 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,226 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,227 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:05,233 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 20:13:05,585 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:13:05,585 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:13:05,585 [1    ] o.Configuration.LanguageManagementConfig - Converted NEXARC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:13:05,585 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:13:06,599 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: NEXARC.EntityFrameworkCore.NEXARCDbContext, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:13:08,461 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-14 20:13:08,535 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-14 20:13:08,554 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-14 20:13:08,567 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NEXARC
+DEBUG 2019-12-14 20:13:08,572 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-14 20:13:08,971 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-14 20:13:09,205 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-14 20:13:09,280 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2019-12-14 20:13:09,280 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-14 20:13:09,287 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.CreateUserDto
+DEBUG 2019-12-14 20:13:09,288 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.UserDto
+DEBUG 2019-12-14 20:13:09,288 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Roles.Dto.PermissionDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.CreateEmployeeDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.EmployeeDto
+DEBUG 2019-12-14 20:13:09,289 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.UpdateEmployeeDto
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.CreateDepartmentDto
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.DepartmentDto
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.UpdateDepartmentDto
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.HR.Employees.Dto.EmployeeStateDto
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-14 20:13:09,290 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-14 20:13:17,534 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:17,931 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:18,053 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:18,301 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:18,363 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:13:19,903 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2019-12-14 20:13:20,165 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-14 20:13:20,345 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 20:13:20,583 [4    ] uthorization.DefaultAuthorizationService - Authorization failed.
+INFO  2019-12-14 20:13:20,594 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-12-14 20:13:20,656 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 472.2581ms 302 
+INFO  2019-12-14 20:13:21,460 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-12-14 20:13:21,479 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 20:13:21,483 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+DEBUG 2019-12-14 20:13:22,814 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:13:27,842 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller NEXARC.Web.Controllers.AccountController (NEXARC.Web.Mvc).
+DEBUG 2019-12-14 20:13:28,247 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:13:33,286 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+DEBUG 2019-12-14 20:13:33,927 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:13:35,043 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 1770.7424ms.
+INFO  2019-12-14 20:13:35,050 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc) in 7204.237800000001ms
+INFO  2019-12-14 20:13:35,058 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:35,087 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13631.547ms 200 text/html; charset=utf-8
+INFO  2019-12-14 20:13:35,130 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/oneui.min.css  
+INFO  2019-12-14 20:13:35,135 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=5f0RFtuChrGi6osDzegxXWf5yOkmx45i7J9fM1p6P5w  
+INFO  2019-12-14 20:13:35,177 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=EjNSmvtPSqCVK_xG_aTvOp8hmVM_7vwyd3hg45CAMGk  
+INFO  2019-12-14 20:13:35,190 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/abp.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\abp.js'
+INFO  2019-12-14 20:13:35,196 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 16.6782ms 200 application/javascript
+INFO  2019-12-14 20:13:35,215 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=XEXcdRYb4eN3XoQCbnM-BSR6UifHRLsXYDIVFZ7Oc6Q  
+INFO  2019-12-14 20:13:35,226 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/moment/min/moment-with-locales.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\moment\min\moment-with-locales.js'
+INFO  2019-12-14 20:13:35,235 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 95.2784ms 200 application/javascript
+INFO  2019-12-14 20:13:35,250 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.jquery.js'
+INFO  2019-12-14 20:13:35,258 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 39.773700000000005ms 200 application/javascript
+INFO  2019-12-14 20:13:35,265 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=QiSp17ew3zyFmdlcKq4HCIOw7UaqE8MC46Ekv50GzPs  
+INFO  2019-12-14 20:13:35,270 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/css/oneui.min.css'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\css\oneui.min.css'
+INFO  2019-12-14 20:13:35,273 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2019-12-14 20:13:35,276 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 146.2915ms 200 text/css
+INFO  2019-12-14 20:13:35,282 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.toastr.js'
+INFO  2019-12-14 20:13:35,295 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.blockUI.js'
+INFO  2019-12-14 20:13:35,297 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 30.831300000000002ms 200 application/javascript
+INFO  2019-12-14 20:13:35,300 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 30.032400000000003ms 200 application/javascript
+INFO  2019-12-14 20:13:35,310 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI  
+INFO  2019-12-14 20:13:35,315 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=fPp3O_ILaqD0UHiR721w1i4iBtxo3NH7yfldI5dg0_I  
+INFO  2019-12-14 20:13:35,319 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.spin.js'
+INFO  2019-12-14 20:13:35,324 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 13.7916ms 200 application/javascript
+INFO  2019-12-14 20:13:35,332 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\abp-web-resources\Abp\Framework\scripts\libs\abp.sweet-alert.js'
+INFO  2019-12-14 20:13:35,342 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 20.1521ms 200 application/javascript
+INFO  2019-12-14 20:13:35,348 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=OVkIx7dUT1-wXFgSTSPczgNYqucNdLxuKrYDL-qU_Y0  
+INFO  2019-12-14 20:13:35,348 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/scripts.js?v=9KDVf-LWejLa70_QfzvN3G939QVfV5mE1GJ8ARPQPEE  
+INFO  2019-12-14 20:13:35,354 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119511892074566  
+INFO  2019-12-14 20:13:35,359 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/js/scripts.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\js\scripts.js'
+INFO  2019-12-14 20:13:35,362 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119511892074566  
+INFO  2019-12-14 20:13:35,367 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 21.3366ms 200 application/javascript
+INFO  2019-12-14 20:13:35,378 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Account/Login.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\view-resources\Views\Account\Login.js'
+INFO  2019-12-14 20:13:35,384 [19   ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 20:13:35,392 [8    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 20:13:35,396 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 41.3937ms 200 application/javascript
+INFO  2019-12-14 20:13:35,400 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:35,406 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:35,433 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 20:13:35,440 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+WARN  2019-12-14 20:13:35,592 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,602 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,605 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,607 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,607 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,608 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,609 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,610 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,611 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,612 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,613 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,625 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,643 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,644 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,644 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,645 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,645 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,645 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,646 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,646 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,647 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,647 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,648 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,648 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,649 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,661 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,662 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,662 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,663 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,673 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,674 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,674 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:35,675 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:35,678 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 20:13:35,683 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 246.1946ms
+INFO  2019-12-14 20:13:35,693 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:35,696 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 340.6714ms 200 application/x-javascript
+INFO  2019-12-14 20:13:35,802 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:35,861 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 384.6476ms
+INFO  2019-12-14 20:13:35,864 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/fonts/fontawesome/fa-solid-900.woff2  
+INFO  2019-12-14 20:13:35,868 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:35,875 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 528.8908ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:35,899 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/fonts/fontawesome/fa-solid-900.woff2'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\fonts\fontawesome\fa-solid-900.woff2'
+INFO  2019-12-14 20:13:35,904 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 41.4215ms 200 font/woff2
+INFO  2019-12-14 20:13:37,798 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/Account/Login application/x-www-form-urlencoded 256
+INFO  2019-12-14 20:13:37,809 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 20:13:37,812 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:37,833 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.JsonResult] Login(NEXARC.Web.Models.Account.LoginViewModel, System.String, System.String) on controller NEXARC.Web.Controllers.AccountController (NEXARC.Web.Mvc).
+INFO  2019-12-14 20:13:38,459 [4    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application signed in.
+INFO  2019-12-14 20:13:38,539 [5    ] tonsoftJson.NewtonsoftJsonResultExecutor - Executing JsonResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2019-12-14 20:13:38,557 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc) in 719.4818ms
+INFO  2019-12-14 20:13:38,560 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:38,565 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 767.9390000000001ms 200 application/json; charset=utf-8
+INFO  2019-12-14 20:13:38,592 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-14 20:13:38,649 [7    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-12-14 20:13:38,654 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:38,660 [7    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller NEXARC.Web.Controllers.HomeController (NEXARC.Web.Mvc).
+INFO  2019-12-14 20:13:38,695 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-14 20:13:38,917 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+DEBUG 2019-12-14 20:13:38,942 [8    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Authorization.Users.User, Id:1
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Authorization.Roles.Role, Id:1
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:1
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:2
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:3
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:6
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:7
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:8
+DEBUG 2019-12-14 20:13:39,128 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:9
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:10
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:11
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:12
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:13
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:14
+DEBUG 2019-12-14 20:13:39,130 [19   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:15
+WARN  2019-12-14 20:13:39,133 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,138 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,139 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,139 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,140 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,141 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,141 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,144 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,144 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,144 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,144 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,145 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,145 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,145 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,145 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,145 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,146 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,146 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,150 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,154 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,154 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,155 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,156 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,156 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,156 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,156 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,156 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,159 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,159 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,159 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,160 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,162 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,163 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,163 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,163 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:39,343 [14   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 635.955ms.
+INFO  2019-12-14 20:13:39,346 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css  
+INFO  2019-12-14 20:13:39,350 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css  
+INFO  2019-12-14 20:13:39,362 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css  
+INFO  2019-12-14 20:13:39,365 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc) in 698.7476ms
+INFO  2019-12-14 20:13:39,372 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:39,374 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\plugins\datatables\dataTables.bootstrap4.css'
+INFO  2019-12-14 20:13:39,379 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 41.513200000000005ms 200 text/css
+INFO  2019-12-14 20:13:39,381 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 789.047ms 200 text/html; charset=utf-8
+INFO  2019-12-14 20:13:39,386 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:13:39,390 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/custom.css  
+INFO  2019-12-14 20:13:39,393 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\plugins\datatables\buttons-bs4\buttons.bootstrap4.min.css'
+INFO  2019-12-14 20:13:39,398 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\plugins\bootstrap-datepicker\css\bootstrap-datepicker3.min.css'
+INFO  2019-12-14 20:13:39,402 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 55.3376ms 200 text/css
+INFO  2019-12-14 20:13:39,404 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.9397ms 200 text/css
+INFO  2019-12-14 20:13:39,425 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar4.jpg  
+INFO  2019-12-14 20:13:39,429 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.9183ms 404 
+INFO  2019-12-14 20:13:39,435 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/css/custom.css'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\css\custom.css'
+INFO  2019-12-14 20:13:39,456 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.2954ms 200 text/css
+INFO  2019-12-14 20:13:39,468 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.8904ms 404 
+INFO  2019-12-14 20:13:39,471 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/oneui.app.min.js  
+INFO  2019-12-14 20:13:39,474 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=1yGr-J4NjYMQVt6LP6vocjHIWhO-BFQLfdCs8x1Mv-U  
+INFO  2019-12-14 20:13:39,478 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119511892074566  
+INFO  2019-12-14 20:13:39,521 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119511892074566  
+INFO  2019-12-14 20:13:39,526 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:39,559 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/oneui.core.min.js  
+INFO  2019-12-14 20:13:39,561 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:39,573 [22   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 20:13:39,581 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 20:13:39,594 [22   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 20:13:39,607 [22   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 20.0848ms
+INFO  2019-12-14 20:13:39,616 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/oneui.app.min.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\oneui.app.min.js'
+INFO  2019-12-14 20:13:39,621 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:39,625 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 160.5017ms 200 application/javascript
+WARN  2019-12-14 20:13:39,628 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,629 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:39,632 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 167.2038ms 200 application/x-javascript
+INFO  2019-12-14 20:13:39,638 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js  
+WARN  2019-12-14 20:13:39,644 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,644 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,645 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,646 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,648 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,649 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,658 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,658 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,663 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,664 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:39,664 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/signalr-client/signalr.min.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\lib\signalr-client\signalr.min.js'
+WARN  2019-12-14 20:13:39,666 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,666 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,667 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,667 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,668 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,668 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,668 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,676 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,687 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,687 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,687 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,688 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,688 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,688 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,689 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,689 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,689 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,690 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,690 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,690 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,691 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:39,694 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 202.68380000000002ms 200 application/javascript
+WARN  2019-12-14 20:13:39,701 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,701 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,702 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,702 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,708 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,708 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,709 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:39,709 [14   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:39,730 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\plugins\bootstrap-notify\bootstrap-notify.min.js'
+INFO  2019-12-14 20:13:39,739 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:39,760 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 108.26520000000001ms 200 application/javascript
+INFO  2019-12-14 20:13:39,780 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar15.jpg  
+INFO  2019-12-14 20:13:39,788 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 185.4857ms
+INFO  2019-12-14 20:13:39,792 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:39,797 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0  
+INFO  2019-12-14 20:13:39,816 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 318.0493ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:39,831 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 105.438ms 404 
+INFO  2019-12-14 20:13:39,842 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:13:39,865 [19   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\fonts\simple-line-icons\Simple-Line-Icons.woff2'
+INFO  2019-12-14 20:13:39,873 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/custom.js  
+INFO  2019-12-14 20:13:39,877 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/media/avatars/avatar10.jpg'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\media\avatars\avatar10.jpg'
+INFO  2019-12-14 20:13:39,882 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 82.79570000000001ms 200 font/woff2
+INFO  2019-12-14 20:13:39,898 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.5516ms 200 image/jpeg
+INFO  2019-12-14 20:13:39,907 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar2.jpg  
+INFO  2019-12-14 20:13:39,912 [22   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/custom.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\custom.js'
+INFO  2019-12-14 20:13:39,914 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar3.jpg  
+INFO  2019-12-14 20:13:39,924 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.5398ms 200 application/javascript
+INFO  2019-12-14 20:13:39,927 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar9.jpg  
+INFO  2019-12-14 20:13:39,946 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 37.7973ms 404 
+INFO  2019-12-14 20:13:39,957 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 40.404ms 404 
+INFO  2019-12-14 20:13:39,983 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 43.6847ms 404 
+INFO  2019-12-14 20:13:39,998 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/oneui/src/assets/js/oneui.core.min.js'. Physical path: 'C:\Users\Admin\Documents\core3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\oneui\src\assets\js\oneui.core.min.js'
+INFO  2019-12-14 20:13:40,011 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 471.20680000000004ms 200 application/javascript
+INFO  2019-12-14 20:13:40,198 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-14 20:13:40,240 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:13:40,272 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:13:40,276 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 94.1016ms 200 application/json
+INFO  2019-12-14 20:13:40,309 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=5LuebWqH53mzVNLMP7uoJg  
+INFO  2019-12-14 20:13:40,323 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-14 20:13:40,436 [5    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"5LuebWqH53mzVNLMP7uoJg","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-12-14T20:13:40.4207531+08:00","Properties":{}}
+DEBUG 2019-12-14 20:13:40,447 [5    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 5LuebWqH53mzVNLMP7uoJg
+DEBUG 2019-12-14 20:13:43,957 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:13:47,307 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Employees  
+INFO  2019-12-14 20:13:47,325 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:47,339 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Employees", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller NEXARC.Web.Controllers.HR.EmployeesController (NEXARC.Web.Mvc).
+DEBUG 2019-12-14 20:13:49,193 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Employee, Id:12
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.EmployeeState, Id:12
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:6
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:5
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:4
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:3
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:2
+DEBUG 2019-12-14 20:13:49,810 [14   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:1
+INFO  2019-12-14 20:13:49,823 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-14 20:13:49,836 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,840 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,840 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,841 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,841 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,841 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,857 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewEmployee' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,868 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'MiddleName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'MiddleName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,869 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthDate' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,870 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,877 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HiredDate' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,877 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,877 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,877 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'NickName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,877 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'NickName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,878 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthPlace' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,878 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthPlace' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,879 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SSS' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,879 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SSS' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,880 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'PHIC' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,881 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'PHIC' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,881 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HDMF' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,882 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HDMF' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,882 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'WTAX' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,882 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'WTAX' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,900 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,902 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,905 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,906 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,906 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,907 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,907 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,908 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,911 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,911 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,911 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,911 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,912 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,913 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,925 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,928 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,928 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,928 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,929 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,930 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,931 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,931 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,932 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,939 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,939 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,940 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,940 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,946 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,948 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,948 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:49,949 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:49,994 [8    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 170.7191ms.
+INFO  2019-12-14 20:13:50,000 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc) in 2654.7957ms
+INFO  2019-12-14 20:13:50,011 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:13:50,035 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2718.473ms 200 text/html; charset=utf-8
+INFO  2019-12-14 20:13:50,044 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar4.jpg  
+INFO  2019-12-14 20:13:50,046 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:13:50,072 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.307000000000002ms 404 
+INFO  2019-12-14 20:13:50,077 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.579900000000002ms 404 
+INFO  2019-12-14 20:13:50,129 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119511892074566  
+DEBUG 2019-12-14 20:13:50,141 [22   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 5LuebWqH53mzVNLMP7uoJg
+INFO  2019-12-14 20:13:50,155 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119511892074566  
+INFO  2019-12-14 20:13:50,171 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar2.jpg  
+INFO  2019-12-14 20:13:50,205 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar3.jpg  
+INFO  2019-12-14 20:13:50,221 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar15.jpg  
+INFO  2019-12-14 20:13:50,228 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 55.8613ms 404 
+INFO  2019-12-14 20:13:50,239 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:50,245 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:50,254 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar9.jpg  
+INFO  2019-12-14 20:13:50,257 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 99.5573ms 404 
+INFO  2019-12-14 20:13:50,267 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 20:13:50,280 [19   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 20:13:50,288 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 20:13:50,291 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 117.8478ms 404 
+INFO  2019-12-14 20:13:50,305 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.229ms 404 
+INFO  2019-12-14 20:13:50,315 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 24.4846ms
+INFO  2019-12-14 20:13:50,323 [22   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-14 20:13:50,326 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:50,329 [22   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10017.706400000001ms 101 
+INFO  2019-12-14 20:13:50,338 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 207.07750000000001ms 200 application/x-javascript
+WARN  2019-12-14 20:13:50,340 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,341 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,353 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,354 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,355 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,356 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,357 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,357 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,366 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,366 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,367 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,367 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,367 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,368 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,368 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,369 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,369 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,369 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,370 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,376 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,383 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,383 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,384 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,384 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,384 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,384 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,384 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,385 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,385 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,386 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,386 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,387 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,388 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,394 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,395 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,395 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,395 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,404 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,404 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,404 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:13:50,404 [19   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:13:50,408 [19   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:50,423 [19   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 129.2807ms
+INFO  2019-12-14 20:13:50,426 [19   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:13:50,429 [19   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 301.5702ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:13:50,544 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-14 20:13:50,572 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:13:50,578 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:13:50,585 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 37.1171ms 200 application/json
+INFO  2019-12-14 20:13:50,625 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=IKd7Vx5KW4DbRStL7Tu-5A  
+INFO  2019-12-14 20:13:50,641 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-14 20:13:50,844 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"IKd7Vx5KW4DbRStL7Tu-5A","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-12-14T20:13:50.8440981+08:00","Properties":{}}
+DEBUG 2019-12-14 20:13:50,855 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: IKd7Vx5KW4DbRStL7Tu-5A
+DEBUG 2019-12-14 20:13:54,201 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:13:55,208 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: IKd7Vx5KW4DbRStL7Tu-5A
+INFO  2019-12-14 20:13:55,231 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-14 20:13:55,254 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 4622.7619ms 101 
+DEBUG 2019-12-14 20:15:36,759 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 20:15:36,918 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 20:15:36,952 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,954 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,955 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,955 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,956 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,956 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,956 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,957 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,958 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,958 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,958 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,959 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,959 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,959 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,960 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:36,965 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 20:15:37,201 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:15:37,201 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:15:37,201 [1    ] o.Configuration.LanguageManagementConfig - Converted NEXARC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:15:37,201 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 20:15:37,941 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: NEXARC.EntityFrameworkCore.NEXARCDbContext, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 20:15:40,210 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-14 20:15:40,274 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-14 20:15:40,290 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-14 20:15:40,301 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NEXARC
+DEBUG 2019-12-14 20:15:40,316 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-14 20:15:40,790 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-14 20:15:41,062 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-14 20:15:41,171 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2019-12-14 20:15:41,171 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-14 20:15:41,185 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.CreateUserDto
+DEBUG 2019-12-14 20:15:41,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.UserDto
+DEBUG 2019-12-14 20:15:41,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-14 20:15:41,186 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Roles.Dto.PermissionDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.CreateEmployeeDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.EmployeeDto
+DEBUG 2019-12-14 20:15:41,187 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.UpdateEmployeeDto
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.CreateDepartmentDto
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.DepartmentDto
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.UpdateDepartmentDto
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.HR.Employees.Dto.EmployeeStateDto
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-14 20:15:41,188 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-14 20:15:46,156 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:15:46,849 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:15:47,067 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:15:47,295 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:15:47,383 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:15:48,009 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2019-12-14 20:15:48,141 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+DEBUG 2019-12-14 20:15:52,432 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:15:55,478 [5    ] uthorization.DefaultAuthorizationService - Authorization was successful.
+INFO  2019-12-14 20:15:55,481 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:15:55,945 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller NEXARC.Web.Controllers.HomeController (NEXARC.Web.Mvc).
+INFO  2019-12-14 20:15:56,550 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-14 20:15:57,686 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+DEBUG 2019-12-14 20:15:58,404 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Authorization.Users.User, Id:1
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Authorization.Roles.Role, Id:1
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:1
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:2
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:3
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:6
+DEBUG 2019-12-14 20:15:58,406 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:7
+DEBUG 2019-12-14 20:15:58,407 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:8
+DEBUG 2019-12-14 20:15:58,407 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:9
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:10
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:11
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:12
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:13
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:14
+DEBUG 2019-12-14 20:15:58,410 [11   ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for Abp.Authorization.Roles.RolePermissionSetting, Id:15
+WARN  2019-12-14 20:15:58,416 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,428 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,428 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,430 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,431 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,432 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,437 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,446 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,446 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,446 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,447 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,447 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,448 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,448 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,448 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,449 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,449 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,450 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,462 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,473 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,473 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,474 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,474 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,475 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,475 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,475 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,475 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,476 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,476 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,477 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,477 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,477 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,485 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,485 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,486 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,486 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,493 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,494 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,494 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:15:58,495 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+DEBUG 2019-12-14 20:15:58,505 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:15:58,881 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 2290.8528ms.
+INFO  2019-12-14 20:15:58,887 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css  
+INFO  2019-12-14 20:15:58,894 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css  
+INFO  2019-12-14 20:15:58,908 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css  
+INFO  2019-12-14 20:15:58,915 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc) in 2951.7358ms
+INFO  2019-12-14 20:15:58,924 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.HomeController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:15:58,931 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css was not modified
+INFO  2019-12-14 20:15:58,934 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css was not modified
+INFO  2019-12-14 20:15:58,938 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css was not modified
+INFO  2019-12-14 20:15:58,959 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 68.2891ms 304 text/css
+INFO  2019-12-14 20:15:58,965 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 10816.3711ms 200 text/html; charset=utf-8
+INFO  2019-12-14 20:15:58,970 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 75.2198ms 304 text/css
+INFO  2019-12-14 20:15:58,981 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 68.3512ms 304 text/css
+INFO  2019-12-14 20:15:58,984 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/oneui.min.css  
+INFO  2019-12-14 20:15:58,990 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/custom.css  
+INFO  2019-12-14 20:15:58,995 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/css/oneui.min.css was not modified
+INFO  2019-12-14 20:15:58,998 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar4.jpg  
+INFO  2019-12-14 20:15:59,002 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:15:59,010 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 18.2381ms 304 text/css
+INFO  2019-12-14 20:15:59,023 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/css/custom.css was not modified
+INFO  2019-12-14 20:15:59,043 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 39.1759ms 304 text/css
+INFO  2019-12-14 20:15:59,045 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 54.627900000000004ms 404 
+INFO  2019-12-14 20:15:59,047 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 56.1666ms 404 
+INFO  2019-12-14 20:15:59,152 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/oneui.core.min.js  
+INFO  2019-12-14 20:15:59,179 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=EjNSmvtPSqCVK_xG_aTvOp8hmVM_7vwyd3hg45CAMGk  
+INFO  2019-12-14 20:15:59,192 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/oneui.app.min.js  
+INFO  2019-12-14 20:15:59,198 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=5f0RFtuChrGi6osDzegxXWf5yOkmx45i7J9fM1p6P5w  
+INFO  2019-12-14 20:15:59,206 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/oneui.app.min.js was not modified
+INFO  2019-12-14 20:15:59,215 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/oneui.core.min.js was not modified
+INFO  2019-12-14 20:15:59,234 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 95.37400000000001ms 304 application/javascript
+INFO  2019-12-14 20:15:59,243 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/moment/min/moment-with-locales.js was not modified
+INFO  2019-12-14 20:15:59,244 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2019-12-14 20:15:59,251 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=XEXcdRYb4eN3XoQCbnM-BSR6UifHRLsXYDIVFZ7Oc6Q  
+INFO  2019-12-14 20:15:59,259 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 68.87010000000001ms 304 application/javascript
+INFO  2019-12-14 20:15:59,262 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 133.57850000000002ms 304 application/javascript
+INFO  2019-12-14 20:15:59,266 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2019-12-14 20:15:59,276 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=QiSp17ew3zyFmdlcKq4HCIOw7UaqE8MC46Ekv50GzPs  
+INFO  2019-12-14 20:15:59,284 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=vMuHbqHh635SKL2RG2qsGGCDyHg1yFeGqhPKpS34g4k  
+INFO  2019-12-14 20:15:59,289 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2019-12-14 20:15:59,293 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2019-12-14 20:15:59,318 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.0851ms 304 application/javascript
+INFO  2019-12-14 20:15:59,335 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=djoKib6ssm5DDzbXLe5pD7ayfFg3siaoEk-BFYzQlvI  
+INFO  2019-12-14 20:15:59,350 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.219300000000004ms 304 application/javascript
+INFO  2019-12-14 20:15:59,359 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119513410640354  
+INFO  2019-12-14 20:15:59,376 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js?v=1yGr-J4NjYMQVt6LP6vocjHIWhO-BFQLfdCs8x1Mv-U  
+INFO  2019-12-14 20:15:59,376 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 33.5995ms 304 application/javascript
+INFO  2019-12-14 20:15:59,381 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2019-12-14 20:15:59,386 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119513410640354  
+INFO  2019-12-14 20:15:59,398 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 119.3872ms 304 application/javascript
+INFO  2019-12-14 20:15:59,402 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=fPp3O_ILaqD0UHiR721w1i4iBtxo3NH7yfldI5dg0_I  
+INFO  2019-12-14 20:15:59,429 [14   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2019-12-14 20:15:59,448 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 92.67360000000001ms 304 application/javascript
+INFO  2019-12-14 20:15:59,476 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/signalr-client/signalr.min.js was not modified
+INFO  2019-12-14 20:15:59,496 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js  
+INFO  2019-12-14 20:15:59,499 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 151.1956ms 304 application/javascript
+INFO  2019-12-14 20:15:59,501 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:15:59,513 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/custom.js  
+INFO  2019-12-14 20:15:59,526 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar15.jpg  
+INFO  2019-12-14 20:15:59,543 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/custom.js was not modified
+INFO  2019-12-14 20:15:59,790 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/scripts.js?v=9KDVf-LWejLa70_QfzvN3G939QVfV5mE1GJ8ARPQPEE  
+INFO  2019-12-14 20:15:59,808 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.48910000000001ms 304 application/javascript
+INFO  2019-12-14 20:15:59,811 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:15:59,825 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js was not modified
+INFO  2019-12-14 20:15:59,832 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 233.0112ms 404 
+INFO  2019-12-14 20:15:59,849 [11   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 20:15:59,855 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 379.0331ms 304 application/javascript
+INFO  2019-12-14 20:15:59,860 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar2.jpg  
+INFO  2019-12-14 20:15:59,882 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/scripts.js was not modified
+INFO  2019-12-14 20:15:59,892 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:15:59,894 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 103.616ms 304 application/javascript
+INFO  2019-12-14 20:15:59,898 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 65.7946ms 404 
+INFO  2019-12-14 20:15:59,906 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/media/avatars/avatar10.jpg was not modified
+INFO  2019-12-14 20:15:59,910 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 472.0382ms 304 application/javascript
+INFO  2019-12-14 20:15:59,916 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar3.jpg  
+INFO  2019-12-14 20:15:59,926 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.5174ms 304 image/jpeg
+INFO  2019-12-14 20:15:59,928 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar9.jpg  
+INFO  2019-12-14 20:15:59,942 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.9533ms 404 
+INFO  2019-12-14 20:15:59,948 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 32.8386ms 404 
+INFO  2019-12-14 20:15:59,995 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 20:16:00,211 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+WARN  2019-12-14 20:16:00,233 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,234 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,296 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,296 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,297 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,298 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,299 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,299 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:00,324 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/fonts/fontawesome/fa-solid-900.woff2  
+WARN  2019-12-14 20:16:00,325 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,325 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,326 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,326 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,327 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,327 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,328 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,331 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,331 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,332 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,332 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,343 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:00,345 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+WARN  2019-12-14 20:16:00,355 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,356 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,356 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,357 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,357 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,358 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,358 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,359 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:00,360 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/fonts/fontawesome/fa-solid-900.woff2 was not modified
+WARN  2019-12-14 20:16:00,364 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,365 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,365 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,366 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,366 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,375 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,376 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,376 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,377 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,392 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,392 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,393 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:00,393 [11   ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:00,414 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 215.6116ms 304 font/woff2
+INFO  2019-12-14 20:16:00,461 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2?v=2.4.0  
+INFO  2019-12-14 20:16:00,468 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:16:00,481 [11   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:16:00,494 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=9x5XUA13YNIs-uLGz2pHzQ  
+INFO  2019-12-14 20:16:00,525 [7    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/fonts/simple-line-icons/Simple-Line-Icons.woff2 was not modified
+INFO  2019-12-14 20:16:00,557 [11   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 646.7139000000001ms
+INFO  2019-12-14 20:16:00,576 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+INFO  2019-12-14 20:16:00,580 [11   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:16:00,590 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 150.96460000000002ms 304 font/woff2
+INFO  2019-12-14 20:16:00,600 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1204.0292ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:16:00,601 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 408.48ms 200 application/json
+DEBUG 2019-12-14 20:16:00,775 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"9x5XUA13YNIs-uLGz2pHzQ","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-12-14T20:16:00.7566709+08:00","Properties":{}}
+INFO  2019-12-14 20:16:00,792 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 20:16:00,825 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 798.147ms
+INFO  2019-12-14 20:16:00,832 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:16:00,839 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1499.828ms 200 application/x-javascript
+DEBUG 2019-12-14 20:16:00,840 [12   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: 9x5XUA13YNIs-uLGz2pHzQ
+DEBUG 2019-12-14 20:16:03,527 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:08,547 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:13,573 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:18,605 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:23,628 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:16:23,870 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Employees  
+INFO  2019-12-14 20:16:23,906 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:16:23,931 [12   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Employees", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Index() on controller NEXARC.Web.Controllers.HR.EmployeesController (NEXARC.Web.Mvc).
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Employee, Id:12
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.EmployeeState, Id:12
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:6
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:5
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:4
+DEBUG 2019-12-14 20:16:27,252 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:3
+DEBUG 2019-12-14 20:16:27,253 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:2
+DEBUG 2019-12-14 20:16:27,253 [4    ] Abp.EntityHistory.EntityHistoryHelper    - Skipping Entity Change Creation for NEXARC.Domain.Entities.HR.Department, Id:1
+INFO  2019-12-14 20:16:27,289 [4    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Index.
+WARN  2019-12-14 20:16:27,306 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,326 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,326 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,327 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,328 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Department' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,328 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,333 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CreateNewEmployee' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,354 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,354 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Code' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,354 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,355 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LastName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,355 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'MiddleName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,355 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'MiddleName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,356 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthDate' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,356 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Status' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,370 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HiredDate' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,370 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,371 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'FirstName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,371 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'NickName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,371 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'NickName' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,372 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthPlace' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,372 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BirthPlace' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,374 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SSS' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,374 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SSS' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,374 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'PHIC' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,374 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'PHIC' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,375 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HDMF' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,375 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'HDMF' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,375 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'WTAX' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,376 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'WTAX' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,401 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,402 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,407 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,408 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,409 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,411 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,412 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,413 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,419 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,419 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,419 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,420 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,420 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,420 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,420 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,421 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,421 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,421 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,421 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,430 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,434 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,434 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,434 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,434 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,435 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,435 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,435 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,435 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,435 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,436 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,436 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,436 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,436 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,442 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,442 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,443 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,444 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,450 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,451 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,451 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:27,451 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:27,559 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Index executed in 216.9984ms.
+DEBUG 2019-12-14 20:16:27,566 [7    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: 9x5XUA13YNIs-uLGz2pHzQ
+INFO  2019-12-14 20:16:27,604 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar10.jpg  
+INFO  2019-12-14 20:16:27,607 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc) in 3628.7869ms
+INFO  2019-12-14 20:16:27,619 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar2.jpg  
+INFO  2019-12-14 20:16:27,621 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar3.jpg  
+INFO  2019-12-14 20:16:27,624 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar15.jpg  
+INFO  2019-12-14 20:16:27,635 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar4.jpg  
+INFO  2019-12-14 20:16:27,648 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.HR.EmployeesController.Index (NEXARC.Web.Mvc)'
+INFO  2019-12-14 20:16:27,653 [7    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
+INFO  2019-12-14 20:16:27,656 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.15870000000001ms 404 
+INFO  2019-12-14 20:16:27,665 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 3794.2456ms 200 text/html; charset=utf-8
+INFO  2019-12-14 20:16:27,670 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 82.9152ms 404 
+INFO  2019-12-14 20:16:27,676 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 97.1999ms 404 
+INFO  2019-12-14 20:16:27,698 [7    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 27192.680200000003ms 101 
+INFO  2019-12-14 20:16:27,702 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 90.29560000000001ms 404 
+INFO  2019-12-14 20:16:27,706 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/assets/media/avatars/avatar9.jpg  
+INFO  2019-12-14 20:16:27,715 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 100.1378ms 404 
+INFO  2019-12-14 20:16:27,956 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 24.055600000000002ms 404 
+INFO  2019-12-14 20:16:27,965 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119513410640354  
+INFO  2019-12-14 20:16:27,972 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119513410640354  
+INFO  2019-12-14 20:16:27,987 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:16:28,000 [14   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 20:16:28,121 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 20:16:28,133 [14   ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 20:16:28,137 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 20:16:28,154 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 POST http://localhost:62114/signalr/negotiate text/plain;charset=UTF-8 0
+INFO  2019-12-14 20:16:28,157 [14   ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 138.113ms
+INFO  2019-12-14 20:16:28,174 [14   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 20:16:28,175 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr/negotiate'
+INFO  2019-12-14 20:16:28,183 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 219.46730000000002ms 200 application/x-javascript
+INFO  2019-12-14 20:16:28,187 [12   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr/negotiate'
+WARN  2019-12-14 20:16:28,200 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Dashboard' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,201 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Employees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,207 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Masterlist' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,208 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeMovements' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,209 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Accountabilities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,209 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offences' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,211 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'InactiveEmployees' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,213 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Maintenance' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,217 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Departments' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Teams' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Designations' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Division' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Ranks' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sections' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,218 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmploymentTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,219 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Sites' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,219 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CostCenters' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,219 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Offenses' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,219 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Security' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,223 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Supplimentary' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,225 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Barangay' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,226 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'City' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,226 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Municipality' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,226 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Province' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,229 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Regions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,229 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'BloodTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,230 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Nationalities' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,230 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Certificates' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,230 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EducationalAwards' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,230 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Holidays' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,231 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Religions' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,231 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'Schools' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,231 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveManagement' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,235 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveTypes' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,236 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,236 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'LeaveAdjustment' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,236 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'SelfService' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,241 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ApproverSetup' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,241 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'ResumeBank' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,241 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'CompanyPolicy' in localization source 'NEXARC'!
+WARN  2019-12-14 20:16:28,242 [4    ] naries.DictionaryBasedLocalizationSource - Can not find 'EmployeeHandbook' in localization source 'NEXARC'!
+INFO  2019-12-14 20:16:28,250 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:16:28,253 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 94.3352ms
+INFO  2019-12-14 20:16:28,256 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+DEBUG 2019-12-14 20:16:28,658 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:16:29,072 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1094.3367ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 20:16:29,084 [12   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 954.7456000000001ms 200 application/json
+INFO  2019-12-14 20:16:29,125 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/signalr?id=WWQeGKsS3tLMOIVafW6s8g  
+INFO  2019-12-14 20:16:29,154 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint '/signalr'
+DEBUG 2019-12-14 20:16:29,340 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is connected: {"ConnectionId":"WWQeGKsS3tLMOIVafW6s8g","IpAddress":"::1","TenantId":null,"UserId":1,"ConnectTime":"2019-12-14T20:16:29.339547+08:00","Properties":{}}
+DEBUG 2019-12-14 20:16:29,341 [11   ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is registered: WWQeGKsS3tLMOIVafW6s8g
+DEBUG 2019-12-14 20:16:33,678 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:38,691 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:43,711 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:48,734 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:53,752 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:16:58,776 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:03,799 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:08,815 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:13,825 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:18,842 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:23,866 [11   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:28,918 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:17:30,079 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css  
+INFO  2019-12-14 20:17:30,084 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css  
+INFO  2019-12-14 20:17:30,100 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/custom.css  
+INFO  2019-12-14 20:17:30,105 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css was not modified
+INFO  2019-12-14 20:17:30,115 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css was not modified
+INFO  2019-12-14 20:17:30,117 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.9683ms 304 text/css
+INFO  2019-12-14 20:17:30,121 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/css/custom.css was not modified
+INFO  2019-12-14 20:17:30,133 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css  
+INFO  2019-12-14 20:17:30,140 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 42.0797ms 304 text/css
+INFO  2019-12-14 20:17:30,154 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css was not modified
+INFO  2019-12-14 20:17:30,167 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/oneui/src/assets/css/oneui.min.css  
+INFO  2019-12-14 20:17:30,188 [11   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 34.271300000000004ms 304 text/css
+INFO  2019-12-14 20:17:30,205 [20   ] NetCore.StaticFiles.StaticFileMiddleware - The file /oneui/src/assets/css/oneui.min.css was not modified
+INFO  2019-12-14 20:17:30,350 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js.map  
+INFO  2019-12-14 20:17:30,377 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 69.233ms 304 text/css
+INFO  2019-12-14 20:17:30,387 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 236.58200000000002ms 304 text/css
+INFO  2019-12-14 20:17:30,396 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 158.6884ms 404 
+DEBUG 2019-12-14 20:17:33,960 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:38,971 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:43,991 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:49,123 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:54,171 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:17:59,191 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:04,204 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:09,229 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:14,255 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:19,266 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:24,283 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:29,301 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:34,307 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:39,311 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:44,327 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:49,341 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:54,353 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:18:59,368 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:04,371 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:09,390 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:14,402 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:19,420 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:24,436 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:29,446 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:34,463 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:39,480 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:44,487 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:49,502 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:54,519 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:19:59,527 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:04,542 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:09,561 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:14,575 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:19,596 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:24,614 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:29,618 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 20:20:31,849 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/signalr-client/signalr.min.js.map  
+INFO  2019-12-14 20:20:31,871 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.662000000000006ms 404 
+DEBUG 2019-12-14 20:20:34,731 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:39,754 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:44,812 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:49,860 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:54,865 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:20:59,882 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:04,890 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:09,908 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:14,920 [20   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:19,939 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:24,958 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:29,987 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:35,048 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:40,067 [23   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:45,078 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:50,105 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:21:55,138 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:00,155 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:05,161 [23   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:10,214 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:15,242 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:20,256 [26   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:25,262 [23   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:30,285 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:35,294 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:40,330 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:45,356 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:50,372 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:22:55,403 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:00,419 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:05,442 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:10,468 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:15,481 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:20,497 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:25,515 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:30,542 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:35,557 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 20:23:40,575 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
