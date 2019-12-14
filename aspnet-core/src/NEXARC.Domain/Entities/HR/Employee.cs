@@ -53,29 +53,14 @@ namespace NEXARC.Domain.Entities.HR
         public CivilStatus CivilStatus { get; set; }
         public DateTime? HiredDate { get; set; }
                      
-        [ForeignKey("NationalityId")]
+
+
         public int NationalityId { get; set; }
-        public Nationality Nationality { get; set; }
-
-        [ForeignKey("BarangayId")]
         public int BarangayId { get; set; }
-        public Barangay Barangay { get; set; }
-
-        [ForeignKey("MunicipalityId")]
         public int MunicipalityId { get; set; }
-        public Municipality Municipality { get; set; }
-
-        [ForeignKey("CityId")]
         public int CityId { get; set; }
-        public City City { get; set; }
-
-        [ForeignKey("ProvinceId")]
         public int ProvinceId { get; set; }
-        public int Province { get; set; }
-
-        [ForeignKey("RegionId")]
         public int RegionId { get; set; }
-        public Region Region { get; set; }
 
         public ICollection<EmployeeState> EmployeeStates { get; set; }
         

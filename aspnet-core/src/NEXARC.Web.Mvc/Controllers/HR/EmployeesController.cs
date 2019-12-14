@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using NEXARC.Controllers;
+using NEXARC.Domain.Enumerations;
 //using NEXARC.Domain.Enumerations;
 using NEXARC.HR.Departments;
 using NEXARC.HR.Employees;
@@ -31,7 +32,7 @@ namespace NEXARC.Web.Controllers.HR
 
         public async Task<ActionResult> Index()
         {
-            var employees = (await _employeeAppService.GetAll(new PagedEmployeeResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
+            var employees = (await _employeeAppService.GetAllAsync(new PagedEmployeeResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
             var model = new EmployeeListViewModel
             {
                 Employees = employees,
@@ -53,7 +54,7 @@ namespace NEXARC.Web.Controllers.HR
             ViewBag.Status = status;
 
             //IDictionary<int, string> departmentNames = new Dictionary<int, string>();
-            var departments = (await _departmentAppService.GetAll(new PagedDepartmentResultRequestDto { MaxResultCount = int.MaxValue })).Items;
+            var departments = (await _departmentAppService.GetAllAsync(new PagedDepartmentResultRequestDto { MaxResultCount = int.MaxValue })).Items;
             //foreach (var item in departments)
             //{
             //    departmentNames.Add(item.Id,item.Name);
@@ -101,7 +102,7 @@ namespace NEXARC.Web.Controllers.HR
         public async Task<ActionResult> EditEmployeeModal(int id)
         {
 
-            var data = await _employeeAppService.Get(new EntityDto<int>(id));
+            var data = await _employeeAppService.GetAsync(new EntityDto<int>(id));
             var model = new EditEmployeeModalViewModel
             {
                 Employee = data,

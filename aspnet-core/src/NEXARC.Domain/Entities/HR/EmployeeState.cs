@@ -4,6 +4,7 @@ using NEXARC.Domain.Entities.HumanResource;
 using NEXARC.Domain.Enumerations;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace NEXARC.Domain.Entities.HR
@@ -21,12 +22,11 @@ namespace NEXARC.Domain.Entities.HR
 
         //USE IN HR
         [ForeignKey("SiteId")]
-        public int SiteId { get; set; }
         public Site Site { get; set; }
-
-        [ForeignKey("EmployeeId")]
+        public int SiteId { get; set; }
+        
+        [Required]
         public int EmployeeId { get; set; }
-        public Employee Employee { get; set; }
 
         [ForeignKey("DivisionId")]
         public int DivisionId { get; set; }

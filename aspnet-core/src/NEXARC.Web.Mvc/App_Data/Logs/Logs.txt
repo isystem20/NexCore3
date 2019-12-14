@@ -426,3 +426,595 @@ DEBUG 2019-12-14 11:04:21,438 [4    ] HttpRequestEntityChangeSetReasonProvider -
 DEBUG 2019-12-14 11:04:23,719 [4    ] Abp.AspNetCore.SignalR.Hubs.AbpCommonHub - A client is disconnected: tBz1MmF9N5GhFlMjADXE8A
 INFO  2019-12-14 11:04:23,810 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint '/signalr'
 INFO  2019-12-14 11:04:23,814 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 73592.573ms 101 
+DEBUG 2019-12-14 14:28:14,962 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 14:28:15,578 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 14:28:15,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,633 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,634 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,635 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 14:28:15,644 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 15:47:02,881 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 15:47:03,666 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 15:47:03,708 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,711 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,712 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,713 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,714 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,715 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,716 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,719 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,720 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,721 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:47:03,725 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 15:48:34,135 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 15:48:34,395 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 15:48:34,544 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,561 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,563 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,564 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,565 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,577 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,579 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,601 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,615 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,617 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,618 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:48:34,632 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+FATAL 2019-12-14 15:48:37,128 [1    ] Abp.AbpBootstrapper                      - System.TypeLoadException: Method 'GetActiveLanguages' in type 'Abp.Localization.ApplicationLanguageProvider' from assembly 'Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypes(Assembly assembly, Boolean includeNonExported)
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypesOrdered(Assembly assembly, Boolean includeNonExported)
+   at Castle.MicroKernel.Registration.FromAssemblyDescriptor.<SelectedTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at Castle.MicroKernel.Registration.FromDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.Registration.BasedOnDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.AspNetCore.AbpAspNetCoreConventionalRegistrar.RegisterAssembly(IConventionalRegistrationContext context)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly, ConventionalRegistrationConfig config)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly)
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.TypeLoadException: Method 'GetActiveLanguages' in type 'Abp.Localization.ApplicationLanguageProvider' from assembly 'Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypes(Assembly assembly, Boolean includeNonExported)
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypesOrdered(Assembly assembly, Boolean includeNonExported)
+   at Castle.MicroKernel.Registration.FromAssemblyDescriptor.<SelectedTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at Castle.MicroKernel.Registration.FromDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.Registration.BasedOnDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.AspNetCore.AbpAspNetCoreConventionalRegistrar.RegisterAssembly(IConventionalRegistrationContext context)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly, ConventionalRegistrationConfig config)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly)
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2019-12-14 15:54:53,406 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 15:54:53,572 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 15:54:53,616 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,620 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,621 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,622 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,623 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,624 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,625 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,626 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,628 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,629 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,630 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,631 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:54:53,637 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 15:58:21,316 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 15:58:21,456 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 15:58:21,483 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,485 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,485 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,486 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,488 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,491 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,492 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,493 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,494 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,495 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,495 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 15:58:21,498 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 16:11:31,895 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 16:11:32,399 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 16:11:32,416 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,418 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,420 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,421 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,423 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.1.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,424 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,425 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,426 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:11:32,429 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 16:13:46,060 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 16:13:46,322 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 16:13:46,361 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,366 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,367 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,368 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,369 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,370 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,370 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,371 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,372 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,373 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,376 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,377 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,378 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,379 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:46,384 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 16:13:46,622 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:13:46,623 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:13:46,623 [1    ] o.Configuration.LanguageManagementConfig - Converted NEXARC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:13:46,623 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:13:48,867 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: NEXARC.EntityFrameworkCore.NEXARCDbContext, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:13:52,868 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-14 16:13:52,986 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-14 16:13:53,019 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-14 16:13:53,043 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NEXARC
+DEBUG 2019-12-14 16:13:53,058 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-14 16:13:53,559 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-14 16:13:53,891 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-14 16:13:53,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2019-12-14 16:13:53,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-14 16:13:53,992 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.CreateUserDto
+DEBUG 2019-12-14 16:13:53,993 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.UserDto
+DEBUG 2019-12-14 16:13:53,993 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Roles.Dto.PermissionDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.CreateEmployeeDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.EmployeeDto
+DEBUG 2019-12-14 16:13:53,994 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.UpdateEmployeeDto
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.CreateDepartmentDto
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.DepartmentDto
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.UpdateDepartmentDto
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.HR.Employees.Dto.EmployeeStateDto
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-14 16:13:53,995 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-14 16:14:02,478 [7    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:02,729 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:03,964 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,028 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,039 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,058 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,062 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,063 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,065 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,069 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,071 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,073 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,074 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,076 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,078 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,080 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,082 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,083 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,086 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,088 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,090 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,092 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,095 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,097 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,099 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,102 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,107 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,207 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,291 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,382 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,431 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,576 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,599 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,634 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,650 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,654 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,686 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,698 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,707 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,711 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,715 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,719 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,723 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:14:04,867 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:18,703 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 16:20:18,910 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 16:20:18,935 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,938 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,938 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,939 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,940 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,942 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,944 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,945 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,947 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,948 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,949 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,950 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,950 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:18,954 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 16:20:19,056 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:20:19,056 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:20:19,056 [1    ] o.Configuration.LanguageManagementConfig - Converted NEXARC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:20:19,056 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:20:19,841 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: NEXARC.EntityFrameworkCore.NEXARCDbContext, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:20:21,459 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-14 16:20:21,532 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-14 16:20:21,550 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-14 16:20:21,562 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NEXARC
+DEBUG 2019-12-14 16:20:21,567 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-14 16:20:21,952 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-14 16:20:22,160 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-14 16:20:22,228 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2019-12-14 16:20:22,228 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-14 16:20:22,235 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.CreateUserDto
+DEBUG 2019-12-14 16:20:22,235 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.UserDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Roles.Dto.PermissionDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.CreateEmployeeDto
+DEBUG 2019-12-14 16:20:22,236 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.EmployeeDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.UpdateEmployeeDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.CreateDepartmentDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.DepartmentDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.UpdateDepartmentDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.HR.Employees.Dto.EmployeeStateDto
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-14 16:20:22,237 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-14 16:20:25,600 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,396 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,475 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,484 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,508 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,511 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,513 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,515 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,517 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,519 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,521 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,559 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,565 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,568 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,571 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,576 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,579 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,582 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,584 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,586 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,589 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,594 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,596 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,599 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,602 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,606 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,708 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,765 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,832 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,860 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,953 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:26,970 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,014 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,033 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,036 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,052 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,081 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,096 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,111 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,117 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,124 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,130 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,133 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,243 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,265 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,300 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,308 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,344 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,350 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,382 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,387 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,392 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,397 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,400 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,797 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:27,804 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:28,574 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:28,578 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:28,908 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:28,943 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:20:30,497 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2019-12-14 16:20:30,666 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-14 16:20:30,846 [5    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:20:31,176 [5    ] uthorization.DefaultAuthorizationService - Authorization failed.
+INFO  2019-12-14 16:20:31,185 [5    ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-12-14 16:20:31,216 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-12-14 16:20:31,226 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 558.5666ms 302 
+INFO  2019-12-14 16:20:31,235 [8    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:20:31,242 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+DEBUG 2019-12-14 16:20:32,847 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:20:36,883 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller NEXARC.Web.Controllers.AccountController (NEXARC.Web.Mvc).
+DEBUG 2019-12-14 16:20:39,562 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:20:41,778 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-12-14 16:20:44,014 [5    ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 2240.0164ms.
+INFO  2019-12-14 16:20:44,031 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc) in 7144.6432ms
+INFO  2019-12-14 16:20:44,041 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+INFO  2019-12-14 16:20:44,123 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 12899.6469ms 200 text/html; charset=utf-8
+INFO  2019-12-14 16:20:44,127 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/css/bootstrap.css?v=fmMNkMcjSw3xcp9iuPnku_ryk9kaWgrEbfJfKmdZ45o  
+INFO  2019-12-14 16:20:44,134 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119372221619369  
+INFO  2019-12-14 16:20:44,139 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.css?v=2SsVsQpWRHM3EJ4D4MT4RRpiEXbEuK0vEjPxVr5P7Ek  
+INFO  2019-12-14 16:20:44,141 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/roboto.css?v=DWPiEyLnt8XZ68WQeudmZPGSejowhmQNUUhaX8dYF1Q  
+INFO  2019-12-14 16:20:44,144 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css?v=l7wu43l7XpKWzFn29hiH8AFe4I_CNzbCPmaAQivPYMg  
+INFO  2019-12-14 16:20:44,150 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/font-awesome/css/font-awesome.css?v=NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w  
+INFO  2019-12-14 16:20:44,158 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:20:44,161 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 16:20:44,175 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 16:20:44,181 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/css/bootstrap.css was not modified
+INFO  2019-12-14 16:20:44,184 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.css was not modified
+INFO  2019-12-14 16:20:44,188 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.css was not modified
+INFO  2019-12-14 16:20:44,190 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/roboto.css was not modified
+INFO  2019-12-14 16:20:44,191 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/font-awesome/css/font-awesome.css was not modified
+INFO  2019-12-14 16:20:44,200 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 72.2786ms 304 text/css
+INFO  2019-12-14 16:20:44,207 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 59.366ms 304 text/css
+INFO  2019-12-14 16:20:44,210 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.3404ms 304 text/css
+INFO  2019-12-14 16:20:44,213 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 80.7959ms 304 text/css
+INFO  2019-12-14 16:20:44,215 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/animate.css/animate.css?v=00w68NO3TLuHjKRHJmjrrgJBDtG_6OhbJEu1gtHcsuo  
+INFO  2019-12-14 16:20:44,220 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 48.3853ms 304 text/css
+INFO  2019-12-14 16:20:44,222 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/animate.css/animate.css was not modified
+INFO  2019-12-14 16:20:44,334 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 16:20:44,340 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 161.4425ms
+INFO  2019-12-14 16:20:44,343 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+DEBUG 2019-12-14 16:20:44,645 [10   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:20:45,792 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1479.4689ms 304 text/css
+INFO  2019-12-14 16:20:45,796 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/css/materialize.css?v=OdWlipUYj8b9Oa4RyT45njteIcxH-4pGocqe0r0V8js  
+INFO  2019-12-14 16:20:45,807 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1669.9248ms 200 application/x-javascript
+INFO  2019-12-14 16:20:45,811 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.css?v=0zP86LzXedNkkBjePtKrMTAPuIy6EzHfGlyYvsmGLBw  
+INFO  2019-12-14 16:20:45,813 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/css/style.css?v=151KUrNx-cFGpjXC7QZ8WbWSo-mQTLO0htvGyBUR_i8  
+INFO  2019-12-14 16:20:45,818 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/_Layout.css?v=vIEtxnpR3ZrYbYcueRr_mJ9XuJJzDprh4sMCwvRBcqk  
+INFO  2019-12-14 16:20:45,822 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/materialize.css was not modified
+INFO  2019-12-14 16:20:45,844 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.css was not modified
+INFO  2019-12-14 16:20:45,855 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/style.css was not modified
+INFO  2019-12-14 16:20:45,872 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 64.7855ms 304 text/css
+INFO  2019-12-14 16:20:45,883 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 67.4175ms 304 text/css
+INFO  2019-12-14 16:20:45,896 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/_Layout.css was not modified
+INFO  2019-12-14 16:20:45,917 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637119372439790843  
+INFO  2019-12-14 16:20:45,924 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119372221619369  
+INFO  2019-12-14 16:20:45,926 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 105.1491ms 304 text/css
+INFO  2019-12-14 16:20:45,933 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.205ms 304 text/css
+INFO  2019-12-14 16:20:45,941 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/json2/json2.js?v=EZJ68U7eUi8uSP0MRRUalYten2eOlhREE9kJOIbIeYg  
+INFO  2019-12-14 16:20:45,946 [5    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:20:45,949 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.css?v=W8a9WvLyUO7CXtOC4f9LoUMwkywM7JSq-Xm5kNsYW08  
+INFO  2019-12-14 16:20:45,957 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 16:20:45,960 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/json2/json2.js was not modified
+INFO  2019-12-14 16:20:45,964 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.css was not modified
+INFO  2019-12-14 16:20:45,973 [8    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Admin\Documents\NexCore3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-12-14 16:20:45,974 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 32.569900000000004ms 304 application/javascript
+INFO  2019-12-14 16:20:45,977 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 77.1139ms 200 application/javascript
+INFO  2019-12-14 16:20:45,984 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 35.778600000000004ms 304 text/css
+INFO  2019-12-14 16:20:45,987 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery/dist/jquery.js?v=DZAnKJ_6XZ9si04Hgrsxu_8s717jcIzLy3oi35EouyE  
+INFO  2019-12-14 16:20:45,993 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/bootstrap/dist/js/bootstrap.js?v=Cr6N6zNN4bp0OwTQOZ6Z66M2r-2dpy_EwKMCyZ-SOMg  
+INFO  2019-12-14 16:20:46,008 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/jquery-validation/dist/jquery.validate.js?v=KuzD50lDGNI5jq_ipt4hwDpSJk3fhseTR1jdvaBoZLs  
+INFO  2019-12-14 16:20:46,015 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/bootstrap/dist/js/bootstrap.js was not modified
+INFO  2019-12-14 16:20:46,022 [8    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-validation/dist/jquery.validate.js was not modified
+INFO  2019-12-14 16:20:46,031 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.9538ms 304 application/javascript
+INFO  2019-12-14 16:20:46,032 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 31.5044ms 304 application/javascript
+INFO  2019-12-14 16:20:46,035 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/moment/min/moment-with-locales.js?v=7CN4bWPV0U57HDA4YjdCBKCAynhqdWErjNn-5rrsW_I  
+INFO  2019-12-14 16:20:46,054 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery/dist/jquery.js was not modified
+INFO  2019-12-14 16:20:46,089 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 16:20:46,093 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.css?v=j_16MTiQNlUrKdjTrCjLCSGkIIjHvt8tFUyucW02Vqw  
+INFO  2019-12-14 16:20:46,094 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/moment/min/moment-with-locales.js was not modified
+INFO  2019-12-14 16:20:46,101 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 121.11630000000001ms 304 application/javascript
+INFO  2019-12-14 16:20:46,124 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.css was not modified
+INFO  2019-12-14 16:20:46,298 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 116.0646ms 304 application/javascript
+INFO  2019-12-14 16:20:46,312 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/sweetalert/dist/sweetalert.min.js?v=aPktydUv1rN3mouQeXoKi3ioFTIQlULuqYeoTAA2ihY  
+INFO  2019-12-14 16:20:46,332 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 357.00710000000004ms 304 text/css
+INFO  2019-12-14 16:20:46,343 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/Waves/dist/waves.js?v=Lar7zQhqgdoUsaqhuwkgnWgsC-eRWIxHhJPV-QtrDog  
+INFO  2019-12-14 16:20:46,350 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/sweetalert/dist/sweetalert.min.js was not modified
+INFO  2019-12-14 16:20:46,359 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/Waves/dist/waves.js was not modified
+INFO  2019-12-14 16:20:46,364 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/abp.js?v=FGfi3RfHf06ftjVdq2JaO16cF9CPZNPvujmuYBacXxg  
+INFO  2019-12-14 16:20:46,413 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 50.4084ms 304 application/javascript
+INFO  2019-12-14 16:20:46,461 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 248.91310000000001ms 304 application/javascript
+INFO  2019-12-14 16:20:46,523 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/abp.js was not modified
+INFO  2019-12-14 16:20:46,523 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js?v=lMgLZMlGsipWDxpvEPxfKVREzRedV_ygRnTj2kvADpw  
+INFO  2019-12-14 16:20:46,540 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 178.7028ms 304 application/javascript
+INFO  2019-12-14 16:20:46,559 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js was not modified
+INFO  2019-12-14 16:20:46,764 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js?v=ImopdkB8alCil1HigOwW3CDqWKsLZXyplf7TXBbjRnE  
+INFO  2019-12-14 16:20:46,773 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 110.6661ms 304 application/javascript
+INFO  2019-12-14 16:20:46,784 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js?v=Y3zoG-hSFKmbS3BHKo_wFWRPbyzJXKoNrnF73uFdtqU  
+INFO  2019-12-14 16:20:46,812 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js was not modified
+INFO  2019-12-14 16:20:46,815 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js was not modified
+INFO  2019-12-14 16:20:46,879 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js?v=RJuGDX616JN_UziXsmKnth0alpECKCx0gtxKZVrZWxY  
+INFO  2019-12-14 16:20:46,909 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 244.0595ms 304 application/javascript
+INFO  2019-12-14 16:20:46,918 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 58.6221ms 304 application/javascript
+INFO  2019-12-14 16:20:46,929 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js was not modified
+INFO  2019-12-14 16:20:46,988 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js?v=guLvtVJMvLobKpGAlQigrGWMQ1sGQo4yTL46zjGQUUY  
+INFO  2019-12-14 16:20:47,001 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/admin.js?v=_sUixSUZcmP81slFpHh9ygZ5nNihdHlHLkpoSCncHCw  
+INFO  2019-12-14 16:20:47,009 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 140.2602ms 304 application/javascript
+INFO  2019-12-14 16:20:47,016 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js was not modified
+INFO  2019-12-14 16:20:47,020 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/admin.js was not modified
+INFO  2019-12-14 16:20:47,030 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2  
+INFO  2019-12-14 16:20:47,039 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 98.0056ms 304 application/javascript
+INFO  2019-12-14 16:20:47,043 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2 was not modified
+INFO  2019-12-14 16:20:47,060 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2  
+INFO  2019-12-14 16:20:47,086 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 29.7463ms 304 font/woff2
+INFO  2019-12-14 16:20:47,105 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/roboto/CWB0XYA8bzo0kSThX0UTuA.woff2 was not modified
+INFO  2019-12-14 16:20:47,131 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/fonts/material-icons/materialicons.woff2  
+INFO  2019-12-14 16:20:47,201 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /fonts/material-icons/materialicons.woff2 was not modified
+INFO  2019-12-14 16:20:47,260 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 62.623200000000004ms 304 font/woff2
+INFO  2019-12-14 16:20:47,272 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 112.7994ms 304 font/woff2
+INFO  2019-12-14 16:20:47,278 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 284.6599ms 304 application/javascript
+INFO  2019-12-14 16:20:47,302 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/js/main.js?v=7nliIEzqMJyvvjWRR4peD-YPQFMZOAPSL8CJSx9bPRA  
+INFO  2019-12-14 16:20:47,306 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Account/Login.js?v=o2PUQBkwW7VjtzD5RNxKPa3oShr3fMFHds_2dwIAV5M  
+INFO  2019-12-14 16:20:47,390 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /js/main.js was not modified
+INFO  2019-12-14 16:20:47,443 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /view-resources/Views/Account/Login.js was not modified
+INFO  2019-12-14 16:20:47,459 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/blockUI/jquery.blockUI.js?v=oQaw-JJuUcJQ9QVYMcFnPxICDT-hv8-kuxT2FNzTGhc  
+INFO  2019-12-14 16:20:47,467 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 125.209ms 304 application/javascript
+INFO  2019-12-14 16:20:47,477 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 155.7519ms 304 application/javascript
+INFO  2019-12-14 16:20:47,483 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/spin.js?v=GySbz3oZXNlwoawo5PpYy0iM38B-q3jyi_HLw00uxy0  
+INFO  2019-12-14 16:20:47,492 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/spin.js/jquery.spin.js?v=EG38bUU5b2M64hy9cNAzu_cQBEsiBYsDifOcoHqNd2k  
+INFO  2019-12-14 16:20:47,496 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/spin.js was not modified
+INFO  2019-12-14 16:20:47,512 [4    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/blockUI/jquery.blockUI.js was not modified
+INFO  2019-12-14 16:20:47,514 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22.7059ms 304 application/javascript
+INFO  2019-12-14 16:20:47,526 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/spin.js/jquery.spin.js was not modified
+INFO  2019-12-14 16:20:47,544 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/toastr/toastr.js?v=C7DJ6LzTt1Hvj9fd-yRnySs3I4T2B8XmQ3TqXQjc00g  
+INFO  2019-12-14 16:20:47,549 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 49.510000000000005ms 304 application/javascript
+INFO  2019-12-14 16:20:47,562 [15   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/toastr/toastr.js was not modified
+INFO  2019-12-14 16:20:47,699 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 169.6295ms 304 application/javascript
+INFO  2019-12-14 16:20:47,719 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 36.4232ms 304 application/javascript
+INFO  2019-12-14 16:20:47,723 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/lib/famfamfam-flags/dist/sprite/famfamfam-flags.png  
+INFO  2019-12-14 16:20:47,728 [21   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/famfamfam-flags/dist/sprite/famfamfam-flags.png was not modified
+INFO  2019-12-14 16:20:47,781 [21   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 168.6699ms 304 image/png
+INFO  2019-12-14 16:20:48,125 [5    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 16:20:48,133 [5    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 2038.0888ms
+INFO  2019-12-14 16:20:48,142 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 16:20:48,154 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 2263.2346000000002ms 200 application/x-javascript; charset=utf-8
+DEBUG 2019-12-14 16:20:49,656 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:54,674 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:20:59,722 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:27,687 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2019-12-14 16:23:27,975 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2019-12-14 16:23:28,003 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.Web.Startup.NEXARCWebMvcModule, NEXARC.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,013 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCWebCoreModule, NEXARC.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,016 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCApplicationModule, NEXARC.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,016 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.NEXARCCoreModule, NEXARC.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,017 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,018 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,019 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,020 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: NEXARC.EntityFrameworkCore.NEXARCEntityFrameworkModule, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,021 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,021 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,022 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,023 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:28,028 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2019-12-14 16:23:28,174 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:23:28,174 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:23:28,174 [1    ] o.Configuration.LanguageManagementConfig - Converted NEXARC (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:23:28,174 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2019-12-14 16:23:29,252 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: NEXARC.EntityFrameworkCore.NEXARCDbContext, NEXARC.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2019-12-14 16:23:32,843 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2019-12-14 16:23:32,916 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2019-12-14 16:23:32,940 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2019-12-14 16:23:32,973 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: NEXARC
+DEBUG 2019-12-14 16:23:32,986 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2019-12-14 16:23:33,615 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2019-12-14 16:23:33,899 [1    ] rization.Users.UserTokenExpirationWorker - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker
+DEBUG 2019-12-14 16:23:33,988 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 17 classes define auto mapping attributes
+DEBUG 2019-12-14 16:23:33,988 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2019-12-14 16:23:34,001 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.CreateUserDto
+DEBUG 2019-12-14 16:23:34,002 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Users.Dto.UserDto
+DEBUG 2019-12-14 16:23:34,002 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2019-12-14 16:23:34,003 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Sessions.Dto.UserLoginInfoDto
+DEBUG 2019-12-14 16:23:34,003 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Roles.Dto.PermissionDto
+DEBUG 2019-12-14 16:23:34,003 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2019-12-14 16:23:34,004 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.MultiTenancy.Dto.TenantDto
+DEBUG 2019-12-14 16:23:34,004 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.CreateEmployeeDto
+DEBUG 2019-12-14 16:23:34,004 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.EmployeeDto
+DEBUG 2019-12-14 16:23:34,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexEmployee.Dto.UpdateEmployeeDto
+DEBUG 2019-12-14 16:23:34,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.CreateDepartmentDto
+DEBUG 2019-12-14 16:23:34,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.DepartmentDto
+DEBUG 2019-12-14 16:23:34,005 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.NexDepartment.Dto.UpdateDepartmentDto
+DEBUG 2019-12-14 16:23:34,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.HR.Employees.Dto.EmployeeStateDto
+DEBUG 2019-12-14 16:23:34,006 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Views.Shared.Components.TenantChange.TenantChangeViewModel
+DEBUG 2019-12-14 16:23:34,007 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - NEXARC.Web.Models.Roles.EditRoleModalViewModel
+DEBUG 2019-12-14 16:23:38,906 [10   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:39,462 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:39,638 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:39,837 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:39,904 [1    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:23:40,473 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2019-12-14 16:23:40,686 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/  
+INFO  2019-12-14 16:23:40,923 [10   ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:23:41,145 [10   ] uthorization.DefaultAuthorizationService - Authorization failed.
+INFO  2019-12-14 16:23:41,171 [10   ] tion.Cookies.CookieAuthenticationHandler - AuthenticationScheme: Identity.Application was challenged.
+INFO  2019-12-14 16:23:41,280 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 597.756ms 302 
+INFO  2019-12-14 16:23:41,284 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/Account/Login?ReturnUrl=%2F  
+INFO  2019-12-14 16:23:41,394 [5    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:23:41,402 [5    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+DEBUG 2019-12-14 16:23:44,518 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:23:50,534 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:23:51,075 [5    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Login(System.String, System.String, System.String) on controller NEXARC.Web.Controllers.AccountController (NEXARC.Web.Mvc).
+DEBUG 2019-12-14 16:23:55,907 [10   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:01,518 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+INFO  2019-12-14 16:24:01,546 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executing ViewResult, running view Login.
+INFO  2019-12-14 16:24:03,387 [10   ] Core.Mvc.ViewFeatures.ViewResultExecutor - Executed ViewResult - view Login executed in 1822.4574ms.
+INFO  2019-12-14 16:24:03,491 [10   ] c.Infrastructure.ControllerActionInvoker - Executed action NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc) in 12315.8467ms
+INFO  2019-12-14 16:24:03,504 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/view-resources/Views/Shared/Components/TenantChange/Default.js?v=637119374433435600  
+INFO  2019-12-14 16:24:03,521 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpScripts/GetScripts?v=637119374139019454  
+INFO  2019-12-14 16:24:03,526 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:62114/AbpServiceProxies/GetAll?v=637119374139019454  
+INFO  2019-12-14 16:24:03,531 [10   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'NEXARC.Web.Controllers.AccountController.Login (NEXARC.Web.Mvc)'
+INFO  2019-12-14 16:24:03,573 [8    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:24:03,610 [10   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 22285.2736ms 200 text/html; charset=utf-8
+INFO  2019-12-14 16:24:03,623 [4    ] tion.Cookies.CookieAuthenticationHandler - Identity.Application was not authenticated. Failure message: Unprotect ticket failed
+INFO  2019-12-14 16:24:03,625 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 16:24:03,629 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 16:24:03,647 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/view-resources/Views/Shared/Components/TenantChange/Default.js'. Physical path: 'C:\Users\Admin\Documents\NexCore3\aspnet-core\src\NEXARC.Web.Mvc\wwwroot\view-resources\Views\Shared\Components\TenantChange\Default.js'
+INFO  2019-12-14 16:24:03,676 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 155.0593ms 200 application/javascript
+INFO  2019-12-14 16:24:03,682 [8    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetScripts", controller = "AbpScripts", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] GetScripts(System.String, Boolean) on controller Abp.AspNetCore.Mvc.Controllers.AbpScriptsController (Abp.AspNetCore).
+INFO  2019-12-14 16:24:03,687 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "GetAll", controller = "AbpServiceProxies", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ContentResult GetAll(Abp.AspNetCore.Mvc.Proxying.ApiProxyGenerationModel) on controller Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController (Abp.AspNetCore).
+INFO  2019-12-14 16:24:04,220 [4    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript
+INFO  2019-12-14 16:24:04,226 [8    ] Mvc.Infrastructure.ContentResultExecutor - Executing ContentResult with HTTP Response ContentType of application/x-javascript; charset=utf-8
+INFO  2019-12-14 16:24:04,243 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore) in 539.5535ms
+INFO  2019-12-14 16:24:04,287 [8    ] c.Infrastructure.ControllerActionInvoker - Executed action Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore) in 557.6363ms
+INFO  2019-12-14 16:24:04,296 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Proxying.AbpServiceProxiesController.GetAll (Abp.AspNetCore)'
+INFO  2019-12-14 16:24:04,302 [8    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Abp.AspNetCore.Mvc.Controllers.AbpScriptsController.GetScripts (Abp.AspNetCore)'
+INFO  2019-12-14 16:24:04,311 [8    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 809.8848ms 200 application/x-javascript; charset=utf-8
+INFO  2019-12-14 16:24:04,321 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 797.6914ms 200 application/x-javascript
+DEBUG 2019-12-14 16:24:06,540 [4    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:11,566 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:16,593 [22   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:21,619 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:26,658 [14   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:31,671 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:36,691 [21   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:41,699 [5    ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null
+DEBUG 2019-12-14 16:24:46,729 [23   ] HttpRequestEntityChangeSetReasonProvider - Unable to get URL from HttpRequest, fallback to null

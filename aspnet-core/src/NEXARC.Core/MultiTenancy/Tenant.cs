@@ -1,5 +1,6 @@
 ﻿using Abp.MultiTenancy;
 using NEXARC.Authorization.Users;
+using NEXARC.Domain.Entities.HR;
 using NEXARC.Domain.Entities.HumanResource;
 using NEXARC.Domain.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -35,33 +36,16 @@ namespace NEXARC.MultiTenancy
 
         public RecordStatus Status { get; set; }
 
-        [ForeignKey("IndustryId")]
         public int IndustryId { get; set; }
-        public Industry Industry { get; set; }
         public string Description { get; set; }
 
-        [ForeignKey("NationalityId")]
         public int NationalityId { get; set; }
-        public Nationality Nationality { get; set; }
-
-        [ForeignKey("BarangayId")]
         public int BarangayId { get; set; }
-        public Barangay Barangay { get; set; }
-
-        [ForeignKey("MunicipalityId")]
         public int MunicipalityId { get; set; }
-        public Municipality Municipality { get; set; }
-
-        [ForeignKey("CityId")]
         public int CityId { get; set; }
-        public City City { get; set; }
-
-        [ForeignKey("ProvinceId")]
         public int ProvinceId { get; set; }
         public int Province { get; set; }
-
-        [ForeignKey("RegionId")]
         public int RegionId { get; set; }
-        public Region Region { get; set; }
+
     }
 }

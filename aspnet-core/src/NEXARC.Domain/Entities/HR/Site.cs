@@ -1,4 +1,5 @@
 ﻿using NEXARC.Domain.Common;
+using NEXARC.Domain.Entities.HR;
 using NEXARC.Domain.Enumerations;
 using System;
 using System.Collections.Generic;
@@ -16,25 +17,12 @@ namespace NEXARC.Domain.Entities.HumanResource
         public string Description { get; set; }
         public string AddressStreet { get; set; }
 
-        [ForeignKey("BarangayId")]
+
         public int BarangayId { get; set; }
-        public Barangay Barangay { get; set; }
-
-        [ForeignKey("MunicipalityId")]
         public int MunicipalityId { get; set; }
-        public Municipality Municipality { get; set; }
-
-        [ForeignKey("CityId")]
         public int CityId { get; set; }
-        public City City { get; set; }
-
-        [ForeignKey("ProvinceId")]
         public int ProvinceId { get; set; }
-        public int Province { get; set; }
-
-        [ForeignKey("RegionId")]
         public int RegionId { get; set; }
-        public Region Region { get; set; }
 
         public RecordStatus Status { get; set; }
         

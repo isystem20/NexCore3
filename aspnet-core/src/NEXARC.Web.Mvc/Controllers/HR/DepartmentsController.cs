@@ -31,7 +31,7 @@ namespace NEXARC.Web.Controllers.HR
 
         public async Task<ActionResult> Index()
         {
-            var notice = (await _departmentAppService.GetAll(new PagedDepartmentResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
+            var notice = (await _departmentAppService.GetAllAsync(new PagedDepartmentResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
             var model = new DepartmentListViewModel
             {
                 Departments = notice,
@@ -46,7 +46,7 @@ namespace NEXARC.Web.Controllers.HR
         public async Task<ActionResult> EditDepartmentModal(int id)
         {
 
-            var notice = await _departmentAppService.Get(new EntityDto<int>(id));
+            var notice = await _departmentAppService.GetAsync(new EntityDto<int>(id));
             var model = new EditDepartmentModalViewModel
             {
                 Department = notice,

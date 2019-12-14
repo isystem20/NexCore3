@@ -12,6 +12,7 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\NEXARC.Core\NEXARC.Core.csproj" />
+    <ProjectReference Include="..\NEXARC.Domain\NEXARC.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <FrameworkReference Include="Microsoft.AspNetCore.App" />

@@ -11,6 +11,20 @@ namespace NEXARC.Configuration
         public async Task ChangeUiTheme(ChangeUiThemeInput input)
         {
             await SettingManager.ChangeSettingForUserAsync(AbpSession.ToUserIdentifier(), AppSettingNames.UiTheme, input.Theme);
-        }
+		}
+	
+		public async Task ChangeLeftSideBarState(ToggleLeftSideBarInput input)
+		{
+			try
+			{
+				await SettingManager.ChangeSettingForUserAsync(AbpSession.ToUserIdentifier(), AppSettingNames.LeftSideBarStatus, input.State);
+			}
+			catch (System.Exception e)
+			{
+				throw;
+			}
+
+		}
+		
     }
 }
