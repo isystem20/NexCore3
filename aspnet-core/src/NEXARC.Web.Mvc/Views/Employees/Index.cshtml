@@ -157,7 +157,8 @@
                                 @employee.FirstName
                             </td>
                             <td class="font-size-sm">
-                                @ViewBag.Departments[employee.CurrentState.DepartmentId.ToString()]
+                                @*@ViewBag.Departments[employee.CurrentState.DepartmentId.ToString()]*@
+                                @employee.CurrentState.Department.Name
                             </td>
                             <td class="font-size-sm">
                                 <span class="badge badge-@employee.Status.GetDescription()"> @employee.Status</span>
@@ -210,24 +211,36 @@
                                 </ul>
                                 <div class="block-content tab-content  modal-tab-content">
                                     <div class="tab-pane active" id="personal_details" role="tabpanel">
-                                        <div class="col-sm-12 group-title">
-                                            <h3 class="font-w400">General</h3>
-                                        </div>
-                                        <br />
+                          
                                         <div class="container row col-sm-12">
-                                            <div class="col-sm-6">
+
+                                            <div class="col-sm-4">
                                                 <div class="form-group">
                                                     <label for="LastName">@L("LastName")</label>
                                                     <input required id="LastName" class="form-control form-control-sm"
                                                            type="text" name="LastName" placeholder="@L("LastName")"
                                                            autocomplete="off">
                                                 </div>
+                                            </div>
+                                            <div class="col-sm-4">
                                                 <div class="form-group">
                                                     <label for="FirstName">@L("FirstName")</label>
                                                     <input required id="FirstName" class="form-control form-control-sm"
                                                            type="text" name="FirstName" placeholder="@L("FirstName")"
                                                            autocomplete="off">
                                                 </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="MiddleName">@L("MiddleName")</label>
+                                                    <input required id="MiddleName" class="form-control form-control-sm"
+                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+
+
                                                 <div class="form-group">
                                                     <label for="NickName">@L("NickName")</label>
                                                     <input required id="NickName" class="form-control form-control-sm"
@@ -254,12 +267,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="MiddleName">@L("MiddleName")</label>
-                                                    <input required id="MiddleName" class="form-control form-control-sm"
-                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
-                                                           autocomplete="off">
-                                                </div>
+
                                                 <div class="form-group">
                                                     <label for="Suffix">@L("Suffix")</label>
                                                     <input required id="Suffix" class="form-control form-control-sm"

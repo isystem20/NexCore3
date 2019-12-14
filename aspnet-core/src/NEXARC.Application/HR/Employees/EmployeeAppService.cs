@@ -45,11 +45,13 @@ namespace NEXARC.HR.Employees
 
             try
             {
-                var result = Repository.GetAllIncluding(x => x.EmployeeStates)
+                var result = Repository.GetAllIncluding(
+                    x => x.EmployeeStates.Where(
+                        w => w.EffectivityDate <= DateTime.Now)
+                    .OrderByDescending(ds => ds.EffectivityDate)
+                    .Take(1))
                     .WhereIf(!input.Keyword.IsNullOrWhiteSpace(), x => x.FirstName.Contains(input.Keyword))
-                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status)
-                    
-                    
+                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status)                   
                     ;
                 return result;
             }
