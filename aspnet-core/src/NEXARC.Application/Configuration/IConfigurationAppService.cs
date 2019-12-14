@@ -6,5 +6,7 @@ namespace NEXARC.Configuration
     public interface IConfigurationAppService
     {
         Task ChangeUiTheme(ChangeUiThemeInput input);
+
+
     }
 }

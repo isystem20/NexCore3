@@ -1,4 +1,4 @@
-﻿using Abp.AspNetCore.Mvc.ViewComponents;
+using Abp.AspNetCore.Mvc.ViewComponents;
 
 namespace NEXARC.Web.Views
 {

@@ -1,42 +1,32 @@
-﻿(function ($) {
+(function () {
+    var $form = $('#RegisterForm');
 
-    if (!$) {
-        return;
-    }
+    $.validator.addMethod("customUsername", function (value, element) {
+        if (value === $form.find('input[name="EmailAddress"]').val()) {
+            return true;
+        }
 
-    $(function () {
+        //Username can not be an email address (except the email address entered)
+        return !$.validator.methods.email.apply(this, arguments);
+    }, abp.localization.localize("RegisterFormUserNameInvalidMessage", "AbpProjectName"));
 
-        var $registerForm = $('#RegisterForm');
+    $form.validate({
+        highlight: function (input) {
+            $(input).parents('.form-group').addClass('has-error');
+        },
 
-        $.validator.addMethod("customUsername", function (value, element) {
-            if (value === $registerForm.find('input[name="EmailAddress"]').val()) {
-                return true;
+        unhighlight: function (input) {
+            $(input).parents('.form-group').removeClass('has-error');
+        },
+
+        errorPlacement: function (error, element) {
+            $(element).parents('.form-group').append(error);
+        },
+        rules: {
+            UserName: {
+                required: true,
+                customUsername: true
             }
-
-            //Username can not be an email address (except the email address entered)
-            return !$.validator.methods.email.apply(this, arguments);
-        }, abp.localization.localize("RegisterFormUserNameInvalidMessage", "NEXARC"));
-        
-        $registerForm.validate({
-            rules: {
-                UserName: {
-                    required: true,
-                    customUsername: true
-                }
-            },
-
-            highlight: function (input) {
-                $(input).parents('.form-line').addClass('error');
-            },
-
-            unhighlight: function (input) {
-                $(input).parents('.form-line').removeClass('error');
-            },
-
-            errorPlacement: function (error, element) {
-                $(element).parents('.form-group').append(error);
-            }
-        });
+        }
     });
-
-})(jQuery);
+})();

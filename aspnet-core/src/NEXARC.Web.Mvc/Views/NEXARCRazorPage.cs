@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc.Razor.Internal;
+using Microsoft.AspNetCore.Mvc.Razor.Internal;
 using Abp.AspNetCore.Mvc.Views;
 using Abp.Runtime.Session;
 
