@@ -10,8 +10,8 @@ using NEXARC.EntityFrameworkCore;
 namespace NEXARC.Migrations
 {
     [DbContext(typeof(NEXARCDbContext))]
-    [Migration("20191214081827_Ini")]
-    partial class Ini
+    [Migration("20191214111234_ini")]
+    partial class ini
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

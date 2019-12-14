@@ -1,11 +1,19 @@
-﻿(function() {
-    $(function() {
+﻿(function () {
+    $(function () {
+        var userService = abp.services.app.user;
+        var $modal = $('#UserCreateModal');
+        var $form = $modal.find('form');
 
-        var _userService = abp.services.app.user;
-        var _$modal = $('#UserCreateModal');
-        var _$form = _$modal.find('form');
-
-        _$form.validate({
+        $form.validate({
+            highlight: function (input) {
+                $(input).parents('.form-group').addClass('has-error');
+            },
+            unhighlight: function (input) {
+                $(input).parents('.form-group').removeClass('has-error');
+            },
+            errorPlacement: function (error, element) {
+                $(element).parent().append(error);
+            },
             rules: {
                 Password: "required",
                 ConfirmPassword: {
@@ -22,7 +30,24 @@
             var userId = $(this).attr("data-user-id");
             var userName = $(this).attr('data-user-name');
 
-            deleteUser(userId, userName);
+            deleteUser(userId, userName, false);
+        });
+
+        $('.delete-user-multi').click(function () {
+            var checked = new Array();
+            $("input:checkbox[dataclass=record-key]:checked").each(function () {
+                checked.push($(this).data('id'));
+            });
+
+            if (checked.length == 0) {
+                One.helpers('notify', { type: 'warning', icon: 'fa fa-exclamation mr-1', message: 'No Record is selected.' });
+            }
+            else {
+                //console.log(checked);
+                //return false;
+                deleteUser(checked, "Multiple Records", true);
+            }
+
         });
 
         $('.edit-user').click(function (e) {
@@ -40,50 +65,81 @@
             });
         });
 
-        _$form.find('button[type="submit"]').click(function (e) {
+        $form.find('button[type="submit"]').click(function (e) {
             e.preventDefault();
 
-            if (!_$form.valid()) {
+            if (!$form.valid()) {
                 return;
             }
 
-            var user = _$form.serializeFormToObject(); //serializeFormToObject is defined in main.js
+            var user = $form.serializeFormToObject(); //serializeFormToObject is defined in main.js
             user.roleNames = [];
-            var _$roleCheckboxes = $("input[name='role']:checked");
-            if (_$roleCheckboxes) {
-                for (var roleIndex = 0; roleIndex < _$roleCheckboxes.length; roleIndex++) {
-                    var _$roleCheckbox = $(_$roleCheckboxes[roleIndex]);
-                    user.roleNames.push(_$roleCheckbox.val());
+            var $roleCheckboxes = $("input[name='role']:checked");
+            if ($roleCheckboxes) {
+                for (var roleIndex = 0; roleIndex < $roleCheckboxes.length; roleIndex++) {
+                    var $roleCheckbox = $($roleCheckboxes[roleIndex]);
+                    user.roleNames.push($roleCheckbox.val());
                 }
             }
 
-            abp.ui.setBusy(_$modal);
-            _userService.create(user).done(function () {
-                _$modal.modal('hide');
+            abp.ui.setBusy($modal);
+            userService.create(user).done(function () {
+                $modal.modal('hide');
                 location.reload(true); //reload page to see new user!
             }).always(function () {
-                abp.ui.clearBusy(_$modal);
+                abp.ui.clearBusy($modal);
             });
         });
 
-        _$modal.on('shown.bs.modal', function () {
-            _$modal.find('input:not([type=hidden]):first').focus();
+        $modal.on('shown.bs.modal', function () {
+            $modal.find('input:not([type=hidden]):first').focus();
         });
 
         function refreshUserList() {
             location.reload(true); //reload page to see new user!
         }
 
-        function deleteUser(userId, userName) {
+        // function deleteUser(userId, userName) {
+        //     abp.message.confirm(
+        //         abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'AbpProjectName'), userName),
+        //         function (isConfirmed) {
+        //             if (isConfirmed) {
+        //                 userService.delete({
+        //                     id: userId
+        //                 }).done(function () {
+        //                     refreshUserList();
+        //                 });
+        //             }
+        //         }
+        //     );
+        // }
+
+        function deleteUser(userId, userName, isMultiple = false) {
             abp.message.confirm(
-                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'NEXARC'), userName),
+                abp.utils.formatString(abp.localization.localize('AreYouSureWantToDelete', 'AbpProjectName'), userName),
                 function (isConfirmed) {
                     if (isConfirmed) {
-                        _userService.delete({
-                            id: userId
-                        }).done(function () {
+                        One.loader('show')
+                        if (Array.isArray(userId)) {
+                            var complete = 0;
+                            userId.forEach(function (recordId) {
+                                userService.delete({
+                                    id: recordId
+                                }).done(function () {
+                                    complete = complete + 1;
+                                });
+                            });
                             refreshUserList();
-                        });
+                            One.loader('hide')
+                        }
+                        else {
+                            userService.delete({
+                                id: userId
+                            }).done(function () {
+                                refreshUserList();
+                            });
+                            One.loader('hide')
+                        }
                     }
                 }
             );
