@@ -20,151 +20,326 @@ namespace NEXARC.Web.Startup
                         icon: "fa fa-chart-area",
                         requiresAuthentication: true
                     )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Tenants,
-                        L("Tenants"),
-                        url: "Tenants",
-                        icon: "fa fa-building",
-                        requiredPermissionName: PermissionNames.Pages_Tenants
-                    )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Users,
-                        L("Users"),
-                        url: "Users",
-                        icon: "fa fa-users",
-                        requiredPermissionName: PermissionNames.Pages_Users
-                    )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Roles,
-                        L("Roles"),
-                        url: "Roles",
-                        icon: "fa fa-user-cog",
-                        requiredPermissionName: PermissionNames.Pages_Roles
-                    )
-                ).AddItem(
-                    new MenuItemDefinition(
-                        PageNames.Departments,
-                        L("Departments"),
-                        url: "Departments",
-                        icon: "fa fa-object-group",
-                        requiredPermissionName: PermissionNames.Pages_Departments
-                    )
-                ).AddItem(
+                )
+                .AddItem(
                     new MenuItemDefinition(
                         PageNames.Departments,
                         L("Employees"),
                         url: "Employees",
-                        icon: "fa fa-object-group",
+                        icon: "fa far fa-folder",
                         requiredPermissionName: PermissionNames.Pages_Employees
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Employees,
+                            L("Masterlist"),
+                            url: "Employees",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Employees
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Departments,
+                            L("EmployeeMovements"),
+                            url: "EmployeeMovements",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Employees
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Departments,
+                            L("Accountabilities"),
+                            url: "Accountabilities",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Employees
+                        )
+                    )
+
+                    .AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Departments,
+                            L("Offences"),
+                            url: "Offences",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Employees
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Departments,
+                            L("InactiveEmployees"),
+                            url: "InactiveEmployees",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Employees
+                        )
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("Maintenance"),
+                        url: "Maintenance",
+                        icon: "fa-info-circle"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Departments,
+                            L("Departments"),
+                            url: "Departments",
+                            icon: "fa fa-object-group",
+                            requiredPermissionName: PermissionNames.Pages_Departments
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Teams"),
+                            url: "Teams",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Designations"),
+                            url: "Designations",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Division"),
+                            url: "Divisions",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Ranks"),
+                            url: "Ranks",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Sections"),
+                            url: "Sections",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("EmploymentTypes"),
+                            url: "EmploymentTypes",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Sites"),
+                            url: "Sites",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("CostCenters"),
+                            url: "CostCenters",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Offenses"),
+                            url: "Offenses",
+                            icon: "fa-info-circle"
+                        )
                     )
                 )
-                //.AddItem(
-                //    new MenuItemDefinition(
-                //        PageNames.Notices,
-                //        L("Clients"),
-                //        url: "Clients",
-                //        icon: "fa-black-tie",
-                //        requiredPermissionName: "Admin.Client"
-                //    )
-                //)
 
                 .AddItem(
                     new MenuItemDefinition(
                         PageNames.About,
-                        L("About"),
-                        url: "About",
+                        L("Security"),
+                        url: "Security",
+                        icon: "fa-info-circle"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Tenants,
+                            L("Tenants"),
+                            url: "Tenants",
+                            icon: "fa fa-building",
+                            requiredPermissionName: PermissionNames.Pages_Tenants
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Users,
+                            L("Users"),
+                            url: "Users",
+                            icon: "fa fa-users",
+                            requiredPermissionName: PermissionNames.Pages_Users
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.Roles,
+                            L("Roles"),
+                            url: "Roles",
+                            icon: "fa fa-user-cog",
+                            requiredPermissionName: PermissionNames.Pages_Roles
+                        )
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("Supplimentary"),
+                        url: "Supplimentary",
+                        icon: "fa-info-circle"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Barangay"),
+                            url: "Barangay",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("City"),
+                            url: "City",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Municipality"),
+                            url: "Minucipality",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Province"),
+                            url: "Province",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Regions"),
+                            url: "Regions",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("BloodTypes"),
+                            url: "BloodTypes",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Nationalities"),
+                            url: "Nationalities",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Certificates"),
+                            url: "Certificates",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("EducationalAwards"),
+                            url: "EducationalAwards",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Holidays"),
+                            url: "Holidays",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Religions"),
+                            url: "Religions",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("Schools"),
+                            url: "Schools",
+                            icon: "fa-info-circle"
+                        )
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("LeaveManagement"),
+                        url: "LeaveManagement",
+                        icon: "fa-info-circle"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("LeaveTypes"),
+                            url: "LeaveTypes",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("LeaveSetup"),
+                            url: "LeaveSetup",
+                            icon: "fa-info-circle"
+                        )
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("LeaveAdjustment"),
+                            url: "LeaveAdjustment",
+                            icon: "fa-info-circle"
+                        )
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("SelfService"),
+                        url: "SelfService",
+                        icon: "fa-info-circle"
+                    ).AddItem(
+                        new MenuItemDefinition(
+                            PageNames.About,
+                            L("ApproverSetup"),
+                            url: "ApproverSetup",
+                            icon: "fa-info-circle"
+                        )
+                    )
+                ).AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("ResumeBank"),
+                        url: "ResumeBank",
                         icon: "fa-info-circle"
                     )
-                ).AddItem( // Menu items below is just for demonstration!
+                )
+                .AddItem(
                     new MenuItemDefinition(
-                        "MultiLevelMenu",
-                        L("MultiLevelMenu"),
-                        icon: "fa-share"
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetBoilerplate",
-                            new FixedLocalizableString("ASP.NET Boilerplate"),
-                            icon: "fa-dot-circle-o"
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetboilerplate.com?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateTemplates",
-                                new FixedLocalizableString("Templates"),
-                                url: "https://aspnetboilerplate.com/Templates?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateSamples",
-                                new FixedLocalizableString("Samples"),
-                                url: "https://aspnetboilerplate.com/Samples?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetBoilerplateDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetboilerplate.com/Pages/Documents?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        )
-                    ).AddItem(
-                        new MenuItemDefinition(
-                            "AspNetZero",
-                            new FixedLocalizableString("ASP.NET Zero"),
-                            icon: "fa-dot-circle-o"
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroHome",
-                                new FixedLocalizableString("Home"),
-                                url: "https://aspnetzero.com?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDescription",
-                                new FixedLocalizableString("Description"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#description",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFeatures",
-                                new FixedLocalizableString("Features"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#features",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroPricing",
-                                new FixedLocalizableString("Pricing"),
-                                url: "https://aspnetzero.com/?ref=abptmpl#pricing",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroFaq",
-                                new FixedLocalizableString("Faq"),
-                                url: "https://aspnetzero.com/Faq?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        ).AddItem(
-                            new MenuItemDefinition(
-                                "AspNetZeroDocuments",
-                                new FixedLocalizableString("Documents"),
-                                url: "https://aspnetzero.com/Documents?ref=abptmpl",
-                                icon: "fa-genderless"
-                            )
-                        )
+                        PageNames.About,
+                        L("CompanyPolicy"),
+                        url: "CompanyPolicy",
+                        icon: "fa-info-circle"
+                    )
+                )
+                .AddItem(
+                    new MenuItemDefinition(
+                        PageNames.About,
+                        L("EmployeeHandbook"),
+                        url: "EmployeeHandbook",
+                        icon: "fa-info-circle"
                     )
                 );
         }

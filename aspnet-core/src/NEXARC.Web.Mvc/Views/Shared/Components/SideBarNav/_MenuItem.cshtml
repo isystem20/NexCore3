@@ -13,7 +13,8 @@
             @if (!string.IsNullOrEmpty(Model.Icon))
             {
                 <text>
-                    <i class="nav-main-link-icon @Url.Content(Model.Icon)"></i>
+                    @*<i class="nav-main-link-icon @Url.Content(Model.Icon)"></i>*@
+                    <i class="nav-main-link-icon fa fa-cube"></i>
                 </text>
             }
             <span class="nav-main-link-name">@Model.DisplayName</span>
@@ -42,10 +43,13 @@ else
             @if (!string.IsNullOrEmpty(Model.Icon))
             {
                 <text>
-                    <i class="fa @Url.Content(Model.Icon)"></i>
+                    @*<i class="nav-main-link-icon fa @Url.Content(Model.Icon)"></i>*@
+                    <i class="nav-main-link-icon @((hasSubMenus) ? Html.Raw("fa far fa-folder") : Html.Raw("fa fa-cube") ) "></i>
                 </text>
             }
-            <span>@Model.DisplayName</span>
+
+
+            <span class="nav-main-link-name">@Model.DisplayName</span>
             @*@if (LanguageManager.CurrentLanguage.IsRightToLeft)
             {
                 <i class="fa fa-angle-right pull-right"></i>
