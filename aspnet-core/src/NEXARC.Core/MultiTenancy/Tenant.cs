@@ -5,6 +5,8 @@ namespace NEXARC.MultiTenancy
 {
     public class Tenant : AbpTenant<User>
     {
+        
+
         public Tenant()
         {            
         }
