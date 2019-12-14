@@ -1,0 +1,93 @@
+@using NEXARC.Web.Views
+@model Abp.Application.Navigation.UserMenuItem
+@inject ILanguageManager LanguageManager
+
+@{
+    var isActive = IsActiveMenuItem(Model, ViewBag.CurrentPageName);
+}
+
+@if (!Model.Items.Any())
+{
+    <li @(isActive ? Html.Raw("class=\"active current-active-item\"") : Html.Raw("class=\"nav-main-item\""))>
+        <a href="@CalculateMenuUrl(Model.Url)" class="nav-main-link" @(!string.IsNullOrEmpty(Model.Target) ? Html.Raw($" target=\"{Model.Target}\"") : null)>
+            @if (!string.IsNullOrEmpty(Model.Icon))
+            {
+                <text>
+                    <i class="nav-main-link-icon @Url.Content(Model.Icon)"></i>
+                </text>
+            }
+            <span class="nav-main-link-name">@Model.DisplayName</span>
+        </a>
+    </li>
+}
+else
+{
+    var subMenus = Model.Items.Where(x => x.IsVisible).ToList();
+    var hasSubMenus = subMenus.Any();
+    var liCssClass = "";
+    if (hasSubMenus)
+    {
+        liCssClass = "nav-main-link nav-main-link-submenu";
+    }
+    if (isActive)
+    {
+        if (!string.IsNullOrEmpty(liCssClass))
+        {
+            liCssClass += " ";
+        }
+        liCssClass += "nav-main-link active";
+    }
+    <li class="nav-main-item">
+        <a href="#" class="nav-main-link @(hasSubMenus ? Html.Raw("nav-main-link-submenu") : null)" @(hasSubMenus ? Html.Raw("data-toggle=\"submenu\" aria-haspopup=\"true\" aria-expanded=\"false\"") : null)>
+            @if (!string.IsNullOrEmpty(Model.Icon))
+            {
+                <text>
+                    <i class="fa @Url.Content(Model.Icon)"></i>
+                </text>
+            }
+            <span>@Model.DisplayName</span>
+            @*@if (LanguageManager.CurrentLanguage.IsRightToLeft)
+            {
+                <i class="fa fa-angle-right pull-right"></i>
+            }
+            else
+            {
+                <i class="fa fa-angle-left pull-right"></i>
+            }*@
+        </a>
+        @if (hasSubMenus)
+        {
+            <ul class="nav-main-submenu">
+                @foreach (var subMenu in subMenus)
+                {
+                    @await Html.PartialAsync("Components/SideBarNav/_MenuItem", subMenu)
+                }
+            </ul>
+        }
+    </li>
+}
+
+@functions {
+string CalculateMenuUrl(string url)
+{
+    if (string.IsNullOrEmpty(url))
+    {
+        return ApplicationPath;
+    }
+
+    if (UrlChecker.IsRooted(url))
+    {
+        return url;
+    }
+    return ApplicationPath + url;
+}
+
+static bool IsActiveMenuItem(Abp.Application.Navigation.UserMenuItem menuItem, string pageName)
+{
+    if (string.IsNullOrWhiteSpace(pageName))
+        return false;
+
+    return pageName.Equals(menuItem.Name, StringComparison.InvariantCultureIgnoreCase)
+           || menuItem.Items.Any(cn => IsActiveMenuItem(cn, pageName));
+}
+}

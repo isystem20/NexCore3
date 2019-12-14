@@ -1,4 +1,4 @@
-﻿namespace NEXARC.Web.Views.Shared.Components.TenantChange
+namespace NEXARC.Web.Views.Shared.Components.TenantChange
 {
     public class ChangeModalViewModel
     {

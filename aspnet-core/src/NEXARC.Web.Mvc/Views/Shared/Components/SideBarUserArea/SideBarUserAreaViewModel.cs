@@ -1,4 +1,4 @@
-﻿using NEXARC.Sessions.Dto;
+using NEXARC.Sessions.Dto;
 
 namespace NEXARC.Web.Views.Shared.Components.SideBarUserArea
 {

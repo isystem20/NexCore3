@@ -1,8 +1,18 @@
-﻿@using NEXARC.Web.Models.Common.Modals
+@using NEXARC.Web.Models.Common.Modals
 @model ModalHeaderViewModel
-<div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+@*<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     <h4 class="modal-title">
         <span>@Html.Raw(Model.Title)</span>
     </h4>
+</div>*@
+<div class="block block-themed block-transparent mb-0">
+    <div class="block-header bg-primary-dark _nexcolor">
+        <h3 class="block-title">@Html.Raw(Model.Title)</h3>
+        <div class="block-options">
+            <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                <i class="fa fa-fw fa-times"></i>
+            </button>
+        </div>
+    </div>
 </div>

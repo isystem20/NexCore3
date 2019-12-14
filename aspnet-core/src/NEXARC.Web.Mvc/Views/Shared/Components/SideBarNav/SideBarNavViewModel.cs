@@ -1,4 +1,4 @@
-﻿using Abp.Application.Navigation;
+using Abp.Application.Navigation;
 
 namespace NEXARC.Web.Views.Shared.Components.SideBarNav
 {

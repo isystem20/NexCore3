@@ -1,0 +1,437 @@
+@using Abp.Authorization.Users
+@using NEXARC.Web.Models.Common.Modals
+@using NEXARC.Web.Startup
+@using NEXARC.Domain.Enumerations;
+@using NEXARC.Extensions;
+@model NEXARC.Web.Models.Employees.EmployeeListViewModel
+@{
+    ViewBag.Title = L("Employees");
+    ViewBag.CurrentPageName = PageNames.Employees;
+}
+@section scripts
+    {
+    <environment names="Development">
+    </environment>
+
+    <environment names="Staging,Production">
+    </environment>
+
+
+    <script src="~/view-resources/Views/Employees/Index.js" asp-append-version="true"></script>
+    <!-- Page JS Plugins -->
+
+    <script src="./oneui/src/assets/js/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.print.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+    <script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+
+    <script src="~/view-resources/Views/Helpers/RequestHelper.js"></script>
+    <!-- Page JS Code -->
+    <script src="./oneui/src/assets/js/pages/be_tables_datatables.js"></script>
+    <script>jQuery(function () { One.helpers(['table-tools-checkable', 'table-tools-sections']); });</script>
+    <script>jQuery(function () { One.helpers(['datepicker']); });</script>
+
+
+    <script>
+        $("#search_table").on("keyup search input paste cut", function (e) {
+            e.preventDefault();
+            if ($('.table').length > 0) {
+                if ($.fn.dataTable.isDataTable('.table')) {
+                    table = $('.table').DataTable();
+                    table.search(this.value).draw();
+                }
+            }
+        });
+
+        $('.export-csv').click(function () {
+            $('.buttons-csv').trigger("click");;
+        });
+        $('.export-copy').click(function () {
+            $('.buttons-copy').trigger("click");;
+        });
+        $('.export-print').click(function () {
+            $('.buttons-print').trigger("click");;
+        });
+    </script>
+}
+
+
+<div class="content" style="padding: 10px !important;">
+
+    <div class="block">
+        <div class="block-header ribbon ribbon-primary ribbon-left ribbon-modern">
+
+            <div class="ribbon-box">
+            Employees
+                <i class="fa fa-user-friends"></i>
+            </div>
+
+
+
+            <h3 class="block-title"></h3>
+            <div class="block-options">
+                <button type="button" class="btn btn-sm btn-square text-primary btn-primary-custom" data-toggle="modal" data-target="#EmployeeCreateModal">
+                    @*<button type="button" class="btn btn-square btn-outline-primary">Primary</button>*@
+                    <i class="si si-pencil"></i>&nbsp;<span>@L("Create")</span>
+                    
+                </button>
+                <button type="button" class="btn btn-sm btn-square text-danger delete-employee-multi btn-danger-custom">
+                    <i class="far fa-trash-alt"></i>&nbsp;<span>Delete</span>
+                </button>
+                <button type="button" class="btn btn-sm btn-square text-primary dropdown-toggle btn-primary-custom" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="si si-note"></i> Export
+                </button>
+                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                    <a class="dropdown-item export-copy" href="javascript:void(0)">
+                        <i class="si si-docs"></i>&nbsp;
+                        Copy
+                    </a>
+                    <a class="dropdown-item export-csv" href="javascript:void(0)">
+                        <i class="si si-doc"></i>&nbsp;
+                        CVS
+                    </a>
+                    <a class="dropdown-item export-print" href="javascript:void(0)">
+                        <i class="si si-printer"></i>&nbsp;
+                        Print
+                    </a>
+                </div>
+                <button type="button" class="btn btn-sm btn-square text-primary btn-primary-custom" data-toggle="block-option" data-action="fullscreen_toggle">
+                <i class="si si-size-fullscreen text-primary"></i></button>
+
+            </div>
+        </div>
+        <div class="block-content">
+
+            <!-- DataTables init on table by adding .js-dataTable-buttons class, functionality is initialized in js/pages/be_tables_datatables.min.js which was auto compiled from _es6/pages/be_tables_datatables.js -->
+            <table id="dtable" style="" class="table table-striped table-vright js-dataTable-buttons dataTable no-footer  js-table-checkable">
+                <thead>
+                    <tr>
+                        <th class="text-center noExport" style="width: 70px;">
+                            <div class="custom-control custom-checkbox d-inline-block">
+                                <input type="checkbox" class="custom-control-input" id="check-all" name="check-all">
+                                <label class="custom-control-label" for="check-all"></label>
+                            </div>
+                        </th>
+                        <th class="font-size-sm text-center noExport" style="width: 80px;">@L("Actions")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Code")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("LastName")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("FirstName")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Department")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Status")</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var employee in Model.Employees)
+                    {
+                        <tr>
+                            <td class="text-center">
+                                <div class="custom-control custom-checkbox d-inline-block">
+                                    <input type="checkbox" class="custom-control-input" dataclass="record-key" data-id="@employee.Id" id="row_@employee.Id" name="row_@employee.Id">
+                                    <label class="custom-control-label" for="row_@employee.Id"></label>
+                                </div>
+                            </td>
+                            <td class="d-sm-table-cell font-size-sm">
+                                <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span>@L("Actions")</span>
+                                    <b class="caret"></b>
+                                </button>
+                                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                                    <a href="#" class="dropdown-item edit-Employee" data-employee-id="@employee.Id" data-toggle="modal" data-target="#EmployeeEditModal">
+                                        <i class="fa fa-edit"></i>&nbsp;@L("Edit")
+                                    </a>
+                                    <a href="#" class="delete-employee dropdown-item" data-employee-id="@employee.Id" data-employee-name="@employee.FullName">
+                                        <i class="fa fa-trash"></i>&nbsp;@L("Delete")
+                                    </a>
+                                </div>
+                            </td>
+                            <td class="font-size-sm">
+                                @employee.Code
+                            </td>
+                            <td class="font-size-sm">
+                                @employee.LastName
+                            </td>
+                            <td class="font-size-sm">
+                                @employee.FirstName
+                            </td>
+
+                            <td class="font-size-sm">
+                                @ViewBag.Departments[employee.CurrentState.DepartmentId]
+                            </td>
+                            <td class="font-size-sm">
+                                <span class="badge badge-@employee.Status.GetDescription()"> @employee.Status</span>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- END Dynamic Table with Export Buttons -->
+</div>
+<!-- END Page Content -->
+
+
+
+
+<div class="modal fade" id="EmployeeCreateModal" tabindex="-1" role="dialog" aria-labelledby="EmployeeCreateModal" aria-hidden="true">
+    <div style="display: block !important;" class="modal-dialog modal-xl" role="document">
+        <div class="modal-content">
+            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewEmployee")))
+            <div style="display: flex; flex-direction: row;">
+                <div style="display: flex; flex-direction: column; min-width: 220px; border-right: 1px solid #d6d9dc; align-items: center; margin-top: 10px;">
+                    <img class="img-avatar img-avatar128 img-avatar-thumb" src="~/oneui/src/assets/media/avatars/avatar0.jpg">
+                    <p class="">Juan Dela Cruz</p>
+                </div>
+                <div class="container-fluid">
+                    <form name="EmployeeCreateForm" role="form" novalidate class="form-horizontal form-validation go-bottom customform">
+                        <div class="modal-body">
+                            <div class="block mb0 modal-body-content">
+                                <ul class="nav nav-tabs nav-tabs-alt " data-toggle="tabs" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#personal_details">Personal Details</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#employment">Employment</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#education">Education</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#work_history">Work History</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#government">Government</a>
+                                    </li>
+
+                                </ul>
+                                <div class="block-content tab-content modal-tab-content">
+                                    <div class="tab-pane active" id="personal_details" role="tabpanel" style="max-height: calc(100vh - 280px); overflow-y: scroll">
+                                        <div class="container row col-sm-12">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="Code">@L("Code")</label>
+                                                    <input required id="Code" class="form-control form-control-sm"
+                                                           type="text" name="Code" placeholder="@L("Code")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="LastName">@L("LastName")</label>
+                                                    <input required id="LastName" class="form-control form-control-sm"
+                                                           type="text" name="LastName" placeholder="@L("LastName")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="LastName">@L("MiddleName")</label>
+                                                    <input required id="MiddleName" class="form-control form-control-sm"
+                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="BirthDate">@L("BirthDate")</label>
+                                                    <input type="text" class="js-datepicker form-control from-control-sm"
+                                                           id="BirthDate" name="BirthDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="Status">@L("Status")</label>
+                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
+                                                            class="form-control form-control-sm"></select>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="HiredDate">@L("HiredDate")</label>
+                                                    <input type="text" class="js-datepicker form-control from-control-sm"
+                                                           id="HiredDate" name="HiredDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="FirstName">@L("FirstName")</label>
+                                                    <input required id="FirstName" class="form-control form-control-sm"
+                                                           type="text" name="FirstName" placeholder="@L("FirstName")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="NickName">@L("NickName")</label>
+                                                    <input required id="NickName" class="form-control form-control-sm"
+                                                           type="text" name="NickName" placeholder="@L("NickName")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="BirthPlace">@L("BirthPlace")</label>
+                                                    <input required id="BirthPlace" class="form-control form-control-sm"
+                                                           type="text" name="BirthPlace" placeholder="@L("BirthPlace")"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="tab-pane" id="education" role="tabpanel" style="min-height: 300px;">
+                                        <h3 class="block-title">
+                                            List of Educational Attainments
+                                        </h3>
+
+                                        <div class="block">
+                                            <div class="dropdown push">
+                                                <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-content-rich-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Add
+                                                </button>
+                                                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-content-rich-primary" x-placement="bottom-start"
+                                                     style="width: 100%; padding: 10px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
+                                                    <form action="be_blocks_forms.html" method="POST">
+                                                        <div class="block">
+                                                            <div class="block-header block-header-default">
+                                                                <h3 class="block-title">Add Education</h3>
+                                                                <div class="block-options">
+                                                                    <button type="submit" class="btn-block-option">
+                                                                        Submit
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="block-content">
+                                                                <div class="row justify-content-center">
+                                                                    <div class="col-sm-12 col-md-12">
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-4 col-form-label" for="example-hf-email">School</label>
+                                                                            <div class="col-sm-8">
+                                                                                <input type="text" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="School Name">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-4 col-form-label" for="example-hf-email">Program / Course</label>
+                                                                            <div class="col-sm-8">
+                                                                                <input type="text" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="Program / Course">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-4 col-form-label" for="EducationalLevel">EducationalLevel</label>
+                                                                            <div class="col-sm-8">
+                                                                                <input type="text" class="form-control" id="EducationalLevel" name="EducationalLevel" placeholder="EducationalLevel">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group row">
+                                                                            <label class="col-sm-4 col-form-label" for="EducationalLevel">Inclusive Dates</label>
+                                                                            <div class="col-sm-4">
+                                                                                <input type="text" class="form-control" id="InclusiveDateFrom" name="InclusiveDateFrom" placeholder="YYYY">
+                                                                            </div>
+                                                                            <div class="col-sm-4">
+                                                                                <input type="text" class="form-control" id="InclusiveDateTo" name="InclusiveDateTo" placeholder="YYYY">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="form-group">
+                                                                            <div class="custom-control custom-checkbox custom-control-primary">
+                                                                                <input type="checkbox" class="custom-control-input" id="block-form5-remember-me" name="block-form5-remember-me">
+                                                                                <label class="custom-control-label" for="block-form5-remember-me">Graduated?</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    @*<div class="dropdown-divider"></div>
+        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Sign up</a>
+        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Forgot password?</a>*@
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                        @*<h3 class="block-title">Categories</h3>*@
+                                        <table class="table table-striped table-borderless table-vcenter push">
+                                            <thead class="border-bottom">
+                                                <tr>
+                                                    <th colspan="2">Program / Course</th>
+                                                    <th class="d-none d-md-table-cell text-center" style="width: 90px;">Level</th>
+                                                    <th class="d-none d-md-table-cell text-center" style="width: 90px;">Status</th>
+                                                    <th class="d-none d-md-table-cell" style="width: 180px;">Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-center" style="width: 50px;">
+                                                        <i class="si si-check fa-2x"></i>
+                                                    </td>
+                                                    <td>
+                                                        <a class="font-size-h5 font-w600" href="be_pages_forum_topics.html">Information Technology</a>
+                                                        <div class="font-size-sm text-muted mt-1">Quezon City University</div>
+                                                    </td>
+                                                    <td class="d-none d-md-table-cell text-center" style="min-width: 100px !important;">
+                                                        BA
+                                                    </td>
+                                                    <td class="d-none d-md-table-cell text-center">
+                                                        Graduate
+                                                    </td>
+                                                    <td class="d-none d-md-table-cell">
+                                                        <span class="font-size-sm">2009 - 2013</span>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+
+                                    <div class="tab-pane" id="government" role="tabpanel">
+                                        <div class="form-group">
+                                            <label for="SSS">@L("SSS")</label>
+                                            <input required id="SSS" class="form-control form-control-sm"
+                                                   type="text" name="SSS" placeholder="@L("SSS")">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="PHIC">@L("PHIC")</label>
+                                            <input required id="PHIC" class="form-control form-control-sm"
+                                                   type="text" name="PHIC" placeholder="@L("PHIC")">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="HDMF">@L("HDMF")</label>
+                                            <input required id="PHIC" class="form-control form-control-sm"
+                                                   type="text" name="HDMF" placeholder="@L("HDMF")">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="WTAX">@L("WTAX")</label>
+                                            <input required id="WTAX" class="form-control form-control-sm"
+                                                   type="text" name="WTAX" placeholder="@L("WTAX")">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="EmployeeEditModal" tabindex="-1" role="dialog" aria-labelledby="EmployeeEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.')
+
+
+</script>
+

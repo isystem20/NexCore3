@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Abp.Configuration;
-using NEXARC.Configuration;
 using NEXARC.Configuration.Ui;
+using NEXARC.Configuration;
 
 namespace NEXARC.Web.Views.Shared.Components.RightSideBar
 {

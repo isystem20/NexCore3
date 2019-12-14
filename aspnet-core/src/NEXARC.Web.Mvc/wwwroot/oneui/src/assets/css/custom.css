@@ -1,0 +1,156 @@
+._content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 1.875rem 1px;
+    overflow-x: visible;
+    background-color: none;
+}
+
+._listing-title {
+    color:#575757;
+}
+
+._nexcolor {
+    /*background-color: #58096B; 
+    background-image: linear-gradient(#58096B, #A21D5E); 
+    color: #ffffff;*/
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+td {
+    padding: 5px !important;
+}
+
+.mb0 {
+    margin-bottom: 0px !important;
+}
+
+#DataTables_Table_0_length {
+    margin-left: 120px !important;
+}
+#dtable_length, #dtable_filter {
+    display: none !important;
+}
+.dataTables_length, .dataTables_filter, .dt-buttons, #dtable_wrapper > .row > .col-sm-12 > div.bg-body-light {
+    display: none !important;
+}
+
+/*.modal {
+    height: calc(100% - 30px) !important;
+}
+
+.modal-body-content {
+    height: calc(100% - 180px) !important;
+}
+
+.modal-tab-content {
+    overflow-y: scroll;
+    height: calc(100% - 300px) !important;
+}*/
+
+#dtable th {
+    font-size: 12px !important;
+}
+
+.btn-primary-custom :hover {
+    border-bottom: 2px solid #5c80d1;
+}
+
+
+
+    /** {
+        box-sizing: border-box;
+    }
+
+    html {
+        font: 14px/1.4 Sans-Serif;
+    }
+
+.customform {
+    width: 320px !important;
+    float: left !important;
+    margin: 20px !important;
+}
+
+    .customform > div {
+        position: relative !important;
+        overflow: hidden !important;
+    }
+
+    .customform input, .customform textarea {
+        width: 100% !important;
+        border: 1px solid #e1e1e1;
+        background: none !important;
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 1 !important;
+        padding: 8px 12px !important;
+        outline: 0 !important;
+    }
+
+        .customform input:valid, .customform textarea:valid {
+            background: white !important;
+        }
+
+        .customform input:focus, .customform textarea:focus {
+            border-color: #5c80d1 !important;
+        }
+
+            .customform input:focus + label, .customform textarea:focus + label {
+                background: #5c80d1 !important;
+                color: white !important;
+                font-size: 70% !important;
+                padding: 1px 6px !important;
+                z-index: 2 !important;
+                text-transform: uppercase !important;
+            }
+
+    .customform label {
+        transition: background 0.2s, color 0.2s, top 0.2s, bottom 0.5s, right 0.2s, left 0.2s !important;
+        position: absolute !important;
+        color: #999 !important;
+        padding: 7px 6px !important;
+    }
+
+    .customform textarea {
+        display: block !important;
+        resize: vertical !important;
+    }
+
+    .go-bottom input, .go-bottom textarea {
+        padding: 12px 12px 12px 12px !important;
+    }
+
+    .go-bottom label {
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+    }
+
+    .go-bottom input:focus, .go-bottom textarea:focus {
+        padding: 4px 6px 20px 6px !important;
+    }
+
+        .go-bottom input:focus + label, .go-bottom textarea:focus + label {
+            top: 100% !important;
+            margin-top: -16px !important;
+        }*/

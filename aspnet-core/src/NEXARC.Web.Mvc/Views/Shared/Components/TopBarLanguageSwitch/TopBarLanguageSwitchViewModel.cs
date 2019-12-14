@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using Abp.Localization;
 
 namespace NEXARC.Web.Views.Shared.Components.TopBarLanguageSwitch

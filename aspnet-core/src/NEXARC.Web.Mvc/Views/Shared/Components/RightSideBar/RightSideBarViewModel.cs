@@ -1,4 +1,4 @@
-﻿using NEXARC.Configuration.Ui;
+using NEXARC.Configuration.Ui;
 
 namespace NEXARC.Web.Views.Shared.Components.RightSideBar
 {

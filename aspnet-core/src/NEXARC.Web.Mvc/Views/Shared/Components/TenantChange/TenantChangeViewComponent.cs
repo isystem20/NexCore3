@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Abp.AutoMapper;
 using Abp.ObjectMapping;
 using NEXARC.Sessions;
+using NEXARC.Web.Views.Shared.Components.TenantChange;
 
 namespace NEXARC.Web.Views.Shared.Components.TenantChange
 {

@@ -1,60 +1,94 @@
 ﻿@using System.Globalization
-@using Abp.Configuration
-@using Abp.Configuration.Startup
-@using Abp.Web.Mvc.Alerts
 @using Abp.Web.Security.AntiForgery
 @using NEXARC
-@using NEXARC.Configuration
 @using NEXARC.Web.Resources
-@using NEXARC.Web.Views.Shared.Components.SideBarNav
-@using NEXARC.Web.Views.Shared.Components.SideBarUserArea
-@using NEXARC.Web.Views.Shared.Components.TopBarLanguageSwitch
 @using NEXARC.Web.Views.Shared.Components.RightSideBar
+@using NEXARC.Web.Views.Shared.Components.SideBarNav
+@using NEXARC.Web.Views.Shared.Components.TopBarLanguageSwitch
+@using NEXARC.Web.Views.Shared.Components.TopBarUserMenu
+@using NEXARC.Web.Views.Shared.Components.ControlSidebar
 @inject NEXARC.Timing.AppTimes AppTimes
 @inject IAbpAntiForgeryManager AbpAntiForgeryManager
-@inject IMultiTenancyConfig MultiTenancyConfig
 @inject IWebResourceManager WebResourceManager
-@inject IAlertManager AlertManager
+@inject ILanguageManager LanguageManager
+
 @{
-    Layout = null;
     AbpAntiForgeryManager.SetCookie(Context);
-    var uiTheme = await SettingManager.GetSettingValueAsync(AppSettingNames.UiTheme);
+
+    var pageTitle = !string.IsNullOrWhiteSpace(ViewBag.Title) ? ViewBag.Title + " / " : "";
+    pageTitle += "NEX ARC";
 }
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="@LanguageManager.CurrentLanguage.Name" @(LanguageManager.CurrentLanguage.IsRightToLeft ? Html.Raw(" dir=\"rtl\"") : null)>
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@pageTitle</title>
+    <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="~/favicon.ico">
 
-    <title>NEXARC</title>
+    <!-- Commenting the default resources
+        @if (LanguageManager.CurrentLanguage.IsRightToLeft)
+        {
+            <link href="/bootstrap/css/bootstrap.rtl.css" rel="stylesheet" asp-append-version="true" />
+            <link href="/admin-lte/css/AdminLTE.rtl.css" rel="stylesheet" asp-append-version="true" />
+            <link href="~/css/styles.rtl.css" rel="stylesheet" asp-append-version="true" />
+        }
+        else
+        {
+            <link href="/bootstrap/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
+            <link href="/admin-lte/css/AdminLTE.css" rel="stylesheet" asp-append-version="true" />
+            <link href="~/css/styles.css" rel="stylesheet" asp-append-version="true" />
+        }
+    <link href="/font-awesome/css/font-awesome.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="/ionicons/css/ionicons-2.0.1.css" rel="stylesheet" asp-append-version="true" />
+    <link href="/admin-lte/css/skins/_all-skins.min.css" rel="stylesheet" asp-append-version="true" />
+    <link href="/toastr/toastr.css" rel="stylesheet" asp-append-version="true" />
+    <!-- abp.notify dep
+        <link href="/famfamfam-flags/dist/sprite/famfamfam-flags.css" rel="stylesheet" asp-append-version="true" />
+    -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <environment names="Development">
-        <link href="~/fonts/roboto/roboto.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/fonts/material-icons/materialicons.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/toastr/toastr.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/famfamfam-flags/dist/sprite/famfamfam-flags.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/Waves/dist/waves.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/lib/animate.css/animate.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/css/materialize.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/css/style.css" rel="stylesheet" asp-append-version="true">
-        <link href="~/css/themes/all-themes.css" rel="stylesheet" asp-append-version="true" />
-        <link href="~/view-resources/Views/Shared/_Layout.css" rel="stylesheet" asp-append-version="true" />
-    </environment>
+    <meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="author" content="pixelcave">
+    <meta name="robots" content="noindex, nofollow">
 
-    <environment names="Staging,Production">
-        <link href="~/view-resources/Views/_Bundles/shared-layout.min.css" rel="stylesheet" asp-append-version="true" />
-    </environment>
+    <!-- Open Graph Meta -->
+    <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
+    <meta property="og:site_name" content="OneUI">
+    <meta property="og:description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
 
-    <!-- View specific styles -->
+    <!-- Icons -->
+    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+    <link rel="shortcut icon" href="./oneui/src/assets/media/favicons/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./oneui/src/assets/media/favicons/favicon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./oneui/src/assets/media/favicons/apple-touch-icon-180x180.png">
+    <!-- END Icons -->
+    <!-- Stylesheets -->
+    <!-- Page JS Plugins CSS -->
+    <link rel="stylesheet" href="./oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="./oneui/src/assets/js/plugins/datatables/buttons-bs4/buttons.bootstrap4.min.css">
+    <link rel="stylesheet" href="~/oneui/src/assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+
+    <!-- Fonts and OneUI framework -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
+    <link rel="stylesheet" id="css-main" href="./oneui/src/assets/css/oneui.min.css">
+    <link rel="stylesheet" href="./oneui/src/assets/css/custom.css">
+    <link rel="stylesheet" href="~/css/custom/_input.css" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
     @RenderSection("styles", required: false)
 
     <script type="text/javascript">
@@ -63,159 +97,450 @@
         abp.appPath = '@ApplicationPath';
     </script>
 
+    <link rel="shortcut icon" href="~/favicon.ico">
 </head>
-<body class="@("theme-" + uiTheme)">
 
-    <!-- Page Loader -->
-    <div class="page-loader-wrapper">
-        <div class="loader">
-            <div class="preloader">
-                <div class="spinner-layer pl-red">
-                    <div class="circle-clipper left">
-                        <div class="circle"></div>
-                    </div>
-                    <div class="circle-clipper right">
-                        <div class="circle"></div>
-                    </div>
-                </div>
-            </div>
-            <p>@L("PleaseWait")</p>
-        </div>
-    </div>
-    <!-- #END# Page Loader -->
-    <!-- Overlay For Sidebars -->
-    <div class="overlay"></div>
-    <!-- #END# Overlay For Sidebars -->
-    <!-- Search Bar -->
-    <div class="search-bar">
-        <div class="search-icon">
-            <i class="material-icons">search</i>
-        </div>
-        <input type="text" placeholder="@L("StartTyping")...">
-        <div class="close-search">
-            <i class="material-icons">close</i>
-        </div>
-    </div>
-    <!-- #END# Search Bar -->
-    <!-- Top Bar -->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
-                <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" asp-controller="Home" asp-action="Index"><i class="fa fa-cubes"></i> NEXARC</a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <!-- Call Search -->
-                    <li><a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a></li>
-                    <!-- #END# Call Search -->
 
-                    @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
 
-                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- #Top Bar -->
-    <section>
-        <aside id="leftsidebar" class="sidebar">
 
-            @await Component.InvokeAsync(typeof(SideBarUserAreaViewComponent))
-            @await Component.InvokeAsync(typeof(SideBarNavViewComponent), new { activeMenu = ViewBag.CurrentPageName })
 
-            <!-- Footer -->
-            <div class="legal">
-                <div class="copyright">
-                    &copy; @DateTime.Now.Year <a href="javascript:void(0);">NEXARC</a>.
-                </div>
-                <div class="version">
-                    <b>@L("Version") </b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]
-                </div>
-            </div>
-            <!-- #Footer -->
-        </aside>
 
-        @await Component.InvokeAsync(typeof(RightSideBarViewComponent))
+<body>
+    <div id="page-loader" class="show"></div>
+    <div id="page-container" class="sidebar-o enable-page-overlay side-scroll page-header-fixed">
+        <!-- Side Overlay-->
+        @await Component.InvokeAsync(typeof(RightSideBarViewComponent), new { activeMenu = ViewBag.CurrentPageName })
+        <!-- END Side Overlay -->
+        <!-- Sidebar -->
+        @await Component.InvokeAsync(typeof(SideBarNavViewComponent), new { activeMenu = ViewBag.CurrentPageName })
+        <!-- END Sidebar -->
+        <!-- Header -->
+        <header id="page-header">
+            <!-- Header Content -->
+            <div class="content-header">
+                <!-- Left Section -->
+                <div class="d-flex align-items-center">
+                    <!-- Toggle Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button type="button" class="btn btn-sm btn-dual mr-2 d-lg-none sidebar_toggle" data-toggle="layout" data-action="sidebar_toggle">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+                    <!-- END Toggle Sidebar -->
+                    <!-- Toggle Mini Sidebar -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
+                    <button id="" type="button" class="btn btn-sm btn-dual mr-2 d-none d-lg-inline-block sidebar_toggle" data-toggle="layout" data-action="sidebar_mini_toggle">
+                        <i class="fa fa-fw fa-ellipsis-v"></i>
+                    </button>
+                    <!-- END Toggle Mini Sidebar -->
+                    <!-- Apps Modal -->
+                    <!-- Opens the Apps modal found at the bottom of the page, after footer’s markup -->
 
-    </section>
 
-    <section class="content">
-        <div class="container-fluid">
-            @if (AlertManager.Alerts.Any())
-            {
-                <div id="AbpPageAlerts">
-                    @foreach (var alertMessage in AlertManager.Alerts)
-                    {
-                        <div class="alert alert-@alertMessage.Type.ToString().ToLower() @(alertMessage.Dismissible ? "alert-dismisable" : "")" role="alert">
-                            <h4 class="alert-heading">
-                                @alertMessage.Title
-                                @if (alertMessage.Dismissible)
-                                {
-                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                }
-                            </h4>
-                            <p>@alertMessage.Text</p>
+
+                    <button type="button" class="btn btn-sm btn-dual mr-2" data-toggle="modal" data-target="#one-modal-apps">
+                        HR 
+                        <i class="si si-grid text-smooth"></i>
+                    </button>
+                    <!-- END Apps Modal -->
+                    <!-- Open Search Section (visible on smaller screens) -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-dual d-sm-none" data-toggle="layout" data-action="header_search_on">
+                        <i class="si si-magnifier"></i>
+                    </button>
+                    <!-- END Open Search Section -->
+                    <!-- Search Form (visible on larger screens) -->
+                    <form class="d-none d-sm-inline-block" method="POST">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control form-control-alt" placeholder="Search.." id="search_table" name="page-header-search-input2">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-body border-0">
+                                    <i class="si si-magnifier"></i>
+                                </span>
+                            </div>
                         </div>
-                    }
+                    </form>
+                    <!-- END Search Form -->
                 </div>
-            }
-
+                <!-- END Left Section -->
+                <!-- Right Section -->
+                <div class="d-flex align-items-center">
+                    <!-- User Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded" src="@Url.Content("~/oneui/src/assets/media/avatars/avatar10.jpg")" alt="Header Avatar" style="width: 18px;">
+                            <span class="d-none d-sm-inline-block ml-1">Adam</span>
+                            <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-user-dropdown">
+                            <div class="p-3 text-center bg-primary">
+                                <img class="img-avatar img-avatar48 img-avatar-thumb" src="@Url.Content("~/oneui/src/assets/media/avatars/avatar10.jpg")" alt="">
+                            </div>
+                            <div class="p-2">
+                                <h5 class="dropdown-header text-uppercase">User Options</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_inbox.html">
+                                    <span>Inbox</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-primary">3</span>
+                                        <i class="si si-envelope-open ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="be_pages_generic_profile.html">
+                                    <span>Profile</span>
+                                    <span>
+                                        <span class="badge badge-pill badge-success">1</span>
+                                        <i class="si si-user ml-1"></i>
+                                    </span>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                                    <span>Settings</span>
+                                    <i class="si si-settings"></i>
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <h5 class="dropdown-header text-uppercase">Actions</h5>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="op_auth_lock.html">
+                                    <span>Lock Account</span>
+                                    <i class="si si-lock ml-1"></i>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center justify-content-between" href="@Url.Action("Logout", "Account", new { area= string.Empty })">
+                                    <span>Log Out</span>
+                                    <i class="si si-logout ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END User Dropdown -->
+                    <!-- Notifications Dropdown -->
+                    <div class="dropdown d-inline-block ml-2">
+                        <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="si si-bell"></i>
+                            <span class="badge badge-primary badge-pill">6</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-2 bg-primary text-center">
+                                <h5 class="dropdown-header text-uppercase text-white">Notifications</h5>
+                            </div>
+                            <ul class="nav-items mb-0">
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">15 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">1 new sale, keep it up</div>
+                                            <small class="text-muted">22 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-times-circle text-danger"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">Update failed, restart server</div>
+                                            <small class="text-muted">26 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-plus-circle text-info"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">2 new sales, keep it up</div>
+                                            <small class="text-muted">33 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-user-plus text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new subscriber</div>
+                                            <small class="text-muted">41 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="text-dark media py-2" href="javascript:void(0)">
+                                        <div class="mr-2 ml-3">
+                                            <i class="fa fa-fw fa-check-circle text-success"></i>
+                                        </div>
+                                        <div class="media-body pr-2">
+                                            <div class="font-w600">You have a new follower</div>
+                                            <small class="text-muted">42 min ago</small>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="p-2 border-top">
+                                <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-arrow-down mr-1"></i> Load More..
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Notifications Dropdown -->
+                    <!-- Toggle Side Overlay -->
+                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                    <button type="button" class="btn btn-sm btn-dual ml-2" data-toggle="layout" data-action="side_overlay_toggle">
+                        <i class="fa fa-fw fa-list-ul fa-flip-horizontal"></i>
+                    </button>
+                    <!-- END Toggle Side Overlay -->
+                </div>
+                <!-- END Right Section -->
+            </div>
+            <!-- END Header Content -->
+            <!-- Header Search -->
+            <div id="page-header-search" class="overlay-header bg-white">
+                <div class="content-header">
+                    <form class="w-100" action="be_pages_generic_search.html" method="POST">
+                        <div class="input-group input-group-sm">
+                            <div class="input-group-prepend">
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <button type="button" class="btn btn-danger" data-toggle="layout" data-action="header_search_off">
+                                    <i class="fa fa-fw fa-times-circle"></i>
+                                </button>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- END Header Search -->
+            <!-- Header Loader -->
+            <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+            <div id="page-header-loader" class="overlay-header bg-white">
+                <div class="content-header">
+                    <div class="w-100 text-center">
+                        <i class="fa fa-fw fa-circle-notch fa-spin"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- END Header Loader -->
+        </header>
+        <!-- END Header -->
+        <!-- Main Container -->
+        <main id="main-container">
             @RenderBody()
+        </main>
+        <!-- END Main Container -->
+        <!-- Footer -->
+        @*<footer id="page-footer" class="bg-body-light">
+            <div class="content py-3">
+                <div class="row font-size-sm">
+                    <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
+                        Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">pixelcave</a>
+                    </div>
+                    <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
+                        <a class="font-w600" href="https://1.envato.market/xWy" target="_blank">OneUI 4.2</a> &copy; <span data-toggle="year-copy"></span>
+                    </div>
+                </div>
+            </div>
+        </footer>*@
+        <!-- END Footer -->
+        <!-- Apps Modal -->
+        <!-- Opens from the modal toggle button in the header -->
+        <div class="modal fade" id="one-modal-apps" tabindex="-1" role="dialog" aria-labelledby="one-modal-apps" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-top modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent mb-0">
+                        <div class="block-header bg-primary-dark">
+                            <h3 class="block-title">Apps</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                    <i class="si si-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="block-content block-content-full">
+                            <div class="row gutters-tiny">
+                                <div class="col-6">
+                                    <!-- CRM -->
+                                    <a class="block block-rounded block-themed bg-default" href="javascript:void(0)">
+                                        <div class="block-content text-center">
+                                            <i class="si si-speedometer fa-2x text-white-75"></i>
+                                            <p class="font-w600 font-size-sm text-white mt-2 mb-3">
+                                                CRM
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- END CRM -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Products -->
+                                    <a class="block block-rounded block-themed bg-danger" href="javascript:void(0)">
+                                        <div class="block-content text-center">
+                                            <i class="si si-rocket fa-2x text-white-75"></i>
+                                            <p class="font-w600 font-size-sm text-white mt-2 mb-3">
+                                                Products
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- END Products -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Sales -->
+                                    <a class="block block-rounded block-themed bg-success mb-0" href="javascript:void(0)">
+                                        <div class="block-content text-center">
+                                            <i class="si si-plane fa-2x text-white-75"></i>
+                                            <p class="font-w600 font-size-sm text-white mt-2 mb-3">
+                                                Sales
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- END Sales -->
+                                </div>
+                                <div class="col-6">
+                                    <!-- Payments -->
+                                    <a class="block block-rounded block-themed bg-warning mb-0" href="javascript:void(0)">
+                                        <div class="block-content text-center">
+                                            <i class="si si-wallet fa-2x text-white-75"></i>
+                                            <p class="font-w600 font-size-sm text-white mt-2 mb-3">
+                                                Payments
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <!-- END Payments -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <!-- END Apps Modal -->
+    </div>
 
-    <environment names="Development">
-        <script src="~/lib/json2/json2.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery/dist/jquery.js" asp-append-version="true"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.js" asp-append-version="true"></script>
-        <script src="~/lib/moment/min/moment-with-locales.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery-validation/dist/jquery.validate.js" asp-append-version="true"></script>
-        <script src="~/lib/blockUI/jquery.blockUI.js" asp-append-version="true"></script>
-        <script src="~/lib/toastr/toastr.js" asp-append-version="true"></script>
-        <script src="~/lib/sweetalert/dist/sweetalert.min.js" asp-append-version="true"></script>
-        <script src="~/lib/spin.js/spin.js" asp-append-version="true"></script>
-        <script src="~/lib/spin.js/jquery.spin.js" asp-append-version="true"></script>
-        <script src="~/lib/bootstrap-select/dist/js/bootstrap-select.js" asp-append-version="true"></script>
-        <script src="~/lib/jquery-slimscroll/jquery.slimscroll.js" asp-append-version="true"></script>
-        <script src="~/lib/Waves/dist/waves.js" asp-append-version="true"></script>
-        <script src="~/lib/push.js/push.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/abp.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js" asp-append-version="true"></script>
-        <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js" asp-append-version="true"></script>
-        <script src="~/js/admin.js" asp-append-version="true"></script>
-        <script src="~/js/main.js" asp-append-version="true"></script>
-        <script src="~/view-resources/Views/Shared/_Layout.js" asp-append-version="true"></script>
 
-        @if (CultureInfo.CurrentUICulture.Name != "en")
-        {
-            <script src="~/lib/jquery-validation/src/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>
-        }
-    </environment>
 
-    <environment names="Staging,Production">
-        <script src="~/view-resources/Views/_Bundles/shared-layout.min.js" asp-append-version="true"></script>
-    </environment>
 
-    <script>
-    // Localizing momentjs
-    moment.locale('@CultureInfo.CurrentUICulture.Name');
-    </script>
 
+    @*<div class="wrapper">
+            <header class="main-header">
+                <a href="/" class="logo">
+                    <span class="logo-mini"><b>K</b>Bets</span>
+                    <span class="logo-lg"><b>Console</b> Manager</span>
+                </a>
+                <nav class="navbar navbar-static-top">
+                    <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <div class="navbar-custom-menu">
+                        <ul class="nav navbar-nav">
+                            @await Component.InvokeAsync(typeof(TopBarLanguageSwitchViewComponent))
+                            @await Component.InvokeAsync(typeof(TopBarUserMenuViewComponent))
+                            <li>
+                                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <aside class="main-sidebar">
+                <section class="sidebar">
+                    <form action="#" method="get" class="sidebar-form">
+                        <div class="input-group">
+                            <input type="text" name="q" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
+
+                </section>
+            </aside>
+            <div class="content-wrapper">
+                @RenderBody()
+            </div>
+            <footer class="main-footer">
+                <div class="pull-right hidden-xs">
+                    <b>@L("Version")</b> @AppVersionHelper.Version [@AppVersionHelper.ReleaseDate.ToString("yyyyMMdd")]
+                </div>
+                <strong>Copyright &copy; @DateTime.Now.Year <a href="javascript:void(0);">AbpProjectName</a></strong>
+            </footer>
+            @await Component.InvokeAsync(typeof(ControlSidebarViewComponent))
+        </div>*@
+
+
+
+
+
+
+
+
+
+    <script src="./oneui/src/assets/js/oneui.core.min.js"></script>
+    <script src="./oneui/src/assets/js/oneui.app.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <script src="~/lib/jquery-validate/jquery.validate-v1.17.0/jquery.validate.js" asp-append-version="true"></script>
+
+    @if (CultureInfo.CurrentUICulture.Name != "en")
+    {
+        <script src="~/lib/jquery-validate/jquery.validate-v1.17.0/localization/messages_@Html.Raw(CultureInfo.CurrentUICulture.Name.Replace("-", "_") + ".js")" asp-append-version="true"></script>
+    }
+    <script src="~/lib/jquery-validate/jquery.validate.unobtrusive-v3.2.10/jquery.validate.unobtrusive.js" asp-append-version="true"></script>
+    <script src="~/lib/moment/min/moment-with-locales.js" asp-append-version="true"></script>
+    <script src="~/lib/blockUI/jquery.blockUI.js" asp-append-version="true"></script><!-- abp.ui dep -->
+    <script src="~/lib/toastr/toastr.js" asp-append-version="true"></script><!-- abp.notify dep -->
+    <script src="~/lib/sweetalert/dist/sweetalert.min.js" asp-append-version="true"></script><!-- abp.message dep -->
+    <script src="~/lib/spin.js/spin.js" asp-append-version="true"></script><!-- abp.ui dep -->
+    <script src="~/lib/spin.js/jquery.spin.js" asp-append-version="true"></script><!-- abp.ui dep -->
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/abp.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.jquery.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.toastr.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.blockUI.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.spin.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.sweet-alert.js" asp-append-version="true"></script>
+    <script src="~/lib/signalr-client/signalr.min.js" asp-append-version="true"></script>
+    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js" asp-append-version="true"></script>
     <!-- Dynamic scripts of ABP system (They are created on runtime and can not be bundled) -->
     <script src="~/AbpServiceProxies/GetAll?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
     <script src="~/AbpScripts/GetScripts?v=@(AppTimes.StartupTime.Ticks)" type="text/javascript"></script>
+    <script src="~/js/scripts.js" asp-append-version="true"></script>
 
-    <script src="~/lib/signalr-client/signalr.min.js" asp-append-version="true"></script>
-    <script src="~/lib/abp-web-resources/Abp/Framework/scripts/libs/abp.signalr-client.js" asp-append-version="true"></script>
+
+
+    <script src="./oneui/src/assets/js/plugins/bootstrap-notify/bootstrap-notify.min.js"></script>
+    <script>jQuery(function () { One.helpers('notify'); });</script>
+
+
+
+
+
+    <script>
+    // Localizing momentjs
+    //moment.locale('@CultureInfo.CurrentUICulture.Name');
+
+    //$(document).ready(function () {
+    //    $('.sidebar-menu').tree();
+    //});
+    </script>
 
     @WebResourceManager.RenderScripts()
-
-    <!-- View specific scripts -->
     @RenderSection("scripts", required: false)
+
+
+    <script src="./oneui/src/assets/js/custom.js"></script>
 </body>
 </html>

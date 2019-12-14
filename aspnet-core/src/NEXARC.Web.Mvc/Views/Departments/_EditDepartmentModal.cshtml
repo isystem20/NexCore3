@@ -1,0 +1,59 @@
+@using NEXARC.Web.Models.Common.Modals
+@model NEXARC.Web.Models.Departments.EditDepartmentModalViewModel
+@{
+    Layout = null;
+}
+
+@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditDepartment")))
+<form name="DepartmentEditForm" role="form" class="form-horizontal form-validation go-bottom customform">
+    <div class="modal-body">
+        <input type="hidden" name="Id" value="@Model.Department.Id" />
+        <div class="block mb0">
+            <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#general">General</a>
+                </li>
+
+                @*<li class="nav-item ml-auto">
+                    <a class="nav-link" href="#btabs-alt-static-settings"><i class="si si-settings"></i></a>
+                </li>*@
+            </ul>
+            <div class="block-content tab-content">
+                <div class="tab-pane active" id="btabs-alt-static-home" role="tabpanel">
+                    <div class="form-group">
+                        <label for="Code">@L("Code")</label>
+                        <input required id="Code" class="form-control form-control-sm"
+                               name="Code" placeholder="@L("Code")"
+                               value="@Model.Department.Code">
+                    </div>
+                    <div class="form-group">
+                        <label for="Name">@L("Name")</label>
+                        <input required id="Name" class="form-control form-control-sm"
+                               name="Name" placeholder="@L("Name")" value="@Model.Department.Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Description">@L("Description")</label>
+                        <textarea class="form-control form-control-sm"
+                                  id="Description" name="Description" rows="3"
+                                  placeholder="@L("Description")"
+                                  value="@Model.Department.Description">@Model.Department.Description</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="Status">@L("Status")</label>
+                        <select id="Status" name="Status" asp-items="ViewBag.Status"
+                                class="form-control form-control-sm" asp-for="@Model.Department.Status"></select>
+                    </div>
+                </div>
+                @*<div class="tab-pane" id="btabs-alt-static-settings" role="tabpanel">
+                    <h4 class="font-w400">Settings Content</h4>
+                    <p>...</p>
+                </div>*@
+            </div>
+        </div>
+
+    </div>
+    @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+</form>
+
+
+<script src="~/view-resources/Views/Departments/_EditDepartmentModal.js" asp-append-version="true"></script>
