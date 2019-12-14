@@ -1,0 +1,13 @@
+﻿.group-title {
+    margin-top: 10px;
+    border-bottom: 1px solid #d6d9dc;
+}
+
+    .group-title h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 5px;
+        color: gray;
+    }
+
+.form-group label {
+    font-weight: 400 !important;
+}
