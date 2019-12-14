@@ -47,17 +47,17 @@ namespace NEXARC.NexEmployee.Dto
 
         //USE IN HR
         //[Required]
-        public int Company { get; set; }
-        public int Site { get; set; }
-        public int Employee { get; set; }
-        public int Division { get; set; }
-        public int Department { get; set; }
-        public int Section { get; set; }
-        public int CostCenter { get; set; }
-        public int Position { get; set; }
-        public int EmploymentType { get; set; }
-        public int Rank { get; set; }
-        public int Group { get; set; }
+        //public int Company { get; set; }
+        public int SiteId { get; set; }
+        public int EmployeeId { get; set; }
+        public int DivisionId { get; set; }
+        public int DepartmentId { get; set; }
+        public int SectionId { get; set; }
+        public int CostCenterId { get; set; }
+        public int PositionId { get; set; }
+        public int EmploymentTypeId { get; set; }
+        public int RankId { get; set; }
+        public int GroupId { get; set; }
         public RecordStatus StateStatus { get; set; } //Double Check
 
     }

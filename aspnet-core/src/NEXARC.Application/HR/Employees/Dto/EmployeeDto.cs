@@ -43,13 +43,13 @@ namespace NEXARC.NexEmployee.Dto
 
 
         public CivilStatus CivilStatus { get; set; }
-        public int Nationality { get; set; }
-        public int Company { get; set; }
-        public int Barangay { get; set; }
-        public int Municipality { get; set; }
-        public int City { get; set; }
-        public int Province { get; set; }
-        public int Region { get; set; }
+        public int NationalityId { get; set; }
+        //public int Company { get; set; }
+        public int BarangayId { get; set; }
+        public int MunicipalityId { get; set; }
+        public int CityId { get; set; }
+        public int ProvinceId { get; set; }
+        public int RegionId { get; set; }
 
         public EmployeeState CurrentState { get; set; }
 

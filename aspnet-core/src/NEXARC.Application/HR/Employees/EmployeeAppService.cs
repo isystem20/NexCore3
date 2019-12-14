@@ -47,7 +47,10 @@ namespace NEXARC.HR.Employees
             {
                 var result = Repository.GetAllIncluding(x => x.EmployeeStates)
                     .WhereIf(!input.Keyword.IsNullOrWhiteSpace(), x => x.FirstName.Contains(input.Keyword))
-                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status);
+                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status)
+                    
+                    
+                    ;
                 return result;
             }
             catch (Exception e)
@@ -70,22 +73,40 @@ namespace NEXARC.HR.Employees
         [AbpAuthorize("HR.Employee.Create")]
         public override async Task<EmployeeDto> CreateAsync(CreateEmployeeDto input)
         {
-            var entity = MapToEntity(input);
-
-            var empId = await Repository.InsertAndGetIdAsync(entity);
-
-            var empState = new EmployeeState
+            try
             {
-                EffectivityDate = DateTime.Now.Date,
-                EmployeeId = empId,
-                DepartmentId = input.Department
-            };
+                var entity = MapToEntity(input);
 
-            await _employeeState.InsertAsync(empState);
+                var empId = await Repository.InsertAndGetIdAsync(entity);
 
-            await CurrentUnitOfWork.SaveChangesAsync();
+                var empState = new EmployeeState
+                {
+                    EffectivityDate = DateTime.Now.Date,
+                    EmployeeId = empId,
+                    SiteId = input.SiteId,
+                    DivisionId = input.DivisionId,
+                    DepartmentId = input.DepartmentId,
+                    SectionId = input.SectionId,
+                    CostCenterId = input.CostCenterId,
+                    PositionId = input.PositionId,
+                    EmploymentTypeId = input.EmploymentTypeId,
+                    RankId = input.RankId,
+                    GroupId = input.GroupId
+                    
+                };
 
-            return MapToEntityDto(entity);
+                await _employeeState.InsertAsync(empState);
+
+                await CurrentUnitOfWork.SaveChangesAsync();
+
+                return MapToEntityDto(entity);
+            }
+            catch (Exception e)
+            {
+
+                throw new UserFriendlyException(e.Message);
+            }
+
 
         }
 
