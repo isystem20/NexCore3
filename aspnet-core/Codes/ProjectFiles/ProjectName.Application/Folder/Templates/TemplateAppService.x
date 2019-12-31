@@ -12,10 +12,11 @@ using System.Threading.Tasks;
 using Abp.Linq.Extensions;
 using Abp.Runtime.Session;
 using Abp.UI;
+using NEXARC.Common.Dto;
 
 namespace {{Project}}.Nex{{EntityPlural}}
 {
-    [AbpAuthorize(PermissionNames.Pages_{{EntityPlural}})]
+    [AbpAuthorize("{{Permission}}.{{Entity}}")]
     public class {{Entity}}AppService : AsyncCrudAppService<{{Entity}}, {{Entity}}Dto, int, Paged{{Entity}}ResultRequestDto, Create{{Entity}}Dto, Update{{Entity}}Dto>, I{{Entity}}AppService
     {
         private readonly IAbpSession _abpSession;
@@ -28,7 +29,7 @@ namespace {{Project}}.Nex{{EntityPlural}}
             _abpSession = abpSession;
         }
 
-        [AbpAuthorize("{{Entity}}.Read")]
+        [AbpAuthorize("{{Permission}}.{{Entity}}.Read")]
         protected override IQueryable<{{Entity}}> CreateFilteredQuery(Paged{{Entity}}ResultRequestDto input)
         {
             return Repository.GetAll()
@@ -36,8 +37,8 @@ namespace {{Project}}.Nex{{EntityPlural}}
                 .WhereIf(input.Status.HasValue, x => x.Status == input.Status);
         }
 
-        [AbpAuthorize("{{Entity}}.Create")]
-        public override async Task<{{Entity}}Dto> Create(Create{{Entity}}Dto input)
+        [AbpAuthorize("{{Permission}}.{{Entity}}.Create")]
+        public override async Task<{{Entity}}Dto> CreateAsync(Create{{Entity}}Dto input)
         {
             try
             {
@@ -56,8 +57,8 @@ namespace {{Project}}.Nex{{EntityPlural}}
 
         }
 
-        [AbpAuthorize("{{Entity}}.Update")]
-        public override async Task<{{Entity}}Dto> Update(Update{{Entity}}Dto input)
+        [AbpAuthorize("{{Permission}}.{{Entity}}.Update")]
+        public override async Task<{{Entity}}Dto> UpdateAsync(Update{{Entity}}Dto input)
         {
             var entity = await GetEntityByIdAsync(input.Id);
 
@@ -66,15 +67,27 @@ namespace {{Project}}.Nex{{EntityPlural}}
 
             return MapToEntityDto(entity);
         }
-        [AbpAuthorize("{{Entity}}.Delete")]
-        public override async Task Delete(EntityDto<int> input)
+        [AbpAuthorize("{{Permission}}.{{Entity}}.Delete")]
+        public override async Task DeleteAsync(EntityDto<int> input)
         {
             var record = await _{{EntityLower}}.FirstOrDefaultAsync(input.Id);
 
             await _{{EntityLower}}.DeleteAsync(record);
         }
 
-        [AbpAuthorize("{{Entity}}.Read")]
+
+		[AbpAuthorize("{{Permission}}.{{Entity}}.Delete")]
+        public async Task DeleteMultipleAsync(MultipleId input)
+        {
+            foreach (var item in input.Id)
+            {
+                var record = await _{{EntityLower}}.FirstOrDefaultAsync(item);
+
+                await _{{EntityLower}}.DeleteAsync(record);
+            }
+        }
+
+        [AbpAuthorize("{{Permission}}.{{Entity}}.Read")]
         protected override async Task<{{Entity}}> GetEntityByIdAsync(int id)
         {
             return await Repository.GetAsync(id);

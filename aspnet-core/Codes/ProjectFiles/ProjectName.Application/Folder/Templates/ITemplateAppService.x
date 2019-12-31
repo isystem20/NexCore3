@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace {{Project}}.{{EntityPlural}}
+namespace {{Project}}.Nex{{EntityPlural}}
 {
     public interface I{{Entity}}AppService : IAsyncCrudAppService<{{Entity}}Dto, int, Paged{{Entity}}ResultRequestDto, Create{{Entity}}Dto, Update{{Entity}}Dto>
     {

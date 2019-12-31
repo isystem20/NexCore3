@@ -2,19 +2,19 @@
 using Abp.UI;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using NEXARC.Controllers;
-using NEXARC.Domain.Enumerations;
-using NEXARC.HR.Departments;
-using NEXARC.NexDepartment.Dto;
-using NEXARC.Web.Helpers;
-using NEXARC.Web.Models.Departments;
+using {{Project}}.Controllers;
+using {{Project}}.Domain.Enumerations;
+using {{Project}}.Nex{{EntityPlural}};
+using {{Project}}.Nex{{EntityPlural}}.Dto;
+using {{Project}}.Web.Helpers;
+using {{Project}}.Web.Models.{{EntityPlural}};
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NEXARC.Web.Controllers.{{Folder}}
+namespace {{Project}}.Web.Controllers.{{Folder}}
 {
     public class {{EntityPlural}}Controller : NEXARCControllerBase
     {
@@ -31,10 +31,10 @@ namespace NEXARC.Web.Controllers.{{Folder}}
 
         public async Task<ActionResult> Index()
         {
-            var notice = (await _{{EntityLower}}AppService.GetAllAsync(new Paged{{Entity}}ResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
+            var {{EntityLower}} = (await _{{EntityLower}}AppService.GetAllAsync(new Paged{{Entity}}ResultRequestDto { MaxResultCount = int.MaxValue })).Items; // Paging not implemented yet
             var model = new {{Entity}}ListViewModel
             {
-                Departments = notice,
+                {{EntityPlural}} = {{EntityLower}},
             };
 
             ViewBag.Status = _pairedItemListing.EnumToSelectList(new RecordStatus());
@@ -48,10 +48,10 @@ namespace NEXARC.Web.Controllers.{{Folder}}
         public async Task<ActionResult> Edit{{Entity}}Modal(int id)
         {
 
-            var notice = await _{{EntityLower}}AppService.GetAsync(new EntityDto<int>(id));
+            var {{EntityLower}} = await _{{EntityLower}}AppService.GetAsync(new EntityDto<int>(id));
             var model = new Edit{{Entity}}ModalViewModel
             {
-                {{Entity}} = notice,
+                {{Entity}} = {{EntityLower}},
             };
 
             ViewBag.Status = _pairedItemListing.EnumToSelectList(new RecordStatus());

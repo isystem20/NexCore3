@@ -1,4 +1,4 @@
-﻿using Abp.Application.Navigation;
+using Abp.Application.Navigation;
 using Abp.Localization;
 using NEXARC.Authorization;
 
@@ -341,7 +341,21 @@ namespace NEXARC.Web.Startup
                         url: "EmployeeHandbook",
                         icon: "fa-info-circle"
                     )
-                );
+                )
+               .AddItem(new MenuItemDefinition(PageNames.Cities, L("Cities"), url: "Cities", icon: "fa-black-tie",
+                        requiredPermissionName: "HR.City.Read"))
+
+				.AddItem(new MenuItemDefinition(PageNames.Divisions,L("Divisions"),url: "Divisions",icon: "fa-black-tie",
+						requiredPermissionName: "HR.Division.Read"))
+
+				.AddItem(new MenuItemDefinition(PageNames.Positions,L("Positions"),url: "Positions",icon: "fa-black-tie",
+						requiredPermissionName: "HR.Position.Read"))
+
+				.AddItem(new MenuItemDefinition(PageNames.Ranks,L("Ranks"),url: "Ranks",icon: "fa-black-tie",
+						requiredPermissionName: "HR.Rank.Read"))
+
+
+                ;
         }
 
         private static ILocalizableString L(string name)

@@ -1,0 +1,46 @@
+@using NEXARC.Web.Models.Common.Modals
+@model NEXARC.Web.Models.Positions.EditPositionModalViewModel
+@{
+    Layout = null;
+}
+
+@await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("EditPosition")))
+<form name="PositionEditForm" role="form" class="form-horizontal form-validation go-bottom customform">
+    <div class="modal-body">
+        <input type="hidden" name="Id" value="@Model.Position.Id" />
+        <div class="block mb0">
+            <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#general">General</a>
+                </li>
+            </ul>
+            <div class="block-content tab-content">
+                <div class="tab-pane active" id="btabs-alt-static-home" role="tabpanel">
+                <div class="form-group">
+                    <label for="Code">Code</label>
+                    <input required="true" id="Code" class="form-control form-control-sm"
+                            name="Code" placeholder="Code"
+                            value="@Model.Position.Code" />
+                </div>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input required="true" id="Name" class="form-control form-control-sm"
+                            name="Name" placeholder="Name"
+                            value="@Model.Position.Name" />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <input required="true" id="Description" class="form-control form-control-sm"
+                            name="Description" placeholder="Description"
+                            value="@Model.Position.Description" />
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+</form>
+
+
+<script src="~/view-resources/Views/Positions/_EditPositionModal.js" asp-append-version="true"></script>

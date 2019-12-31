@@ -9,5 +9,8 @@
         public const string Pages_Roles = "Pages.Roles";
         public const string Pages_Departments = "Pages.Departments";
         public const string Pages_Employees = "Pages.Employees";
+        public const string Pages_Cities = "Pages.Cities";
+
+
     }
 }

@@ -4,6 +4,6 @@ namespace NEXARC.Web.Models.{{EntityPlural}}
 {
     public class Edit{{Entity}}ModalViewModel
     {
-        public {{Entity}}Dto {{EntityPlural}} { get; set; }
+        public {{Entity}}Dto {{Entity}} { get; set; }
     }
 }

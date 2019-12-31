@@ -116,14 +116,13 @@
                         One.loader('show')
                         if (Array.isArray(cityId)) {
                             var complete = 0;
-                            cityId.forEach(function (recordId) {
-                                cityService.delete({
-                                    id: recordId
-                                }).done(function () {
-                                    complete = complete + 1;
-                                });
+                            // console.log(cityId);
+   
+                            cityService.deleteMultiple({
+                                id: cityId
+                            }).done(function () {
+                                refreshCityList();
                             });
-                            refreshCityList();
                             One.loader('hide')
                         }
                         else {

@@ -114,16 +114,13 @@
                 function (isConfirmed) {
                     if (isConfirmed) {
                         One.loader('show')
-                        if (Array.isArray(departmentId)) {
-                            var complete = 0;
-                            departmentId.forEach(function (recordId) {
-                                departmentService.delete({
-                                    id: recordId
-                                }).done(function () {
-                                    complete = complete + 1;
-                                });
+                        if (isMultiple) {
+                            departmentService.deleteMultiple({
+                                id: departmentId
+                            }).done(function () {
+                                refreshDepartmentList();
                             });
-                            refreshDepartmentList();
+                            
                             One.loader('hide')
                         }
                         else {

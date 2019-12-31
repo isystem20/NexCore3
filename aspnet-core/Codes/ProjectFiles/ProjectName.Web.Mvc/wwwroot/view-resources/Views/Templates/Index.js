@@ -115,15 +115,11 @@
                     if (isConfirmed) {
                         One.loader('show')
                         if (Array.isArray({{EntityLower}}Id)) {
-                            var complete = 0;
-                            {{EntityLower}}Id.forEach(function (recordId) {
-                                {{EntityLower}}Service.delete({
-                                    id: recordId
-                                }).done(function () {
-                                    complete = complete + 1;
-                                });
+                            {{EntityLower}}Service.deleteMultiple({
+                                id: {{EntityLower}}Id
+                            }).done(function () {
+                                refreshCityList();
                             });
-                            refresh{{Entity}}List();
                             One.loader('hide')
                         }
                         else {
