@@ -1,0 +1,1 @@
+﻿                        <th class="font-size-sm d-none d-sm-table-cell">@L("{{PropertyName}}")</th>

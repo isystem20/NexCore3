@@ -17,6 +17,7 @@ using Abp.UI;
 using NEXARC.Domain.Enumerations;
 using Abp.Domain.Uow;
 using NEXARC.HR.Employees.Dto;
+using Microsoft.EntityFrameworkCore;
 
 namespace NEXARC.HR.Employees
 {
@@ -42,17 +43,21 @@ namespace NEXARC.HR.Employees
         [AbpAuthorize("HR.Employee.Read")]
         protected override IQueryable<Employee> CreateFilteredQuery(PagedEmployeeResultRequestDto input)
         {
-
+            //.Where(
+            //            w => w.EffectivityDate <= DateTime.Now)
+            //        .OrderByDescending(ds => ds.EffectivityDate)
+            //        .Take(1)
             try
             {
-                var result = Repository.GetAllIncluding(
-                    x => x.EmployeeStates.Where(
-                        w => w.EffectivityDate <= DateTime.Now)
-                    .OrderByDescending(ds => ds.EffectivityDate)
-                    .Take(1))
+                var result = Repository.GetAll().Include(x => x.EmployeeStates)
                     .WhereIf(!input.Keyword.IsNullOrWhiteSpace(), x => x.FirstName.Contains(input.Keyword))
-                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status)                   
-                    ;
+                    .WhereIf(input.Status.HasValue, x => x.Status == input.Status)
+                    .Select(e => new
+                    {
+                        Employee = e,
+                        EmployeeState = e.EmployeeStates.Where(w => w.EffectivityDate <= DateTime.Now).OrderByDescending(d => d.EffectivityDate).Take(1)
+                    }).AsQueryable()
+                    .Select(cp => cp.Employee);
                 return result;
             }
             catch (Exception e)
@@ -64,8 +69,8 @@ namespace NEXARC.HR.Employees
         protected override EmployeeDto MapToEntityDto(Employee emp)
         {
             var employeeState = _employeeState.GetAll()
-                .Where(e => e.EffectivityDate <= DateTime.Now && e.EmployeeId == emp.Id)
-                .OrderByDescending(o => o.EffectivityDate).SingleOrDefault();
+                .Where(w => w.EffectivityDate <= DateTime.Now).OrderByDescending(d => d.EffectivityDate).Take(1).SingleOrDefault();
+
             var empDto = base.MapToEntityDto(emp);
             //var currentState = ObjectMapper.Map<EmployeeStateDto>(employeeState);
             empDto.CurrentState = employeeState;
