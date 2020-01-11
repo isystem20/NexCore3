@@ -58,6 +58,8 @@ namespace NEXARC.Web.Startup
 
             services.AddSignalR();
 
+            services.AddMvc().AddRazorRuntimeCompilation();
+
             // Configure Abp and Dependency Injection
             return services.AddAbp<NEXARCWebMvcModule>(
                 // Configure Log4Net logging

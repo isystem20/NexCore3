@@ -158,7 +158,7 @@
                                 @employee.FirstName
                             </td>
                             <td class="font-size-sm">
-                                @employee.CurrentState.Department.Name
+                                @*@employee.CurrentState.Department.Name*@
                             </td>
                             <td class="font-size-sm">
                                 <span class="badge badge-@employee.Status.GetDescription()"> @employee.Status</span>
@@ -334,53 +334,60 @@
                                                            type="text" name="Code" placeholder="@L("Code")"
                                                            autocomplete="off">
                                                 </div>
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="HiredDate">@L("HiredDate")</label> -->
-                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
-                                                <!-- id="HiredDate" name="HiredDate" -->
-                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
-                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
-                                                <!-- autocomplete="off"> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="ContractStartDate">@L("ContractStartDate")</label> -->
-                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
-                                                <!-- id="ContractStartDate" name="ContractStartDate" -->
-                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
-                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
-                                                <!-- autocomplete="off"> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="ResignationDate">@L("ResignationDate")</label> -->
-                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
-                                                <!-- id="ResignationDate" name="ResignationDate" -->
-                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
-                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
-                                                <!-- autocomplete="off"> -->
-                                                <!-- </div> -->
+                                                 <div class="form-group"> 
+                                                     <label for="HiredDate">@L("HiredDate")</label> 
+                                                     <input type="text" class="form-control form-control-sm js-datepicker" 
+                                                     id="HiredDate" name="HiredDate" 
+                                                     data-week-start="1" data-autoclose="true" data-today-highlight="true" 
+                                                     data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" 
+                                                     autocomplete="off"> 
+                                                 </div> 
+                                                 <div class="form-group"> 
+                                                     <label for="ContractStartDate">@L("ContractStartDate")</label> 
+                                                     <input type="text" class="form-control form-control-sm js-datepicker" 
+                                                     id="ContractStartDate" name="ContractStartDate" 
+                                                     data-week-start="1" data-autoclose="true" data-today-highlight="true" 
+                                                     data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" 
+                                                     autocomplete="off"> 
+                                                 </div> 
+                                                 <div class="form-group"> 
+                                                     <label for="ResignationDate">@L("ResignationDate")</label> 
+                                                     <input type="text" class="form-control form-control-sm js-datepicker" 
+                                                     id="ResignationDate" name="ResignationDate" 
+                                                     data-week-start="1" data-autoclose="true" data-today-highlight="true" 
+                                                     data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" 
+                                                     autocomplete="off"> 
+                                                 </div> 
                                             </div>
                                             <div class="col-sm-6">
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="Status">@L("Status")</label> -->
-                                                <!-- <select id="Status" name="Status" asp-items="ViewBag.Status" -->
-                                                <!-- class="form-control form-control-sm"></select> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="RegularDate">@L("RegularDate")</label> -->
-                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
-                                                <!-- id="RegularDate" name="RegularDate" -->
-                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
-                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
-                                                <!-- autocomplete="off"> -->
-                                                <!-- </div> -->
-                                                <!-- <div class="form-group"> -->
-                                                <!-- <label for="ContractEndDate">@L("ContractEndDate")</label> -->
-                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
-                                                <!-- id="ContractEndDate" name="ContractEndDate" -->
-                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
-                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
-                                                <!-- autocomplete="off"> -->
-                                                <!-- </div> -->
+                                                <div class="form-group">
+                                                    <label for="Status">@L("Status")</label>
+                                                    <select id="Status" name="Status" asp-items="ViewBag.Status" class="form-control form-control-sm"></select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="EffectivityDate">@L("EffectivityDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="EffectivityDate" name="EffectivityDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="RegularDate">@L("RegularDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="RegularDate" name="RegularDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="ContractEndDate">@L("ContractEndDate")</label>
+                                                    <input type="text" class="form-control form-control-sm js-datepicker"
+                                                           id="ContractEndDate" name="ContractEndDate"
+                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
+                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
+                                                           autocomplete="off">
+                                                </div>
                                             </div>
                                         </div>
 
@@ -388,58 +395,58 @@
                                             <h3 class="font-w400">Organization</h3>
                                         </div>
                                         <br />
-                                        <!-- <div class="container row col-sm-12"> -->
-                                        <!-- <div class="col-sm-6"> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Company">@L("Company")</label> -->
-                                        <!-- <select id="Company" name="CompanyId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Division">@L("Division")</label> -->
-                                        <!-- <select id="Division" name="DivisionId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Department">@L("Department")</label> -->
-                                        <!-- <select id="Department" name="DepartmentId" asp-items="ViewBag.Departments" -->
-                                        <!-- class="form-control form-control-sm"> -->
-                                        <!-- </select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Position">@L("Position")</label> -->
-                                        <!-- <select id="Position" name="PositionId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Group">@L("Group")</label> -->
-                                        <!-- <select id="Group" name="GroupId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="col-sm-6"> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Site">@L("Site")</label> -->
-                                        <!-- <select id="Site" name="SiteId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Section">@L("Section")</label> -->
-                                        <!-- <select id="Section" name="SectionId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="Rank">@L("Rank")</label> -->
-                                        <!-- <select id="Rank" name="RankId" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- <div class="form-group"> -->
-                                        <!-- <label for="CostCenter">@L("CostCenter")</label> -->
-                                        <!-- <select id="CostCenter" name="CostCenterid" asp-items="ViewBag.Status" -->
-                                        <!-- class="form-control form-control-sm"></select> -->
-                                        <!-- </div> -->
-                                        <!-- </div> -->
-                                        <!-- </div> -->
+                                         <div class="container row col-sm-12"> 
+                                         <div class="col-sm-6"> 
+                                             <div class="form-group"> 
+                                             <label for="Company">@L("Company")</label> 
+                                             <select id="Company" name="CompanyId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="Division">@L("Division")</label> 
+                                             <select id="Division" name="DivisionId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="Department">@L("Department")</label> 
+                                             <select id="Department" name="DepartmentId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"> 
+                                         </select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="Position">@L("Position")</label> 
+                                             <select id="Position" name="PositionId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                         <label for="Group">@L("Group")</label> 
+                                         <select id="Group" name="GroupId" asp-items="ViewBag.Status" 
+                                         class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         </div> 
+                                         <div class="col-sm-6"> 
+                                         <div class="form-group"> 
+                                             <label for="Site">@L("Site")</label> 
+                                             <select id="Site" name="SiteId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="Section">@L("Section")</label> 
+                                             <select id="Section" name="SectionId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="Rank">@L("Rank")</label> 
+                                             <select id="Rank" name="RankId" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         <div class="form-group"> 
+                                             <label for="CostCenter">@L("CostCenter")</label> 
+                                             <select id="CostCenter" name="CostCenterid" asp-items="ViewBag.Status" 
+                                             class="form-control form-control-sm"></select> 
+                                         </div> 
+                                         </div> 
+                                         </div> 
                                     </div>
 
                                     <div class="tab-pane" id="education" role="tabpanel" style="min-height: 300px;">

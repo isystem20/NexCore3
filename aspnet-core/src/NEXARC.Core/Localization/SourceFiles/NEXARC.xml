@@ -183,6 +183,7 @@
     <text name="Sites">Sites</text>
     <text name="Supplimentary">Supplimentary</text>
     <text name="Teams">Teams</text>
+    <text name="EffectivityDate">Effectivity Date</text>
     
   </texts>
 </localizationDictionary>
