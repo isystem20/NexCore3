@@ -5,6 +5,7 @@
 @using NEXARC.Extensions;
 @using System.Collections.Generic;
 @model NEXARC.Web.Models.Employees.EmployeeListViewModel
+
 @{
     ViewBag.Title = L("Employees");
     ViewBag.CurrentPageName = PageNames.Employees;
@@ -157,7 +158,6 @@
                                 @employee.FirstName
                             </td>
                             <td class="font-size-sm">
-                                @*@ViewBag.Departments[employee.CurrentState.DepartmentId.ToString()]*@
                                 @employee.CurrentState.Department.Name
                             </td>
                             <td class="font-size-sm">
@@ -187,7 +187,7 @@
                 </div>
                 <div class="container-fluid">
                     <form name="EmployeeCreateForm" role="form" novalidate class="form-horizontal form-validation go-bottom customform">
-                        <div class="modal-body">
+                        <div class="_content modal-body">
                             <div class="block mb0 modal-body-content">
                                 <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
                                     <li class="nav-item">
@@ -211,46 +211,19 @@
                                 </ul>
                                 <div class="block-content tab-content  modal-tab-content">
                                     <div class="tab-pane active" id="personal_details" role="tabpanel">
-                          
                                         <div class="container row col-sm-12">
-
                                             <div class="col-sm-4">
                                                 <div class="form-group">
-                                                    <label for="LastName">@L("LastName")</label>
+                                                    <label for="LastName">@L("FullName")</label>
                                                     <input required id="LastName" class="form-control form-control-sm"
                                                            type="text" name="LastName" placeholder="@L("LastName")"
                                                            autocomplete="off">
                                                 </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <label for="FirstName">@L("FirstName")</label>
-                                                    <input required id="FirstName" class="form-control form-control-sm"
-                                                           type="text" name="FirstName" placeholder="@L("FirstName")"
-                                                           autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="form-group">
-                                                    <label for="MiddleName">@L("MiddleName")</label>
-                                                    <input required id="MiddleName" class="form-control form-control-sm"
-                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
-                                                           autocomplete="off">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-
-
                                                 <div class="form-group">
                                                     <label for="NickName">@L("NickName")</label>
                                                     <input required id="NickName" class="form-control form-control-sm"
                                                            type="text" name="NickName" placeholder="@L("NickName")"
                                                            autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="CivilStatus">@L("CivilStatus")</label>
-                                                    <select id="CivilStatus" name="CivilStatus" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label for="BirthDate">@L("BirthDate")</label>
@@ -261,17 +234,39 @@
                                                            autocomplete="off">
                                                 </div>
                                                 <div class="form-group">
-                                                    <label for="Status">@L("Status")</label>
-                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
+                                                    <label for="CivilStatus">@L("CivilStatus")</label>
+                                                    <select id="CivilStatus" name="CivilStatus" asp-items="ViewBag.CivilStatus"
                                                             class="form-control form-control-sm"></select>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-6">
 
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="FirstName">&nbsp;</label>
+                                                    <input required id="FirstName" class="form-control form-control-sm"
+                                                           type="text" name="FirstName" placeholder="@L("FirstName")"
+                                                           autocomplete="off">
+                                                </div>
                                                 <div class="form-group">
                                                     <label for="Suffix">@L("Suffix")</label>
                                                     <input required id="Suffix" class="form-control form-control-sm"
                                                            type="text" name="Suffix" placeholder="@L("Suffix")"
+                                                           autocomplete="off">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="BirthPlace">@L("BirthPlace")</label>
+                                                    <input required id="BirthPlace" class="form-control form-control-sm"
+                                                           type="text" name="BirthPlace" placeholder="@L("BirthPlace")"
+                                                           autocomplete="off">
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-sm-4">
+                                                <div class="form-group">
+                                                    <label for="MiddleName">&nbsp;</label>
+                                                    <input required id="MiddleName" class="form-control form-control-sm"
+                                                           type="text" name="MiddleName" placeholder="@L("MiddleName")"
                                                            autocomplete="off">
                                                 </div>
                                                 <div class="form-group">
@@ -284,17 +279,11 @@
                                                     <select id="Nationality" name="Nationality" asp-items="ViewBag.Status"
                                                             class="form-control form-control-sm"></select>
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="BirthPlace">@L("BirthPlace")</label>
-                                                    <input required id="BirthPlace" class="form-control form-control-sm"
-                                                           type="text" name="BirthPlace" placeholder="@L("BirthPlace")"
-                                                           autocomplete="off">
-                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="col-sm-12 group-title">
-                                            <h3 class="font-w400">Place</h3>
+                                            <h3 class="font-w400">Location</h3>
                                         </div>
                                         <br />
 
@@ -337,65 +326,61 @@
                                         </div>
                                     </div>
                                     <div class="tab-pane" id="employment" role="tabpanel">
-                                        <div class="col-sm-12 group-title">
-                                            <h3 class="font-w400">General</h3>
-                                        </div>
-                                        <br />
                                         <div class="container row col-sm-12">
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <label for="Code">@L("Code")</label>
+                                                    <label for="Code">@L("EmployeeCode")</label>
                                                     <input required id="Code" class="form-control form-control-sm"
                                                            type="text" name="Code" placeholder="@L("Code")"
                                                            autocomplete="off">
                                                 </div>
-                                                <div class="form-group">
-                                                    <label for="HiredDate">@L("HiredDate")</label>
-                                                    <input type="text" class="form-control form-control-sm js-datepicker"
-                                                           id="HiredDate" name="HiredDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ContractStartDate">@L("ContractStartDate")</label>
-                                                    <input type="text" class="form-control form-control-sm js-datepicker"
-                                                           id="ContractStartDate" name="ContractStartDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ResignationDate">@L("ResignationDate")</label>
-                                                    <input type="text" class="form-control form-control-sm js-datepicker"
-                                                           id="ResignationDate" name="ResignationDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="HiredDate">@L("HiredDate")</label> -->
+                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
+                                                <!-- id="HiredDate" name="HiredDate" -->
+                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
+                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
+                                                <!-- autocomplete="off"> -->
+                                                <!-- </div> -->
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="ContractStartDate">@L("ContractStartDate")</label> -->
+                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
+                                                <!-- id="ContractStartDate" name="ContractStartDate" -->
+                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
+                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
+                                                <!-- autocomplete="off"> -->
+                                                <!-- </div> -->
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="ResignationDate">@L("ResignationDate")</label> -->
+                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
+                                                <!-- id="ResignationDate" name="ResignationDate" -->
+                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
+                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
+                                                <!-- autocomplete="off"> -->
+                                                <!-- </div> -->
                                             </div>
                                             <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="Status">@L("Status")</label>
-                                                    <select id="Status" name="Status" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="RegularDate">@L("RegularDate")</label>
-                                                    <input type="text" class="form-control form-control-sm js-datepicker"
-                                                           id="RegularDate" name="RegularDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="ContractEndDate">@L("ContractEndDate")</label>
-                                                    <input type="text" class="form-control form-control-sm js-datepicker"
-                                                           id="ContractEndDate" name="ContractEndDate"
-                                                           data-week-start="1" data-autoclose="true" data-today-highlight="true"
-                                                           data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy"
-                                                           autocomplete="off">
-                                                </div>
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="Status">@L("Status")</label> -->
+                                                <!-- <select id="Status" name="Status" asp-items="ViewBag.Status" -->
+                                                <!-- class="form-control form-control-sm"></select> -->
+                                                <!-- </div> -->
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="RegularDate">@L("RegularDate")</label> -->
+                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
+                                                <!-- id="RegularDate" name="RegularDate" -->
+                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
+                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
+                                                <!-- autocomplete="off"> -->
+                                                <!-- </div> -->
+                                                <!-- <div class="form-group"> -->
+                                                <!-- <label for="ContractEndDate">@L("ContractEndDate")</label> -->
+                                                <!-- <input type="text" class="form-control form-control-sm js-datepicker" -->
+                                                <!-- id="ContractEndDate" name="ContractEndDate" -->
+                                                <!-- data-week-start="1" data-autoclose="true" data-today-highlight="true" -->
+                                                <!-- data-date-format="mm/dd/yyyy" placeholder="mm/dd/yyyy" -->
+                                                <!-- autocomplete="off"> -->
+                                                <!-- </div> -->
                                             </div>
                                         </div>
 
@@ -403,166 +388,159 @@
                                             <h3 class="font-w400">Organization</h3>
                                         </div>
                                         <br />
-                                        <div class="container row col-sm-12">
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="Company">@L("Company")</label>
-                                                    <select id="Company" name="CompanyId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Division">@L("Division")</label>
-                                                    <select id="Division" name="DivisionId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Department">@L("Department")</label>
-                                                    <select id="Department" name="DepartmentId" asp-items="ViewBag.DepartmentLookUp"
-                                                            class="form-control form-control-sm">
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Position">@L("Position")</label>
-                                                    <select id="Position" name="PositionId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Group">@L("Group")</label>
-                                                    <select id="Group" name="GroupId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <div class="form-group">
-                                                    <label for="Site">@L("Site")</label>
-                                                    <select id="Site" name="SiteId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Section">@L("Section")</label>
-                                                    <select id="Section" name="SectionId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="Rank">@L("Rank")</label>
-                                                    <select id="Rank" name="RankId" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="CostCenter">@L("CostCenter")</label>
-                                                    <select id="CostCenter" name="CostCenterid" asp-items="ViewBag.Status"
-                                                            class="form-control form-control-sm"></select>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <!-- <div class="container row col-sm-12"> -->
+                                        <!-- <div class="col-sm-6"> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Company">@L("Company")</label> -->
+                                        <!-- <select id="Company" name="CompanyId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Division">@L("Division")</label> -->
+                                        <!-- <select id="Division" name="DivisionId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Department">@L("Department")</label> -->
+                                        <!-- <select id="Department" name="DepartmentId" asp-items="ViewBag.Departments" -->
+                                        <!-- class="form-control form-control-sm"> -->
+                                        <!-- </select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Position">@L("Position")</label> -->
+                                        <!-- <select id="Position" name="PositionId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Group">@L("Group")</label> -->
+                                        <!-- <select id="Group" name="GroupId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="col-sm-6"> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Site">@L("Site")</label> -->
+                                        <!-- <select id="Site" name="SiteId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Section">@L("Section")</label> -->
+                                        <!-- <select id="Section" name="SectionId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="Rank">@L("Rank")</label> -->
+                                        <!-- <select id="Rank" name="RankId" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- <div class="form-group"> -->
+                                        <!-- <label for="CostCenter">@L("CostCenter")</label> -->
+                                        <!-- <select id="CostCenter" name="CostCenterid" asp-items="ViewBag.Status" -->
+                                        <!-- class="form-control form-control-sm"></select> -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
                                     </div>
 
                                     <div class="tab-pane" id="education" role="tabpanel" style="min-height: 300px;">
-                                        <h3 class="block-title">
-                                            List of Educational Attainments
-                                        </h3>
-
-                                        <div class="block">
-                                            <div class="dropdown push">
-                                                <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-content-rich-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                    Add
-                                                </button>
-                                                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-content-rich-primary" x-placement="bottom-start"
-                                                     style="width: 100%; padding: 10px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);">
-                                                    <form action="be_blocks_forms.html" method="POST">
-                                                        <div class="block">
-                                                            <div class="block-header block-header-default">
-                                                                <h3 class="block-title">Add Education</h3>
-                                                                <div class="block-options">
-                                                                    <button type="submit" class="btn-block-option">
-                                                                        Submit
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="block-content">
-                                                                <div class="row justify-content-center">
-                                                                    <div class="col-sm-12 col-md-12">
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-4 col-form-label" for="example-hf-email">School</label>
-                                                                            <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="School Name">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-4 col-form-label" for="example-hf-email">Program / Course</label>
-                                                                            <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="Program / Course">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-4 col-form-label" for="EducationalLevel">EducationalLevel</label>
-                                                                            <div class="col-sm-8">
-                                                                                <input type="text" class="form-control" id="EducationalLevel" name="EducationalLevel" placeholder="EducationalLevel">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group row">
-                                                                            <label class="col-sm-4 col-form-label" for="EducationalLevel">Inclusive Dates</label>
-                                                                            <div class="col-sm-4">
-                                                                                <input type="text" class="form-control" id="InclusiveDateFrom" name="InclusiveDateFrom" placeholder="YYYY">
-                                                                            </div>
-                                                                            <div class="col-sm-4">
-                                                                                <input type="text" class="form-control" id="InclusiveDateTo" name="InclusiveDateTo" placeholder="YYYY">
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="form-group">
-                                                                            <div class="custom-control custom-checkbox custom-control-primary">
-                                                                                <input type="checkbox" class="custom-control-input" id="block-form5-remember-me" name="block-form5-remember-me">
-                                                                                <label class="custom-control-label" for="block-form5-remember-me">Graduated?</label>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                    @*<div class="dropdown-divider"></div>
-                                                        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Sign up</a>
-                                                        <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Forgot password?</a>*@
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-
-
-
-                                        @*<h3 class="block-title">Categories</h3>*@
-                                        <table class="table table-striped table-borderless table-vcenter push">
-                                            <thead class="border-bottom">
-                                                <tr>
-                                                    <th colspan="2">Program / Course</th>
-                                                    <th class="d-none d-md-table-cell text-center" style="width: 90px;">Level</th>
-                                                    <th class="d-none d-md-table-cell text-center" style="width: 90px;">Status</th>
-                                                    <th class="d-none d-md-table-cell" style="width: 180px;">Date</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center" style="width: 50px;">
-                                                        <i class="si si-check fa-2x"></i>
-                                                    </td>
-                                                    <td>
-                                                        <a class="font-size-h5 font-w600" href="be_pages_forum_topics.html">Information Technology</a>
-                                                        <div class="font-size-sm text-muted mt-1">Quezon City University</div>
-                                                    </td>
-                                                    <td class="d-none d-md-table-cell text-center" style="min-width: 100px !important;">
-                                                        BA
-                                                    </td>
-                                                    <td class="d-none d-md-table-cell text-center">
-                                                        Graduate
-                                                    </td>
-                                                    <td class="d-none d-md-table-cell">
-                                                        <span class="font-size-sm">2009 - 2013</span>
-                                                    </td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
+                                        <!-- <h3 class="block-title"> -->
+                                        <!-- List of Educational Attainments -->
+                                        <!-- </h3> -->
+                                        <!-- <div class="block"> -->
+                                        <!-- <div class="dropdown push"> -->
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-content-rich-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+                                        <!-- Add -->
+                                        <!-- </button> -->
+                                        <!-- <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-content-rich-primary" x-placement="bottom-start" -->
+                                        <!-- style="width: 100%; padding: 10px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 38px, 0px);"> -->
+                                        <!-- @*<form action="be_blocks_forms.html" method="POST"> -->
+                                            <!-- <div class="block"> -->
+                                                <!-- <div class="block-header block-header-default"> -->
+                                                    <!-- <h3 class="block-title">Add Education</h3> -->
+                                                    <!-- <div class="block-options"> -->
+                                                        <!-- <button type="submit" class="btn-block-option"> -->
+                                                            <!-- Submit -->
+                                                        <!-- </button> -->
+                                                    <!-- </div> -->
+                                                <!-- </div> -->
+                                                <!-- <div class="block-content"> -->
+                                                    <!-- <div class="row justify-content-center"> -->
+                                                        <!-- <div class="col-sm-12 col-md-12"> -->
+                                                            <!-- <div class="form-group row"> -->
+                                                                <!-- <label class="col-sm-4 col-form-label" for="example-hf-email">School</label> -->
+                                                                <!-- <div class="col-sm-8"> -->
+                                                                    <!-- <input type="text" class="form-control" id="example-hf-email" name="example-hf-email" placeholder="School Name"> -->
+                                                                <!-- </div> -->
+                                                            <!-- </div> -->
+                                                            <!-- <div class="form-group row"> -->
+                                                                <!-- <label class="col-sm-4 col-form-label" for="example-hf-email2">Program / Course</label> -->
+                                                                <!-- <div class="col-sm-8"> -->
+                                                                    <!-- <input type="text" class="form-control" id="example-hf-email2" name="example-hf-email2" placeholder="Program / Course"> -->
+                                                                <!-- </div> -->
+                                                            <!-- </div> -->
+                                                            <!-- <div class="form-group row"> -->
+                                                                <!-- <label class="col-sm-4 col-form-label" for="EducationalLevel">EducationalLevel</label> -->
+                                                                <!-- <div class="col-sm-8"> -->
+                                                                    <!-- <input type="text" class="form-control" id="EducationalLevel" name="EducationalLevel" placeholder="EducationalLevel"> -->
+                                                                <!-- </div> -->
+                                                            <!-- </div> -->
+                                                            <!-- <div class="form-group row"> -->
+                                                                <!-- <label class="col-sm-4 col-form-label" for="EducationalLevel">Inclusive Dates</label> -->
+                                                                <!-- <div class="col-sm-4"> -->
+                                                                    <!-- <input type="text" class="form-control" id="InclusiveDateFrom" name="InclusiveDateFrom" placeholder="YYYY"> -->
+                                                                <!-- </div> -->
+                                                                <!-- <div class="col-sm-4"> -->
+                                                                    <!-- <input type="text" class="form-control" id="InclusiveDateTo" name="InclusiveDateTo" placeholder="YYYY"> -->
+                                                                <!-- </div> -->
+                                                            <!-- </div> -->
+                                                            <!-- <div class="form-group"> -->
+                                                                <!-- <div class="custom-control custom-checkbox custom-control-primary"> -->
+                                                                    <!-- <input type="checkbox" class="custom-control-input" id="block-form5-remember-me" name="block-form5-remember-me"> -->
+                                                                    <!-- <label class="custom-control-label" for="block-form5-remember-me">Graduated?</label> -->
+                                                                <!-- </div> -->
+                                                            <!-- </div> -->
+                                                        <!-- </div> -->
+                                                    <!-- </div> -->
+                                                <!-- </div> -->
+                                            <!-- </div> -->
+                                        <!-- </form>*@ -->
+                                        <!-- @*<div class="dropdown-divider"></div> -->
+                                            <!-- <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Sign up</a> -->
+                                            <!-- <a class="dropdown-item text-muted font-size-sm" href="javascript:void(0)">Forgot password?</a>*@ -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- </div> -->
+                                        <!-- @*<h3 class="block-title">Categories</h3>*@ -->
+                                        <!-- <table class="table table-striped table-borderless table-vcenter push"> -->
+                                        <!-- <thead class="border-bottom"> -->
+                                        <!-- <tr> -->
+                                        <!-- <th colspan="2">Program / Course</th> -->
+                                        <!-- <th class="d-none d-md-table-cell text-center" style="width: 90px;">Level</th> -->
+                                        <!-- <th class="d-none d-md-table-cell text-center" style="width: 90px;">Status</th> -->
+                                        <!-- <th class="d-none d-md-table-cell" style="width: 180px;">Date</th> -->
+                                        <!-- </tr> -->
+                                        <!-- </thead> -->
+                                        <!-- <tbody> -->
+                                        <!-- <tr> -->
+                                        <!-- <td class="text-center" style="width: 50px;"> -->
+                                        <!-- <i class="si si-check fa-2x"></i> -->
+                                        <!-- </td> -->
+                                        <!-- <td> -->
+                                        <!-- <a class="font-size-h5 font-w600" href="be_pages_forum_topics.html">Information Technology</a> -->
+                                        <!-- <div class="font-size-sm text-muted mt-1">Quezon City University</div> -->
+                                        <!-- </td> -->
+                                        <!-- <td class="d-none d-md-table-cell text-center" style="min-width: 100px !important;"> -->
+                                        <!-- BA -->
+                                        <!-- </td> -->
+                                        <!-- <td class="d-none d-md-table-cell text-center"> -->
+                                        <!-- Graduate -->
+                                        <!-- </td> -->
+                                        <!-- <td class="d-none d-md-table-cell"> -->
+                                        <!-- <span class="font-size-sm">2009 - 2013</span> -->
+                                        <!-- </td> -->
+                                        <!-- </tr> -->
+                                        <!-- </tbody> -->
+                                        <!-- </table> -->
 
                                     </div>
 
@@ -588,7 +566,7 @@
                                             </div>
                                             <div class="form-group">
                                                 <label for="HDMF">@L("HDMF")</label>
-                                                <input required id="PHIC" class="form-control form-control-sm"
+                                                <input required id="HDMF" class="form-control form-control-sm"
                                                        type="text" name="HDMF" placeholder="@L("HDMF")">
                                             </div>
                                             <div class="form-group">
@@ -600,8 +578,9 @@
                                     </div>
                                 </div>
                             </div>
-                            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+
                         </div>
+                        @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
                     </form>
                 </div>
             </div>
@@ -619,7 +598,6 @@
 
 
 <script>
-    $('.')
 
 
 </script>

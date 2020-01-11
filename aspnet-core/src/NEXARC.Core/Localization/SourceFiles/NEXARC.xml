@@ -103,5 +103,51 @@
     <text name="UserDeleteWarningMessage">User {0} will be deleted.</text>
     <text name="RoleDeleteWarningMessage">Role {0} will be deleted and unassigned from all assigned users.</text>
     <text name="TenantDeleteWarningMessage">Tenant {0} will be deleted.</text>
+
+      <!---->
+    <text name="AddressStreet">Address Street</text>
+    <text name="Baranggay">Baranggay</text>
+    <text name="BirthDate">Birth Date</text>
+    <text name="BirthPlace">Birth Place</text>
+    <text name="Cities">Cities</text>
+    <text name="City">City</text>
+    <text name="CivilStatus">Civil Status</text>
+    <text name="Code">Code</text>
+    <text name="Company">Company</text>
+    <text name="ContractEndDate">Contract End Date</text>
+    <text name="ContractStartDate">Contract Start Date</text>
+    <text name="CostCenter">Cost Center</text>
+    <text name="DefaultPasswordIs,NEXARC.Authorization.Users.User.DefaultPassword">Default Password Is, N E X A R C. Authorization. Users. User. Default Password</text>
+    <text name="Department">Department</text>
+    <text name="Departments">Departments</text>
+    <text name="Description">Description</text>
+    <text name="Division">Division</text>
+    <text name="Divisions">Divisions</text>
+    <text name="EmployeeCode">Employee Code</text>
+    <text name="FirstName">First Name</text>
+    <text name="Gender">Gender</text>
+    <text name="Group">Group</text>
+    <text name="HDMF">HDMF</text>
+    <text name="HiredDate">Hired Date</text>
+    <text name="LastName">Last Name</text>
+    <text name="MiddleName">Middle Name</text>
+    <text name="Municipality">Municipality</text>
+    <text name="Nationality">Nationality</text>
+    <text name="NickName">Nick Name</text>
+    <text name="PHIC">PHIC</text>
+    <text name="Position">Position</text>
+    <text name="Positions">Positions</text>
+    <text name="Province">Province</text>
+    <text name="Rank">Rank</text>
+    <text name="Ranks">Ranks</text>
+    <text name="Region">Region</text>
+    <text name="RegularDate">Regular Date</text>
+    <text name="ResignationDate">Resignation Date</text>
+    <text name="Section">Section</text>
+    <text name="Site">Site</text>
+    <text name="SSS">SSS</text>
+    <text name="Status">Status</text>
+    <text name="Suffix">Suffix</text>
+    
   </texts>
 </localizationDictionary>
