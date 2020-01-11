@@ -1,0 +1,200 @@
+@using NEXARC.Web.Models.Common.Modals
+@using NEXARC.Web.Startup
+@using NEXARC.Domain.Enumerations;
+@using NEXARC.Domain.Entities.HumanResource;
+@using NEXARC.Extensions;
+@model NEXARC.Web.Models.Teams.TeamListViewModel
+@{
+    ViewBag.Title = L("Teams");
+    ViewBag.CurrentPageName = PageNames.Teams;
+}
+@section scripts
+    {
+<environment names="Development">
+</environment>
+
+<environment names="Staging,Production">
+</environment>
+
+<script src="~/view-resources/Views/Teams/Index.js" asp-append-version="true"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/buttons/dataTables.buttons.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.print.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.html5.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.flash.min.js"></script>
+<script src="./oneui/src/assets/js/plugins/datatables/buttons/buttons.colVis.min.js"></script>
+<script src="./oneui/src/assets/js/pages/be_tables_datatables.js"></script>
+<script>jQuery(function () { One.helpers(['table-tools-checkable', 'table-tools-sections']); });</script>
+
+
+<script>
+    $("#search_table").on("keyup search input paste cut", function (e) {
+        e.preventDefault();
+        if ($('.table').length > 0) {
+            if ($.fn.dataTable.isDataTable('.table')) {
+                table = $('.table').DataTable();
+                table.search(this.value).draw();
+            }
+        }
+    });
+
+    $('.export-csv').click(function () {
+        $('.buttons-csv').trigger("click");;
+    });
+    $('.export-copy').click(function () {
+        $('.buttons-copy').trigger("click");;
+    });
+    $('.export-print').click(function () {
+        $('.buttons-print').trigger("click");;
+    });
+</script>
+    }
+
+<div class="content">
+
+    <div class="block">
+        <div class="block-header  ribbon ribbon-dark ribbon-left">
+            <div class="ribbon-box">
+                @L("Teams")
+            </div>
+            <h3 class="block-title"></h3>
+            <div class="block-options">
+                <button type="button" class="btn btn-sm btn-square btn-dark" data-toggle="block-option" data-action="fullscreen_toggle"><i class="si si-size-fullscreen"></i></button>
+                <button type="button" class="btn btn-sm btn-square btn-primary" data-toggle="modal" data-target="#TeamCreateModal">
+                    <i class="si si-pencil"></i>&nbsp;<span>@L("Create")</span>
+                </button>
+                <button type="button" class="btn btn-sm btn-square btn-danger delete-team-multi">
+                    <i class="far fa-trash-alt"></i>&nbsp;<span>Delete</span>
+                </button>
+                <button type="button" class="btn btn-sm btn-square btn-secondary dropdown-toggle" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="si si-note"></i> Export
+                </button>
+                <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                    <a class="dropdown-item export-copy" href="javascript:void(0)">
+                        <i class="si si-docs"></i>&nbsp;
+                        Copy
+                    </a>
+                    <a class="dropdown-item export-csv" href="javascript:void(0)">
+                        <i class="si si-doc"></i>&nbsp;
+                        CVS
+                    </a>
+                    <a class="dropdown-item export-print" href="javascript:void(0)">
+                        <i class="si si-printer"></i>&nbsp;
+                        Print
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="block-content">
+
+            <table id="dtable" class="table table-striped table-vright js-dataTable-buttons dataTable no-footer  js-table-checkable">
+                <thead>
+                    <tr>
+                        <th class="text-center noExport" style="width: 70px;">
+                            <div class="custom-control custom-checkbox d-inline-block">
+                                <input type="checkbox" class="custom-control-input" id="check-all" name="check-all">
+                                <label class="custom-control-label" for="check-all"></label>
+                            </div>
+                        </th>
+                        <th class="font-size-sm text-center noExport" style="width: 80px;">@L("Actions")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Code")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Name")</th>
+                        <th class="font-size-sm d-none d-sm-table-cell">@L("Description")</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var team in Model.Teams)
+                    {
+                    <tr>
+                        <td class="text-center">
+                            <div class="custom-control custom-checkbox d-inline-block">
+                                <input type="checkbox" class="custom-control-input" dataclass="record-key" data-id="@team.Id" id="row_@team.Id" name="row_@team.Id">
+                                <label class="custom-control-label" for="row_@team.Id"></label>
+                            </div>
+                        </td>
+                        <td class="d-sm-table-cell font-size-sm">
+                            <button type="button" class="btn btn-sm btn-outline-primary dropdown-toggle" id="dropdown-default-primary" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>@L("Actions")</span>
+                                <b class="caret"></b>
+                            </button>
+                            <div class="dropdown-menu font-size-sm" aria-labelledby="dropdown-default-primary">
+                                <a href="#" class="dropdown-item edit-team" data-team-id="@team.Id" data-toggle="modal" data-target="#TeamEditModal">
+                                    <i class="fa fa-edit"></i>&nbsp;@L("Edit")
+                                </a>
+                                <a href="#" class="delete-team dropdown-item" data-team-id="@team.Id" data-team-name="@team.Name">
+                                    <i class="fa fa-trash"></i>&nbsp;@L("Delete")
+                                </a>
+                            </div>
+                        </td>
+                        <td class="font-size-sm">
+                          @team.Code
+                        </td>
+                        <td class="font-size-sm">
+                          @team.Name
+                        </td>
+                        <td class="font-size-sm">
+                          @team.Description
+                        </td>
+
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="TeamCreateModal" tabindex="-1" role="dialog" aria-labelledby="TeamCreateModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @await Html.PartialAsync("~/Views/Shared/Modals/_ModalHeader.cshtml", new ModalHeaderViewModel(L("CreateNewTeam")))
+            <form name="TeamCreateForm" role="form" novalidate class="form-horizontal form-validation go-bottom customform">
+                <div class="modal-body">
+
+                    <div class="block mb0">
+                        <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#general">General</a>
+                            </li>
+                        </ul>
+                        <div class="block-content tab-content">
+                            <div class="tab-pane active" id="btabs-alt-static-home" role="tabpanel">
+                <div class="form-group">
+                    <label for="Code">Code</label>
+                    <input required="true" id="Code" class="form-control form-control-sm"
+                            name="Code" placeholder="Code"
+                             />
+                </div>
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input required="true" id="Name" class="form-control form-control-sm"
+                            name="Name" placeholder="Name"
+                             />
+                </div>
+                <div class="form-group">
+                    <label for="Description">Description</label>
+                    <input required="true" id="Description" class="form-control form-control-sm"
+                            name="Description" placeholder="Description"
+                             />
+                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                @await Html.PartialAsync("~/Views/Shared/Modals/_ModalFooterWithSaveAndCancel.cshtml")
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="TeamEditModal" tabindex="-1" role="dialog" aria-labelledby="TeamEditModalLabel" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        </div>
+    </div>
+</div>

@@ -104,7 +104,6 @@
     <text name="RoleDeleteWarningMessage">Role {0} will be deleted and unassigned from all assigned users.</text>
     <text name="TenantDeleteWarningMessage">Tenant {0} will be deleted.</text>
 
-      <!---->
     <text name="AddressStreet">Address Street</text>
     <text name="Baranggay">Baranggay</text>
     <text name="BirthDate">Birth Date</text>
@@ -148,6 +147,42 @@
     <text name="SSS">SSS</text>
     <text name="Status">Status</text>
     <text name="Suffix">Suffix</text>
+
+    <text name="Accountabilities">Accountabilities</text>
+    <text name="ApproverSetup">Approver Setup</text>
+    <text name="Barangay">Barangay</text>
+    <text name="BloodTypes">Blood Types</text>
+    <text name="Certificates">Certificates</text>
+    <text name="CompanyPolicy">Company Policy</text>
+    <text name="CostCenters">Cost Centers</text>
+    <text name="Dashboard">Dashboard</text>
+    <text name="Designations">Designations</text>
+    <text name="EducationalAwards">Educational Awards</text>
+    <text name="EmployeeHandbook">Employee Handbook</text>
+    <text name="EmployeeMovements">Employee Movements</text>
+    <text name="Employees">Employees</text>
+    <text name="EmploymentTypes">Employment Types</text>
+    <text name="Holidays">Holidays</text>
+    <text name="InactiveEmployees">Inactive Employees</text>
+    <text name="LeaveAdjustment">Leave Adjustment</text>
+    <text name="LeaveManagement">Leave Management</text>
+    <text name="LeaveSetup">Leave Setup</text>
+    <text name="LeaveTypes">Leave Types</text>
+    <text name="Maintenance">Maintenance</text>
+    <text name="Masterlist">Masterlist</text>
+    <text name="Nationalities">Nationalities</text>
+    <text name="Offences">Offences</text>
+    <text name="Offenses">Offenses</text>
+    <text name="Regions">Regions</text>
+    <text name="Religions">Religions</text>
+    <text name="ResumeBank">Resume Bank</text>
+    <text name="Schools">Schools</text>
+    <text name="Sections">Sections</text>
+    <text name="Security">Security</text>
+    <text name="SelfService">Self Service</text>
+    <text name="Sites">Sites</text>
+    <text name="Supplimentary">Supplimentary</text>
+    <text name="Teams">Teams</text>
     
   </texts>
 </localizationDictionary>

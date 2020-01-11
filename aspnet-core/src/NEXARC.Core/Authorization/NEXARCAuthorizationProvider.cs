@@ -50,6 +50,12 @@ namespace NEXARC.Authorization
 				.CreateChildPermission("HR.Rank.Read",L("HR Read Rank"))
 				.CreateChildPermission("HR.Rank.Update",L("HR Update Rank"))
 				.CreateChildPermission("HR.Rank.Delete",L("HR Delete Rank"));
+
+			context.CreatePermission("HR.Team",L("HR Team"))
+				.CreateChildPermission("HR.Team.Create",L("HR Create Team"))
+				.CreateChildPermission("HR.Team.Read",L("HR Read Team"))
+				.CreateChildPermission("HR.Team.Update",L("HR Update Team"))
+				.CreateChildPermission("HR.Team.Delete",L("HR Delete Team"));
         }
 
         private static ILocalizableString L(string name)

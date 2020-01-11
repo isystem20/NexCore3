@@ -94,21 +94,21 @@ namespace NEXARC.Web.Startup
                         )
                     ).AddItem(
                         new MenuItemDefinition(
-                            PageNames.About,
-                            L("Designations"),
-                            url: "Designations",
+                            PageNames.Positions,
+                            L("Positions"),
+                            url: "Positions",
                             icon: "fa-info-circle"
                         )
                     ).AddItem(
                         new MenuItemDefinition(
-                            PageNames.About,
+                            PageNames.Divisions,
                             L("Division"),
                             url: "Divisions",
                             icon: "fa-info-circle"
                         )
                     ).AddItem(
                         new MenuItemDefinition(
-                            PageNames.About,
+                            PageNames.Ranks,
                             L("Ranks"),
                             url: "Ranks",
                             icon: "fa-info-circle"
@@ -198,9 +198,9 @@ namespace NEXARC.Web.Startup
                         )
                     ).AddItem(
                         new MenuItemDefinition(
-                            PageNames.About,
-                            L("City"),
-                            url: "City",
+                            PageNames.Cities,
+                            L("Cities"),
+                            url: "Cities",
                             icon: "fa-info-circle"
                         )
                     ).AddItem(
@@ -342,19 +342,6 @@ namespace NEXARC.Web.Startup
                         icon: "fa-info-circle"
                     )
                 )
-               .AddItem(new MenuItemDefinition(PageNames.Cities, L("Cities"), url: "Cities", icon: "fa-black-tie",
-                        requiredPermissionName: "HR.City.Read"))
-
-				.AddItem(new MenuItemDefinition(PageNames.Divisions,L("Divisions"),url: "Divisions",icon: "fa-black-tie",
-						requiredPermissionName: "HR.Division.Read"))
-
-				.AddItem(new MenuItemDefinition(PageNames.Positions,L("Positions"),url: "Positions",icon: "fa-black-tie",
-						requiredPermissionName: "HR.Position.Read"))
-
-				.AddItem(new MenuItemDefinition(PageNames.Ranks,L("Ranks"),url: "Ranks",icon: "fa-black-tie",
-						requiredPermissionName: "HR.Rank.Read"))
-
-
                 ;
         }
 

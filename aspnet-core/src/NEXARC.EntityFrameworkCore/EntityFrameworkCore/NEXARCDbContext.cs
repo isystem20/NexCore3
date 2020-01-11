@@ -28,6 +28,7 @@ namespace NEXARC.EntityFrameworkCore
         public DbSet<Region> Regions { get; set; }
         public DbSet<Section> Sections { get; set; }
         public DbSet<Site> Sites { get; set; }
+        public DbSet<Team> Teams { get; set; }
         public NEXARCDbContext(DbContextOptions<NEXARCDbContext> options)
             : base(options)
         {

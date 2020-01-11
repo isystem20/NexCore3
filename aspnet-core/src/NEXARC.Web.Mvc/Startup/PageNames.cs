@@ -17,5 +17,7 @@ namespace NEXARC.Web.Startup
 		public const string Positions = "Positions"; 
 
 		public const string Ranks = "Ranks"; 
+
+		public const string Teams = "Teams"; 
     }
 }

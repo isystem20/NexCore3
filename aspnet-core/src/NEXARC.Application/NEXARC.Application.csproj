@@ -11,6 +11,10 @@
     <RootNamespace>NEXARC</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Remove="HR\ITeamAppService.cs" />
+    <Compile Remove="HR\TeamAppService.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\NEXARC.Core\NEXARC.Core.csproj" />
     <ProjectReference Include="..\NEXARC.Domain\NEXARC.Domain.csproj" />
   </ItemGroup>
